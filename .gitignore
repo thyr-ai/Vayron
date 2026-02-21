@@ -1,0 +1,26 @@
+# Credentials & Secrets
+credentials/
+secrets/
+*.key
+*.pem
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+
+# Node modules (if any scripts use npm)
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Obsidian workspace (personal settings)
+.obsidian/workspace*
+.obsidian/workspace.json
+
+# Memory files (optional - comment out if you want to sync memory)
+# memory/private_encrypted/

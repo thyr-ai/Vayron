@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission Control 🎯</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 Mission Control</h1>
+    <nav>
+      <button class="tab-btn active" data-tab="documents">📄 Dokument</button>
+      <button class="tab-btn" data-tab="images">🖼️ Bilder</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Documents Tab -->
+    <section id="documents-tab" class="tab-content active">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="🔍 Sök i dokument...">
+        <button id="clear-search">✕</button>
+      </div>
+
+      <div id="documents-list" class="content-list">
+        <div class="loading">Laddar dokument...</div>
+      </div>
+    </section>
+
+    <!-- Images Tab -->
+    <section id="images-tab" class="tab-content">
+      <div id="images-grid" class="images-grid">
+        <div class="loading">Laddar bilder...</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for viewing content -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+[Unit]
+Description=Mission Control Web Interface
+After=network.target
+
+[Service]
+Type=simple
+User=administrator
+WorkingDirectory=/home/administrator/vayron/mission-control-web
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=mission-control
+
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

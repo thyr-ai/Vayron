@@ -1,0 +1,6 @@
+version: 1.0
+rules:
+  code: openai
+  strategic_analysis: anthropic
+  general: gemini
+default: anthropic
