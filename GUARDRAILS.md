@@ -4,6 +4,39 @@ _Skapad: 2026-02-21_
 
 ## 🚨 Kritiska regler
 
+### Google-konto (NotebookLM, Gmail, Drive, Calendar)
+
+**ALDRIG:**
+- ❌ Radera dokument, filer, anteckningar
+- ❌ Dela filer publikt eller med andra
+- ❌ Ändra lösenord eller säkerhetsinställningar
+- ❌ Köpa något via Google (Play Store, Cloud, etc.)
+- ❌ Ändra Calendar-events utan godkännande
+- ❌ Radera mail (förutom spam/uppenbart skräp)
+
+**TILLÅTET (utan att fråga):**
+- ✅ Läsa NotebookLM-anteckningar
+- ✅ Organisera NotebookLM (strukturera, tagga, sammanfatta)
+- ✅ Läsa Gmail för kontext (för att förstå projekt/sammanhang)
+- ✅ Läsa Google Calendar
+- ✅ Läsa Google Drive-dokument
+- ✅ Skapa/uppdatera dokument i NotebookLM
+
+**KRÄVER GODKÄNNANDE FÖRST:**
+- ⚠️ Skicka email från Gmail
+- ⚠️ Skapa nya Calendar-events
+- ⚠️ Skapa nya Google Docs/Sheets
+- ⚠️ Flytta eller organisera filer i Drive
+- ⚠️ Dela dokument (även internt)
+
+**LOGGNING:**
+- Logga läsning av känsligt innehåll (mail, personliga dokument) till **SAFETY.md**
+- Logga alla actions (skapa, flytta, dela) till **SAFETY.md**
+
+**SFÄR:** Personal (vardagligt, relationellt, karriär - inte de mest känsliga sakerna)
+
+---
+
 ### One.com kontrollpanel
 
 **ALDRIG:**
