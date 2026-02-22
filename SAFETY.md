@@ -17,6 +17,11 @@ _Denna fil loggar alla actions från system styrda av GUARDRAILS.md_
 **Regler:** Se GUARDRAILS.md för fullständiga regler
 **Status:** Credentials sparade, ingen inloggning testad än (passkey kan kräva setup)
 
+**02:13** - App-specific password mottagen
+**Vad:** Mattias skapade app-specific password "Vayron" för programmatisk access
+**Uppdaterat:** credentials/google.md med app-password
+**Status:** Redo att använda för NotebookLM/Gmail/Drive-access utan passkey-prompts
+
 ---
 
 ## 2026-02-21
