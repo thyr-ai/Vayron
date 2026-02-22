@@ -4,6 +4,21 @@ _Denna fil loggar alla actions från system styrda av GUARDRAILS.md_
 
 ---
 
+## 2026-02-22
+
+### Google Account Access (mattiasthyr@gmail.com)
+**01:56** - Google credentials mottagna och sparade
+**Vad:** Fick tillgång till Mattias Google-konto (NotebookLM, Gmail, Drive, Calendar)
+**Varför:** Hjälpa organisera NotebookLM-anteckningar, läsa mail/calendar för kontext
+**Credentials:** Sparade till `/home/administrator/vayron/credentials/google.md` (chmod 600)
+**Auth method:** Passkey (kan kräva Mattias godkännande vid varje programmatisk inloggning)
+**Sfär:** Personal (vardagligt, relationellt, karriär - inte de mest känsliga sakerna)
+**Godkännande:** Explicit från Mattias (2026-02-22 01:43 - "Ja du kan få tillgång till mitt Google konto")
+**Regler:** Se GUARDRAILS.md för fullständiga regler
+**Status:** Credentials sparade, ingen inloggning testad än (passkey kan kräva setup)
+
+---
+
 ## 2026-02-21
 
 ### GitHub Access (thyr-ai/Vayron)
