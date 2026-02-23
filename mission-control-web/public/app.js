@@ -250,3 +250,201 @@ function escapeHtml(text) {
   div.textContent = text;
   return div.innerHTML;
 }
+
+// ===== X BOOKMARKS =====
+
+let allAccounts = [];
+let allBookmarks = [];
+let currentAccountFilter = 'all';
+let showArchived = false;
+let bookmarkStates = {}; // { tweetId: { read: bool, archived: bool } }
+
+// Load bookmarks on page load
+document.addEventListener('DOMContentLoaded', () => {
+  loadBookmarkStates();
+  loadBookmarks();
+  initBookmarkFilters();
+  initToggleArchived();
+});
+
+// Initialize bookmark account filters
+function initBookmarkFilters() {
+  const accountBtns = document.querySelectorAll('.account-btn');
+  
+  accountBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const account = btn.dataset.account;
+      
+      // Update buttons
+      accountBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Filter bookmarks
+      currentAccountFilter = account;
+      displayBookmarks();
+    });
+  });
+}
+
+// Load bookmarks from API
+async function loadBookmarks() {
+  try {
+    const [accountsRes, bookmarksRes] = await Promise.all([
+      fetch('/api/bookmarks/accounts'),
+      fetch('/api/bookmarks/all')
+    ]);
+    
+    allAccounts = await accountsRes.json();
+    allBookmarks = await bookmarksRes.json();
+    
+    renderAccountFilters();
+    displayBookmarks();
+  } catch (err) {
+    console.error('Error loading bookmarks:', err);
+    document.querySelector('.bookmarks-grid').innerHTML = `
+      <div class="error">
+        <p>❌ Fel vid laddning av bookmarks</p>
+        <p>${err.message}</p>
+      </div>
+    `;
+  }
+}
+
+// Render account filter buttons
+function renderAccountFilters() {
+  const filterContainer = document.querySelector('.account-filters');
+  
+  // Add "All" button
+  let html = '<button class="account-btn active" data-account="all">Alla konton</button>';
+  
+  // Add button for each account
+  allAccounts.forEach(account => {
+    html += `
+      <button class="account-btn" data-account="${account.username}">
+        ${escapeHtml(account.name)} (@${escapeHtml(account.username)}) 
+        <span class="count">${account.count}</span>
+      </button>
+    `;
+  });
+  
+  filterContainer.innerHTML = html;
+  initBookmarkFilters();
+}
+
+// Display bookmarks
+function displayBookmarks() {
+  const grid = document.querySelector('.bookmarks-grid');
+  
+  // Filter bookmarks
+  let filtered = allBookmarks;
+  if (currentAccountFilter !== 'all') {
+    filtered = allBookmarks.filter(b => b.accountUsername === currentAccountFilter);
+  }
+  
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="loading">Inga bookmarks hittades</div>';
+    return;
+  }
+  
+  // Render bookmarks
+  const html = filtered.map(bookmark => renderBookmarkCard(bookmark)).join('');
+  grid.innerHTML = html;
+  
+  // Add event listeners for checkboxes (event delegation)
+  grid.addEventListener('change', (e) => {
+    if (e.target.type === 'checkbox') {
+      const card = e.target.closest('.bookmark-card');
+      const tweetId = card.dataset.id;
+      const isRead = e.target.parentElement.textContent.includes('Läst');
+      const key = isRead ? 'read' : 'archived';
+      setBookmarkState(tweetId, key, e.target.checked);
+    }
+  });
+}
+
+// Load bookmark states from localStorage
+function loadBookmarkStates() {
+  const saved = localStorage.getItem('bookmarkStates');
+  if (saved) {
+    bookmarkStates = JSON.parse(saved);
+  }
+}
+
+// Save bookmark states to localStorage
+function saveBookmarkStates() {
+  localStorage.setItem('bookmarkStates', JSON.stringify(bookmarkStates));
+}
+
+// Get state for a bookmark
+function getBookmarkState(tweetId) {
+  return bookmarkStates[tweetId] || { read: false, archived: false };
+}
+
+// Set state for a bookmark
+function setBookmarkState(tweetId, key, value) {
+  if (!bookmarkStates[tweetId]) {
+    bookmarkStates[tweetId] = { read: false, archived: false };
+  }
+  bookmarkStates[tweetId][key] = value;
+  saveBookmarkStates();
+  displayBookmarks(); // Re-render
+}
+
+// Initialize toggle archived button
+function initToggleArchived() {
+  const header = document.querySelector('.bookmarks-header');
+  const toggleBtn = document.createElement('button');
+  toggleBtn.className = 'toggle-archived-btn';
+  toggleBtn.textContent = 'Visa arkiverade';
+  toggleBtn.addEventListener('click', () => {
+    showArchived = !showArchived;
+    toggleBtn.classList.toggle('active', showArchived);
+    toggleBtn.textContent = showArchived ? 'Dölj arkiverade' : 'Visa arkiverade';
+    document.querySelector('.bookmarks-grid').classList.toggle('show-archived', showArchived);
+  });
+  header.appendChild(toggleBtn);
+}
+
+// Render a single bookmark card
+function renderBookmarkCard(bookmark) {
+  // Extract first URL from text if any
+  const urlMatch = bookmark.text.match(/https?:\/\/[^\s]+/);
+  const hasUrl = urlMatch !== null;
+  
+  const state = getBookmarkState(bookmark.id);
+  const readClass = state.read ? 'read' : '';
+  const archivedClass = state.archived ? 'archived' : '';
+  
+  return `
+    <div class="bookmark-card ${readClass} ${archivedClass}" data-account="${escapeHtml(bookmark.accountUsername)}" data-id="${bookmark.id}">
+      <div class="bookmark-header">
+        <div class="bookmark-author">
+          <div class="name">${escapeHtml(bookmark.author)}</div>
+          <div class="handle">från @${escapeHtml(bookmark.accountUsername)}</div>
+        </div>
+      </div>
+      
+      <div class="bookmark-content">
+        ${escapeHtml(bookmark.text)}
+      </div>
+      
+      <div class="bookmark-meta">
+        <a href="${bookmark.url}" target="_blank" rel="noopener" class="bookmark-link">
+          🐦 Öppna på X
+        </a>
+        ${hasUrl ? `<a href="${urlMatch[0]}" target="_blank" rel="noopener" class="bookmark-link">🔗 Länk</a>` : ''}
+      </div>
+      
+      <div class="bookmark-actions">
+        <label class="bookmark-checkbox">
+          <input type="checkbox" ${state.read ? 'checked' : ''}>
+          <span>Läst</span>
+        </label>
+        <label class="bookmark-checkbox">
+          <input type="checkbox" ${state.archived ? 'checked' : ''}>
+          <span>Arkiverad</span>
+        </label>
+      </div>
+    </div>
+  `;
+}

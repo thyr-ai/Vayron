@@ -3,6 +3,7 @@ const basicAuth = require('express-basic-auth');
 const fs = require('fs').promises;
 const path = require('path');
 const chokidar = require('chokidar');
+const { parseBookmarks, getAllBookmarks, getStats } = require('./parse-bookmarks');
 
 const app = express();
 const PORT = 8080;
@@ -166,6 +167,36 @@ app.get('/api/search', async (req, res) => {
     results.sort((a, b) => (b.matches?.length || 0) - (a.matches?.length || 0));
     
     res.json(results);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// X Bookmarks endpoints
+const BOOKMARKS_DIR = path.join(WORKSPACE, 'x-bookmarks');
+
+app.get('/api/bookmarks/accounts', (req, res) => {
+  try {
+    const accounts = parseBookmarks(BOOKMARKS_DIR);
+    res.json(accounts);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/bookmarks/all', (req, res) => {
+  try {
+    const bookmarks = getAllBookmarks(BOOKMARKS_DIR);
+    res.json(bookmarks);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/bookmarks/stats', (req, res) => {
+  try {
+    const stats = getStats(BOOKMARKS_DIR);
+    res.json(stats);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

@@ -10,14 +10,81 @@
   <header>
     <h1>🎯 Mission Control</h1>
     <nav>
-      <button class="tab-btn active" data-tab="documents">📄 Dokument</button>
+      <button class="tab-btn active" data-tab="kanban">📋 Kanban</button>
+      <button class="tab-btn" data-tab="bookmarks">🐦 X Bookmarks</button>
+      <button class="tab-btn" data-tab="documents">📄 Dokument</button>
       <button class="tab-btn" data-tab="images">🖼️ Bilder</button>
     </nav>
   </header>
 
   <main>
+    <!-- Kanban Tab -->
+    <section id="kanban-tab" class="tab-content active">
+      <div class="kanban-header">
+        <h2>📋 Kanban Board</h2>
+        <select id="context-filter" class="context-filter">
+          <option value="all">Alla kontexter</option>
+          <option value="@dator">@dator</option>
+          <option value="@telefon">@telefon</option>
+          <option value="@vps">@vps</option>
+          <option value="@garaget">@garaget</option>
+        </select>
+      </div>
+
+      <div class="kanban-board">
+        <div class="kanban-column" data-state="inbox">
+          <h3>📥 Inbox</h3>
+          <div class="tasks" id="inbox-tasks"></div>
+          <button class="add-task-btn" data-state="inbox">+ Lägg till</button>
+        </div>
+
+        <div class="kanban-column" data-state="next">
+          <h3>▶️ Nästa steg</h3>
+          <div class="tasks" id="next-tasks"></div>
+          <button class="add-task-btn" data-state="next">+ Lägg till</button>
+        </div>
+
+        <div class="kanban-column" data-state="doing">
+          <h3>🚧 Pågående</h3>
+          <div class="tasks" id="doing-tasks"></div>
+          <button class="add-task-btn" data-state="doing">+ Lägg till</button>
+        </div>
+
+        <div class="kanban-column" data-state="waiting">
+          <h3>⏸️ Väntar på</h3>
+          <div class="tasks" id="waiting-tasks"></div>
+          <button class="add-task-btn" data-state="waiting">+ Lägg till</button>
+        </div>
+
+        <div class="kanban-column" data-state="backlog">
+          <h3>📦 Backlog</h3>
+          <div class="tasks" id="backlog-tasks"></div>
+          <button class="add-task-btn" data-state="backlog">+ Lägg till</button>
+        </div>
+      </div>
+
+      <div class="completed-section">
+        <h3>✅ Klart (senaste veckan)</h3>
+        <div id="completed-tasks" class="completed-list"></div>
+      </div>
+    </section>
+
+    <!-- X Bookmarks Tab -->
+    <section id="bookmarks-tab" class="tab-content">
+      <div class="bookmarks-header">
+        <h2>🐦 X Bookmarks</h2>
+        <div class="account-filters">
+          <button class="account-btn active" data-account="all">Alla konton</button>
+        </div>
+      </div>
+
+      <div class="bookmarks-grid">
+        <div class="loading">Laddar bookmarks...</div>
+      </div>
+    </section>
+
     <!-- Documents Tab -->
-    <section id="documents-tab" class="tab-content active">
+    <section id="documents-tab" class="tab-content">
       <div class="search-box">
         <input type="text" id="search-input" placeholder="🔍 Sök i dokument...">
         <button id="clear-search">✕</button>

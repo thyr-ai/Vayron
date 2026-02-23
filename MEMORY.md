@@ -14,6 +14,42 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-02-23: Mission Control expansion + rclone Google Drive
+**Hållbar Google Drive-sync etablerad:**
+- Homebrew installerat på både VPS och Mattias Mac
+- rclone konfigurerat med OAuth för permanent Drive-access
+- X-exports nedladdade automatiskt från Drive (606 tweets från 2 konton)
+- Framtida exports kan hämtas enkelt via `rclone copy`
+
+**Mission Control webapplikation expanderad:**
+- Från 2 tabs (Dokument/Bilder) → 4 tabs (Kanban/X Bookmarks/Dokument/Bilder)
+- Port 8080, Basic auth (vayron/mission-control-2026)
+- Dark mode design med cyan accents
+
+**X Bookmarks-viewer FÄRDIG:**
+- Parser för Twitter/X data exports (like.js format)
+- 606 sparade tweets från 2 konton: Konfident (@Konfidentse, 27) + Övning (@ovningse, 579)
+- Features:
+  - Tidsordning (nyaste först, baserat på tweetId)
+  - Färgkodning: mattiasthyr=blå, ovningse=grön, Konfidentse=gul (vänster kant)
+  - Läst/Arkiverad checkboxes (sparas i localStorage)
+  - Knapp för att visa/dölja arkiverade tweets
+  - Account-filter (Alla/per konto)
+  - Länkar till original-tweets + extraherade URLs
+- API-endpoints: `/api/bookmarks/accounts`, `/api/bookmarks/all`, `/api/bookmarks/stats`
+- Automatisk detektion av nya konton när de läggs till
+
+**Kanban Board - Designspec komplett:**
+- GTD-baserad task management med context-filtrering som huvudfunktion
+- 5 kolumner: Inbox → Nästa steg → Pågående → Väntar på → Backlog
+- Klart-sektion för framstegsspårning
+- Context-badges: @dator, @telefon, @vps, @garaget (färgkodade)
+- Subtasks stöd, sorteringsordning för prioritering
+- Synkar med MISSION_CONTROL.md (parsear markdown, skriver tillbaka)
+- Git push var 5:e minut
+- Design färdig i `/home/administrator/vayron/mission-control-web/KANBAN_DESIGN.md`
+- Implementation pausad (X Bookmarks prioriterat)
+
 ### 2026-02-21: Säkerhetsstruktur & Obsidian-integration
 **GUARDRAILS.md + SAFETY.md skapade:**
 - GUARDRAILS.md = reglerna för känsliga system (one.com kontrollpanel)
@@ -52,6 +88,9 @@ _Skapad: 2026-02-16_
 - Workspace: /home/administrator/vayron
 - Memory writer: /home/administrator/vayron/agent/memory_writer.py
 - Sfärer: professional, semiprofessional, personal, private_encrypted
+- Mission Control: http://localhost:8080 (Node.js webapp)
+- rclone: Google Drive sync (remote: gdrive)
+- Homebrew: Pakethanterare (VPS + Mac)
 
 ## 📍 Telegram-kanaler
 - 5052479766 → Professional
@@ -66,11 +105,22 @@ _Skapad: 2026-02-16_
 
 ## 🚧 Pågående projekt
 
-### X Bookmark Samlingsplats
-- **Status:** Väntar på data export från X-konton
-- **Mål:** Multi-kolumn viewer (TweetDeck-style) för sparade tweets
-- **Nästa steg:** Bygga HTML/JS viewer när export-filerna kommer
-- **Långsiktig plan:** Scraper + nyhetsbevakningsfunktion
+### Mission Control - Kanban Board
+- **Status:** Designspec komplett, väntar på implementation
+- **Location:** `/home/administrator/vayron/mission-control-web/`
+- **Designspec:** `KANBAN_DESIGN.md` (GTD-baserad, context-filtrering)
+- **Nästa steg:** Implementera parser + API + UI enligt spec
+- **Features redo:** 5-kolumns layout, subtasks, context-badges, MISSION_CONTROL.md sync
+
+### X Bookmark Viewer
+- **Status:** ✅ FÄRDIG (v1.0)
+- **Data:** 606 tweets från 2 konton (Konfident + Övning)
+- **Väntar på:** Tredje kontot (mattiasthyr) - lägg bara in ZIP i x-bookmarks/
+- **Framtida förbättringar:**
+  - [ ] Sök i bookmarks
+  - [ ] Export till olika format
+  - [ ] Stats/analytics (mest sparade författare, etc.)
+  - [ ] Scraper för automatiska uppdateringar
 
 ### Git/Obsidian Sync
 - **Status:** SSH-nyckel väntar på att läggas till på GitHub
@@ -89,6 +139,10 @@ _Skapad: 2026-02-16_
 - [ ] Sätt upp meningsfulla heartbeat-checks
 - [ ] Bli bättre på att använda routing_rules.yaml
 - [ ] Proaktiv sfärhantering
+- [ ] Mission Control: Implementera Kanban board
+- [ ] Mission Control: Systemd service för auto-start
+- [ ] X Bookmarks: Sök och filter-funktioner
+- [ ] X Bookmarks: Automatisk scraper för nya tweets
 
 ---
 

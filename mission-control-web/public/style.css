@@ -334,3 +334,411 @@ main {
     max-height: 95vh;
   }
 }
+
+/* ===== KANBAN BOARD ===== */
+.kanban-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.kanban-header h2 {
+  font-size: 1.8rem;
+}
+
+.context-filter {
+  padding: 0.5rem 1rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.context-filter:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.kanban-column {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+.kanban-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.tasks {
+  min-height: 300px;
+  margin-bottom: 1rem;
+}
+
+.task-card {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  cursor: move;
+  transition: all 0.2s;
+}
+
+.task-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+.task-card.dragging {
+  opacity: 0.5;
+}
+
+.task-title {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.task-contexts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.context-badge {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.context-badge.dator {
+  background: #0066cc;
+  color: white;
+}
+
+.context-badge.telefon {
+  background: #00aa44;
+  color: white;
+}
+
+.context-badge.vps {
+  background: #9933ff;
+  color: white;
+}
+
+.context-badge.garaget {
+  background: #ff6600;
+  color: white;
+}
+
+.context-badge.custom {
+  background: #666;
+  color: white;
+}
+
+.add-task-btn {
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--bg-dark);
+  border: 1px dashed var(--border);
+  color: var(--text-dim);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-task-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.completed-section {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.completed-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--success);
+}
+
+.completed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.completed-item {
+  padding: 0.5rem 1rem;
+  background: var(--bg-dark);
+  border-left: 3px solid var(--success);
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.completed-item .date {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-right: 1rem;
+}
+
+/* ===== X BOOKMARKS ===== */
+.bookmarks-header {
+  margin-bottom: 2rem;
+}
+
+.bookmarks-header h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.account-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.account-btn {
+  padding: 0.5rem 1.25rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.account-btn:hover {
+  border-color: var(--accent);
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.account-btn.active {
+  background: var(--accent);
+  color: var(--bg-dark);
+  border-color: var(--accent);
+  font-weight: bold;
+}
+
+.bookmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.bookmark-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.bookmark-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+}
+
+/* Account color coding */
+.bookmark-card[data-account="mattiasthyr"] {
+  border-left-color: #3b82f6; /* Blå */
+}
+
+.bookmark-card[data-account="ovningse"] {
+  border-left-color: #10b981; /* Grön */
+}
+
+.bookmark-card[data-account="Konfidentse"] {
+  border-left-color: #f59e0b; /* Gul */
+}
+
+/* Read/Archived states */
+.bookmark-card.read {
+  opacity: 0.6;
+}
+
+.bookmark-card.archived {
+  display: none;
+}
+
+.show-archived .bookmark-card.archived {
+  display: block;
+  opacity: 0.4;
+}
+
+.bookmark-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.bookmark-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.bookmark-author {
+  flex: 1;
+}
+
+.bookmark-author .name {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.bookmark-author .handle {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.bookmark-content {
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.bookmark-link {
+  display: inline-block;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.bookmark-link:hover {
+  text-decoration: underline;
+}
+
+.bookmark-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive Kanban */
+@media (max-width: 1200px) {
+  .kanban-board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    grid-template-columns: 1fr;
+  }
+  
+  .bookmarks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Account filter count badges */
+.account-btn .count {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.account-btn.active .count {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Error state */
+.error {
+  text-align: center;
+  padding: 3rem;
+  color: var(--warning);
+}
+
+.error p {
+  margin: 0.5rem 0;
+}
+
+/* Bookmark actions */
+.bookmark-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  align-items: center;
+}
+
+.bookmark-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--text-dim);
+}
+
+.bookmark-checkbox input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-checkbox:hover {
+  color: var(--text);
+}
+
+.bookmark-checkbox input:checked + label {
+  color: var(--accent);
+}
+
+/* Toggle archived button */
+.toggle-archived-btn {
+  padding: 0.5rem 1rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.toggle-archived-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.toggle-archived-btn.active {
+  background: var(--accent);
+  color: var(--bg-dark);
+  border-color: var(--accent);
+}
