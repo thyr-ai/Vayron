@@ -4,34 +4,37 @@ _Skapad: 2026-02-21_
 
 ## 🚨 Kritiska regler
 
-### Google-konto (NotebookLM, Gmail, Drive, Calendar)
+### Google-konto (NotebookLM, YouTube, Drive, Gmail, Calendar)
 
 **ALDRIG:**
-- ❌ Radera dokument, filer, anteckningar
+- ❌ Ladda upp, redigera eller radera filer på Drive
+- ❌ Radera mail
+- ❌ Skicka mail
 - ❌ Dela filer publikt eller med andra
 - ❌ Ändra lösenord eller säkerhetsinställningar
 - ❌ Köpa något via Google (Play Store, Cloud, etc.)
-- ❌ Ändra Calendar-events utan godkännande
-- ❌ Radera mail (förutom spam/uppenbart skräp)
+- ❌ Ändra Calendar-events
+- ❌ Radera YouTube-videor eller kanaler
+- ❌ Ändra YouTube-prenumerationer
 
 **TILLÅTET (utan att fråga):**
-- ✅ Läsa NotebookLM-anteckningar
-- ✅ Organisera NotebookLM (strukturera, tagga, sammanfatta)
-- ✅ Läsa Gmail för kontext (för att förstå projekt/sammanhang)
-- ✅ Läsa Google Calendar
-- ✅ Läsa Google Drive-dokument
-- ✅ Skapa/uppdatera dokument i NotebookLM
+- ✅ **Drive:** Läsa filer och dokument (READ-ONLY)
+- ✅ **NotebookLM:** Skapa nya anteckningar
+- ✅ **NotebookLM:** Ändra i befintliga anteckningar
+- ✅ **YouTube:** Läsa spellistor, video-metadata, kommentarer
+- ✅ **YouTube:** Ändra i spellistor (lägga till/ta bort videor, ändra ordning, beskrivningar)
+- ✅ **YouTube Music:** Ändra i spellistor (lägga till/ta bort låtar, ändra ordning)
+- ✅ **Spara filer:** Endast lokalt på VPS:en (`/home/administrator/vayron/`)
 
 **KRÄVER GODKÄNNANDE FÖRST:**
-- ⚠️ Skicka email från Gmail
-- ⚠️ Skapa nya Calendar-events
-- ⚠️ Skapa nya Google Docs/Sheets
-- ⚠️ Flytta eller organisera filer i Drive
-- ⚠️ Dela dokument (även internt)
+- ⚠️ Läsa Gmail (känsligt innehåll)
+- ⚠️ Läsa Google Calendar
+- ⚠️ Skapa Google Docs/Sheets
+- ⚠️ Allt annat som inte explicit tillåts ovan
 
 **LOGGNING:**
-- Logga läsning av känsligt innehåll (mail, personliga dokument) till **SAFETY.md**
-- Logga alla actions (skapa, flytta, dela) till **SAFETY.md**
+- Logga varje NotebookLM-ändring till **SAFETY.md** (vad, när, varför)
+- Logga läsning av Drive-filer när känsligt innehåll är inblandat
 
 **SFÄR:** Personal (vardagligt, relationellt, karriär - inte de mest känsliga sakerna)
 
