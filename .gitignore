@@ -1,6 +1,4 @@
 # Credentials & Secrets
-credentials/*
-!credentials/README.md
 secrets/
 *.key
 *.pem
