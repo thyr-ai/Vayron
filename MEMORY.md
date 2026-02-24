@@ -14,6 +14,37 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-02-24: Git-crypt setup + instruktionsförbättringar
+**Git-crypt för krypterade credentials - KLART:**
+- Installerat på både Mac och VPS via Homebrew
+- Krypteringsnyckel skapad och säkert överförd (scp)
+- `.gitattributes` konfigurerad: `credentials/** filter=git-crypt diff=git-crypt`
+- Både Mac och VPS upplåsta med samma nyckel
+- SSH-nyckel för Mac skapad (vayron-mac) och aktiverad på GitHub
+- Credentials synkas nu säkert via git (krypterade i repot, dekrypterade lokalt)
+- Test lyckad: `one-com-creds.md` läsbar på VPS efter push från Mac
+
+**Workflow för credentials framöver:**
+1. Skapa `.md` i `credentials/` på Mac (Obsidian)
+2. `git add credentials/<fil>.md && git commit && git push`
+3. VPS: `git pull` → jag kan läsa dekrypterad
+4. GitHub: filen lagras krypterad (binär data)
+
+**MIS-TAKES jag gjorde och ska undvika:**
+- ❌ **Glömde att `.gitignore` blockerade `credentials/*`** - förhindrade att krypterade filer commitades
+  - ✅ Lärdom: När jag sätter upp kryptering, kolla .gitignore först!
+- ❌ **Gav för komplexa instruktioner** (nano-redigering osv)
+  - ✅ Lärdom: Ge enkla, copy-paste-ready kommandon. En rad är bäst.
+- ❌ **Föreslog Obsidian-redigering av dolda filer** (.gitignore)
+  - ✅ Lärdom: Dolda filer (.) syns inte i Obsidian - använd alltid Terminal
+- ❌ **Glömde att förklara git remote-skillnad** (HTTPS vs SSH)
+  - ✅ Lärdom: Verifiera remote-URL innan push-instruktioner
+
+**Miller-info (personal sfär):**
+- Går på Handskerydsskolan i nollan (förskoleklass)
+- Lämnas kl 8, promenad tar 18 min i snö
+- Memory_writer.py fixad: accepterar nu både `"sphere"/"sphere_guess"` och `"content"/"full_text"`
+
 ### 2026-02-23: Mission Control expansion + rclone Google Drive
 **Hållbar Google Drive-sync etablerad:**
 - Homebrew installerat på både VPS och Mattias Mac
@@ -84,13 +115,16 @@ _Skapad: 2026-02-16_
 - Opus 4.6 är i begränsad beta, inte alla nycklar har access än
 
 ## 🔧 Teknisk setup
-- VPS: cloud-server-10381902
+- VPS: cloud-server-10381902 (IP: 85.190.102.252)
 - Workspace: /home/administrator/vayron
 - Memory writer: /home/administrator/vayron/agent/memory_writer.py
 - Sfärer: professional, semiprofessional, personal, private_encrypted
 - Mission Control: http://localhost:8080 (Node.js webapp)
 - rclone: Google Drive sync (remote: gdrive)
 - Homebrew: Pakethanterare (VPS + Mac)
+- Git: GitHub repo thyr-ai/Vayron (private)
+- Git-crypt: Krypterar credentials/** automatiskt
+- SSH: vayron@vps (VPS) + vayron-mac (Mac)
 
 ## 📍 Telegram-kanaler
 - 5052479766 → Professional
@@ -122,11 +156,15 @@ _Skapad: 2026-02-16_
   - [ ] Stats/analytics (mest sparade författare, etc.)
   - [ ] Scraper för automatiska uppdateringar
 
-### Git/Obsidian Sync
-- **Status:** SSH-nyckel väntar på att läggas till på GitHub
-- **Mål:** Synka config-filer mellan VPS och Mattias Obsidian vault
-- **Repo:** github.com/thyr-ai/Vayron (private)
-- **Nästa steg:** Push till GitHub när SSH-nyckel är aktiverad
+### Git/Obsidian Sync + Git-crypt
+- **Status:** ✅ KLART
+- **Features:**
+  - SSH-nycklar på både VPS och Mac (vayron@vps + vayron-mac)
+  - Git sync fungerar: Mac ↔ GitHub ↔ VPS
+  - Git-crypt aktiverat för `credentials/**`
+  - Krypteringsnyckel säkert delad via scp
+- **Workflow:** Credentials skapas på Mac → git push → VPS pullar och dekrypterar automatiskt
+- **Säkerhet:** Filer krypterade i GitHub, dekrypterade bara för auktoriserade nycklar
 
 ### One.com Kontrollpanel Access
 - **Status:** Diskussion pågår, väntar på beslut
