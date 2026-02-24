@@ -37,6 +37,14 @@ def disclosure_for(sphere: str) -> str:
     return "full"
 
 def normalize(payload: dict) -> dict:
+    # Accept both "sphere" and "sphere_guess"
+    if "sphere" in payload and "sphere_guess" not in payload:
+        payload["sphere_guess"] = payload["sphere"]
+    
+    # Accept "content" as shorthand for "full_text"
+    if "content" in payload and "full_text" not in payload:
+        payload["full_text"] = payload["content"]
+    
     payload.setdefault("summary", "")
     payload.setdefault("full_text", "")
     payload.setdefault("insights", [])
