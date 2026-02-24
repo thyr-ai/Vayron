@@ -23,5 +23,5 @@ __pycache__/
 .obsidian/workspace*
 .obsidian/workspace.json
 
-# Memory files (optional - comment out if you want to sync memory)
-# memory/private_encrypted/
+# Memory files - sync public spheres, keep private local
+memory/private_encrypted/
