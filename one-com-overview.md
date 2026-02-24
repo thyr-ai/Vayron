@@ -8,7 +8,8 @@
 
 ## 📊 Sammanfattning
 
-- **Huvuddomän (aktiv):** nassjogp.bike
+- **🚨 KRITISK DOMÄN:** thyr.se (FÅR EJ MISSA BETALNING - privat, flera användare)
+- **Senast vald domän:** nassjogp.bike
 - **Lagringsanvändning:** 21 av 750 GB (2.8%)
 - **Plan:** Attached domain
 - **Antal domäner:** 11 st
@@ -28,7 +29,7 @@
 | 7 | lokalfotograf.se | Aktiv |
 | 8 | **nassjogp.bike** | **Aktiv (huvuddomän)** |
 | 9 | ovning.se | Aktiv |
-| 10 | thyr.se | Aktiv |
+| 10 | **🚨 thyr.se** | **Aktiv - KRITISK (privat, flera användare, FÅR EJ MISSA BETALNING)** |
 | 11 | voilavelo.fr | Aktiv |
 
 ---
