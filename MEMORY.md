@@ -14,6 +14,42 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-02-25: Telegram-gruppkonfiguration + nassjogp.bike migration
+**Telegram-grupper - Rätt syntax äntligen lärd:**
+- ❌ Försökte använda `allowGroups` (existerar inte)
+- ✅ Rätt syntax är `channels.telegram.groups` med grupp-ID som nycklar:
+  ```json
+  "channels.telegram.groups": {
+    "-5052479766": {"groupPolicy": "open", "requireMention": false}
+  }
+  ```
+- Läste `/channels/telegram.md` i OpenClaw docs och hittade rätt svar direkt
+- Lade till permanent reminder i AGENTS.md: "📚 OpenClaw Documentation - Always Check First!"
+
+**OpenClaw docs-rutin etablerad:**
+1. Lokal dokumentation: `~/.npm-global/lib/node_modules/openclaw/docs/`
+2. Sökkommando: `find ... -name "*.md" | xargs grep -l "keyword"`
+3. Fallback: `web_fetch` från https://docs.openclaw.ai/
+4. **Aldrig gissa syntax** - spara tid, undvik buggar
+
+**nassjogp.bike WordPress → Statisk HTML:**
+- Skapade modern, responsiv HTML-version (5.4 KB vs WP:s 500+ KB)
+- GitHub repo: https://github.com/thyr-ai/nassjogp-bike-website
+- **BACKUP FÖRST** (Mattias regel):
+  - SFTP-nedladdning: 1.4 GB WordPress-installation
+  - Komprimerad: 1.2 GB tar.gz
+  - Uppladdad till Google Drive: `backups/nassjogp-bike/`
+  - Tid: 2 min 24 sek upload
+- Status: Backup klar, ny sida redo men ej uppladdad (väntar på godkännande)
+
+**SFTP-workflow för framtida backups:**
+```bash
+sshpass -p 'PASSWORD' sftp -o StrictHostKeyChecking=no -P 22 user@host
+get -r .
+tar -czf backup.tar.gz folder/
+rclone copy backup.tar.gz gdrive:backups/
+```
+
 ### 2026-02-24: Git-crypt setup + instruktionsförbättringar
 **Git-crypt för krypterade credentials - KLART:**
 - Installerat på både Mac och VPS via Homebrew
