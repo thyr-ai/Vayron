@@ -127,6 +127,48 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
 - **WhatsApp:** No headers — use **bold** or CAPS for emphasis
 
+## 📚 OpenClaw Documentation - Always Check First!
+
+**CRITICAL:** Before guessing, configuring, or troubleshooting OpenClaw — CHECK THE DOCS!
+
+### Local Documentation (Fastest)
+
+```bash
+~/.npm-global/lib/node_modules/openclaw/docs/
+```
+
+**Key locations:**
+- `/channels/telegram.md` - Telegram config (groups, policies, tokens)
+- `/channels/` - All channel configs (Discord, WhatsApp, etc.)
+- `/concepts/agents.md` - Agent setup and bindings
+- `/concepts/models.md` - Model configuration
+- `/tools/` - Available tools and their usage
+- `/skills/` - Skill system documentation
+
+**How to search:**
+```bash
+# Find docs about a topic
+find ~/.npm-global/lib/node_modules/openclaw/docs -name "*.md" | xargs grep -l "keyword"
+
+# Read a specific doc
+cat ~/.npm-global/lib/node_modules/openclaw/docs/channels/telegram.md
+```
+
+### Web Documentation (If local not available)
+
+Use `web_fetch` to read from https://docs.openclaw.ai/
+
+**Example mistake I made:**
+- ❌ Tried to use `allowGroups` for Telegram (doesn't exist)
+- ✅ Should have read `/channels/telegram.md` which shows the correct syntax:
+  ```json
+  "channels.telegram.groups": {
+    "-1234567890": {"groupPolicy": "open", "requireMention": false}
+  }
+  ```
+
+**Rule:** When configuring OpenClaw, ALWAYS read the relevant doc first. Guessing wastes time and creates bugs.
+
 ## 💓 Heartbeats - Be Proactive!
 
 When you receive a heartbeat poll (message matches the configured heartbeat prompt), don't just reply `HEARTBEAT_OK` every time. Use heartbeats productively!
