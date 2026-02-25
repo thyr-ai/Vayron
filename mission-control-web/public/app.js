@@ -420,7 +420,7 @@ function renderBookmarkCard(bookmark) {
       <div class="bookmark-header">
         <div class="bookmark-author">
           <div class="name">${escapeHtml(bookmark.author)}</div>
-          <div class="handle">från @${escapeHtml(bookmark.accountUsername)}</div>
+          <div class="handle">från @${escapeHtml(bookmark.accountUsername)} · ${bookmark.date || 'Okänt datum'}</div>
         </div>
       </div>
       

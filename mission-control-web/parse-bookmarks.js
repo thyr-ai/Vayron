@@ -57,6 +57,7 @@ function parseBookmarks(accountsDir) {
       // Transform to cleaner format
       const bookmarks = likes.map(item => {
         const like = item.like;
+        const date = tweetIdToDate(like.tweetId);
         return {
           id: like.tweetId,
           text: like.fullText,
@@ -64,7 +65,9 @@ function parseBookmarks(accountsDir) {
           // Extract username from tweet text if mentioned
           author: extractAuthor(like.fullText),
           account: displayName,
-          accountUsername: username
+          accountUsername: username,
+          date: formatDate(date),
+          timestamp: date ? date.getTime() : null
         };
       });
       
@@ -97,6 +100,29 @@ function extractAuthor(text) {
   if (!text) return 'Unknown';
   const match = text.match(/^@(\w+)/);
   return match ? match[1] : 'Unknown';
+}
+
+/**
+ * Extract timestamp from Twitter Snowflake ID
+ * Twitter epoch: 1288834974657 (2010-11-04T01:42:54.657Z)
+ */
+function tweetIdToDate(tweetId) {
+  try {
+    const TWITTER_EPOCH = 1288834974657n;
+    const id = BigInt(tweetId);
+    const timestamp = (id >> 22n) + TWITTER_EPOCH;
+    return new Date(Number(timestamp));
+  } catch (err) {
+    return null;
+  }
+}
+
+/**
+ * Format date as YYYY-MM-DD
+ */
+function formatDate(date) {
+  if (!date) return null;
+  return date.toISOString().split('T')[0];
 }
 
 /**

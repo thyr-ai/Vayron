@@ -6,6 +6,29 @@ _Denna fil loggar alla actions från system styrda av GUARDRAILS.md_
 
 ## 2026-02-24
 
+### thyr.se Website Rescue (mattiasthyr@me.com @ one.com)
+**14:29-14:33** - Räddade hemsida från one.com till GitHub
+**Vad:** Hämtade thyr.se-hemsidan från one.com File Manager och pushade till GitHub
+**Varför:** Mattias installerade om Windows-dator där hemsidan skapades, ingen lokal kopia fanns
+**Resultat:**
+- Hemsida hämtad med wget från live-server
+- 2 filer: index.html (8.9 KB) + assets/images/logo.png (43 KB)
+- Git repo skapat: github.com/thyr-ai/thyr.se (private)
+- Pushad till main branch
+- Mattias kan nu klona till Antigravity: `git clone git@github.com:thyr-ai/thyr.se.git`
+**Actions utförda:**
+- ✅ Läst File Manager på one.com
+- ✅ Hämtat publicerad hemsida via wget
+- ✅ Skapat git repo lokalt på VPS
+- ✅ Pushad till GitHub
+- ❌ Ingen modifiering av serverfiler
+**Godkännande:** Explicit från Mattias - "Skulle du kunna hämta ner den och lägga den i github"
+**Browser/Tools:** one.com File Manager (read-only), wget, git
+
+---
+
+## 2026-02-24
+
 ### One.com Kontrollpanel (mattiasthyr@me.com)
 **12:04** - Första inloggning och översikt skapad
 **Vad:** Loggade in på one.com kontrollpanel och skapade READ-ONLY översikt
