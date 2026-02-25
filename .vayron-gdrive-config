@@ -1,0 +1,14 @@
+# Vayron Google Drive Configuration
+# All backups and Vayron-relaterade filer ska sparas under gdrive:Vayron/
+
+GDRIVE_BASE_PATH="gdrive:Vayron"
+GDRIVE_BACKUPS_PATH="gdrive:Vayron/backups"
+
+# Struktur:
+# Vayron/
+#   ├── backups/
+#   │   ├── nassjogp-bike/
+#   │   ├── thyr-se/
+#   │   └── ... (övriga domäner)
+#   ├── exports/
+#   └── logs/
