@@ -1,3 +1,7 @@
+# Om Mattias
+
+- Pronomen: han/honom (inte hen)
+
 # Sfärer och disclosure
 
 ## Sfärdefinitioner
