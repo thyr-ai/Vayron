@@ -14,6 +14,20 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-02-27: Mission Control systemd service + ElevenLabs voice cloning
+**Mission Control kraschade 3 gånger → systemd service fixade problemet:**
+- Node.js-processen dog utan varning
+- Skapade `/etc/systemd/system/mission-control.service` med auto-restart
+- Nu: startar automatiskt vid reboot + restartar vid crash
+- Mönster användbart för alla långlivade appar framöver
+
+**ElevenLabs voice cloning påbörjad:**
+- SDK installerat i Python venv (`elevenlabs-env/`)
+- Mattias uppgraderade till Starter plan ($5/mån) för voice cloning
+- Två test-voices från Weiron-klipp: vq5EfJQzmd8DLPEdnsit + 8FxwDat0FW0jG5Tgwirr
+- **Utmaning:** Göteborgsk dialekt bevaras inte perfekt med IVC (Instant Voice Clone)
+- **Lösning:** Väntar på nya inspelningar, överväger PVC (Professional) med transkription
+
 ### 2026-02-25: Telegram-gruppkonfiguration + nassjogp.bike migration
 **Telegram-grupper - Rätt syntax äntligen lärd:**
 - ❌ Försökte använda `allowGroups` (existerar inte)
@@ -174,6 +188,12 @@ rclone copy backup.tar.gz gdrive:backups/
 - Uppskattar proaktivitet men inte spam
 
 ## 🚧 Pågående projekt
+
+### ElevenLabs Voice Cloning
+- **Status:** Två test-voices skapade, väntar på nya inspelningar
+- **Voice IDs:** vq5EfJQzmd8DLPEdnsit (Avenyn), 8FxwDat0FW0jG5Tgwirr (Nilecity)
+- **Utmaning:** Göteborgsk dialekt svår för IVC - överväger PVC med transkription
+- **Next:** Nya inspelningar från Mattias → bättre källmaterial
 
 ### Mission Control - Public HTTPS Access ✅ KLART
 - **URL:** https://mc.konfident.se
