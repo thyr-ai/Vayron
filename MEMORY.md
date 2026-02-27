@@ -175,6 +175,18 @@ rclone copy backup.tar.gz gdrive:backups/
 
 ## 🚧 Pågående projekt
 
+### Mission Control - Public HTTPS Access ✅ KLART
+- **URL:** https://mc.konfident.se
+- **Login:** vayron / mission-control-2026
+- **Setup:** 2026-02-27 06:00 CET
+- **Details:**
+  - DNS A-record: mc.konfident.se → 85.190.102.252
+  - Nginx reverse proxy till localhost:8080
+  - SSL via Let's Encrypt (expires 2026-05-28, auto-renew)
+  - Basic auth för säkerhet
+  - Firewall: port 80 & 443 öppna
+- **Next:** Testa från telefon, skapa systemd service för auto-start
+
 ### Mission Control - Kanban Board
 - **Status:** Designspec komplett, väntar på implementation
 - **Location:** `/home/administrator/vayron/mission-control-web/`
