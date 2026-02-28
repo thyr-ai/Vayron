@@ -1,0 +1,23 @@
+{
+  "headers": {
+    "1": "Dagens datum",
+    "2": "Mattias Thyr",
+    "3": "Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö",
+    "4": "Dokument",
+    "5": "Standarddokument",
+    "6": "Konfident",
+    "7": "Privat korrespondens",
+    "8": "Anpassad text"
+  },
+  "footers": {
+    "1": "Ingen",
+    "2": "Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se",
+    "3": "070 666 10 13 | m@thyr.se",
+    "4": "070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se",
+    "5": "070 323 10 13 | mattias@konfident.se",
+    "6": "m@thyr.se",
+    "7": "mattias@konfident.se",
+    "8": "Sida {page}",
+    "9": "Anpassad text"
+  }
+}
