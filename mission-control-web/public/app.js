@@ -448,3 +448,78 @@ function renderBookmarkCard(bookmark) {
     </div>
   `;
 }
+
+// SiS-dokument functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const sisForm = document.getElementById('sis-form');
+  const headerChoice = document.getElementById('header-choice');
+  const footerChoice = document.getElementById('footer-choice');
+  const customHeaderGroup = document.getElementById('custom-header-group');
+  const customFooterGroup = document.getElementById('custom-footer-group');
+  const statusEl = document.getElementById('sis-status');
+
+  // Show/hide custom text inputs
+  headerChoice?.addEventListener('change', (e) => {
+    customHeaderGroup.style.display = e.target.value === '8' ? 'block' : 'none';
+  });
+
+  footerChoice?.addEventListener('change', (e) => {
+    customFooterGroup.style.display = e.target.value === '9' ? 'block' : 'none';
+  });
+
+  // Handle form submission
+  sisForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+      title: document.getElementById('doc-title').value,
+      content: document.getElementById('doc-content').value,
+      header_choice: document.getElementById('header-choice').value,
+      footer_choice: document.getElementById('footer-choice').value,
+      custom_header: document.getElementById('custom-header').value || null,
+      custom_footer: document.getElementById('custom-footer').value || null,
+      output_name: document.getElementById('output-name').value || null
+    };
+
+    const btn = document.getElementById('generate-btn');
+    btn.disabled = true;
+    btn.textContent = '⏳ Genererar...';
+    
+    showStatus('Genererar dokument...', 'info');
+
+    try {
+      const response = await fetch('/api/sis-generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        showStatus(`✅ ${result.message}`, 'success');
+        
+        // Create download links
+        const downloadHTML = `
+          <div style="margin-top: 1rem;">
+            <a href="/api/sis-download/${result.pdf_file}" download class="btn-primary" style="display: inline-block; text-decoration: none; margin-right: 1rem;">📄 Ladda ner PDF</a>
+            <a href="/api/sis-download/${result.docx_file}" download class="btn-primary" style="display: inline-block; text-decoration: none;">📝 Ladda ner DOCX</a>
+          </div>
+        `;
+        statusEl.innerHTML += downloadHTML;
+      } else {
+        showStatus(`❌ Fel: ${result.error}`, 'error');
+      }
+    } catch (error) {
+      showStatus(`❌ Kunde inte generera dokument: ${error.message}`, 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '📄 Generera PDF & DOCX';
+    }
+  });
+
+  function showStatus(message, type) {
+    statusEl.textContent = message;
+    statusEl.className = `status-message show ${type}`;
+  }
+});
