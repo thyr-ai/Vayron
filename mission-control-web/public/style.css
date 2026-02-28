@@ -858,3 +858,62 @@ main {
   border: 1px solid var(--accent);
   color: var(--accent);
 }
+
+/* Checkbox groups for SiS */
+.form-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.checkbox-item:hover {
+  background: rgba(0, 212, 255, 0.05);
+  border-color: var(--accent);
+}
+
+.checkbox-item input[type="radio"] {
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.checkbox-item input[type="radio"]:checked + .checkbox-text {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.checkbox-text {
+  flex: 1;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}

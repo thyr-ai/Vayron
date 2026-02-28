@@ -452,30 +452,35 @@ function renderBookmarkCard(bookmark) {
 // SiS-dokument functionality
 document.addEventListener('DOMContentLoaded', () => {
   const sisForm = document.getElementById('sis-form');
-  const headerChoice = document.getElementById('header-choice');
-  const footerChoice = document.getElementById('footer-choice');
   const customHeaderGroup = document.getElementById('custom-header-group');
   const customFooterGroup = document.getElementById('custom-footer-group');
   const statusEl = document.getElementById('sis-status');
 
-  // Show/hide custom text inputs
-  headerChoice?.addEventListener('change', (e) => {
-    customHeaderGroup.style.display = e.target.value === '8' ? 'block' : 'none';
+  // Show/hide custom text inputs based on radio selection
+  document.querySelectorAll('input[name="header"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      customHeaderGroup.style.display = e.target.value === '8' ? 'block' : 'none';
+    });
   });
 
-  footerChoice?.addEventListener('change', (e) => {
-    customFooterGroup.style.display = e.target.value === '9' ? 'block' : 'none';
+  document.querySelectorAll('input[name="footer"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      customFooterGroup.style.display = e.target.value === '9' ? 'block' : 'none';
+    });
   });
 
   // Handle form submission
   sisForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    const selectedHeader = document.querySelector('input[name="header"]:checked');
+    const selectedFooter = document.querySelector('input[name="footer"]:checked');
+
     const formData = {
       title: document.getElementById('doc-title').value,
       content: document.getElementById('doc-content').value,
-      header_choice: document.getElementById('header-choice').value,
-      footer_choice: document.getElementById('footer-choice').value,
+      header_choice: selectedHeader ? selectedHeader.value : '1',
+      footer_choice: selectedFooter ? selectedFooter.value : '1',
       custom_header: document.getElementById('custom-header').value || null,
       custom_footer: document.getElementById('custom-footer').value || null,
       output_name: document.getElementById('output-name').value || null

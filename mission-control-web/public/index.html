@@ -122,45 +122,90 @@
           <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här..."></textarea>
         </div>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="header-choice">Sidhuvud</label>
-            <select id="header-choice" required>
-              <option value="1">Dagens datum (bara datum)</option>
-              <option value="2">Mattias Thyr</option>
-              <option value="3">Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö</option>
-              <option value="4">Dokument</option>
-              <option value="5">Standarddokument</option>
-              <option value="6">Konfident</option>
-              <option value="7" selected>Privat korrespondens</option>
-              <option value="8">Anpassad text...</option>
-            </select>
+        <div class="form-section">
+          <label class="section-label">Sidhuvud (datum läggs till automatiskt)</label>
+          <div class="checkbox-group" id="header-checkboxes">
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="1" checked>
+              <span class="checkbox-text">Dagens datum (bara datum, ingen text)</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="2">
+              <span class="checkbox-text">Mattias Thyr</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="3">
+              <span class="checkbox-text">Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="4">
+              <span class="checkbox-text">Dokument</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="5">
+              <span class="checkbox-text">Standarddokument</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="6">
+              <span class="checkbox-text">Konfident</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="7">
+              <span class="checkbox-text">Privat korrespondens</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="header" value="8">
+              <span class="checkbox-text">Anpassad text...</span>
+            </label>
           </div>
-
-          <div class="form-group">
-            <label for="footer-choice">Sidfot</label>
-            <select id="footer-choice" required>
-              <option value="1">Ingen sidfot</option>
-              <option value="2" selected>Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se</option>
-              <option value="3">070 666 10 13 | m@thyr.se</option>
-              <option value="4">070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se</option>
-              <option value="5">070 323 10 13 | mattias@konfident.se</option>
-              <option value="6">m@thyr.se</option>
-              <option value="7">mattias@konfident.se</option>
-              <option value="8">Sida {page} (sidnummer)</option>
-              <option value="9">Anpassad text...</option>
-            </select>
+          <div class="form-group" id="custom-header-group" style="display: none; margin-top: 1rem;">
+            <input type="text" id="custom-header" placeholder="Skriv din egen sidhuvud-text...">
           </div>
         </div>
 
-        <div class="form-group" id="custom-header-group" style="display: none;">
-          <label for="custom-header">Anpassad sidhuvud-text</label>
-          <input type="text" id="custom-header" placeholder="Skriv din egen text...">
-        </div>
-
-        <div class="form-group" id="custom-footer-group" style="display: none;">
-          <label for="custom-footer">Anpassad sidfot-text</label>
-          <input type="text" id="custom-footer" placeholder="Skriv din egen text...">
+        <div class="form-section">
+          <label class="section-label">Sidfot</label>
+          <div class="checkbox-group" id="footer-checkboxes">
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="1">
+              <span class="checkbox-text">Ingen sidfot</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="2" checked>
+              <span class="checkbox-text">Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="3">
+              <span class="checkbox-text">070 666 10 13 | m@thyr.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="4">
+              <span class="checkbox-text">070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="5">
+              <span class="checkbox-text">070 323 10 13 | mattias@konfident.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="6">
+              <span class="checkbox-text">m@thyr.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="7">
+              <span class="checkbox-text">mattias@konfident.se</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="8">
+              <span class="checkbox-text">Sida {page} (sidnummer)</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="radio" name="footer" value="9">
+              <span class="checkbox-text">Anpassad text...</span>
+            </label>
+          </div>
+          <div class="form-group" id="custom-footer-group" style="display: none; margin-top: 1rem;">
+            <input type="text" id="custom-footer" placeholder="Skriv din egen sidfot-text...">
+          </div>
         </div>
 
         <div class="form-group">
