@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-PDF Generator - Mattias Thyr Standarddokument
-Fyller i standardmall och genererar PDF
+SiS Dokument - Standarddokument Generator
+Genererar professionella dokument enligt svensk standard (SiS-mall)
 """
 
 import sys
@@ -107,7 +107,7 @@ class PDFGenerator:
 
 def main():
     if len(sys.argv) < 2:
-        print("PDF Generator - Mattias Thyr Standarddokument")
+        print("SiS Dokument - Standarddokument Generator")
         print()
         print("Användning:")
         print("  python3 generate_pdf.py 'Titel' 'Innehåll' [filnamn]")
@@ -122,7 +122,7 @@ def main():
     
     # Interaktivt läge
     if sys.argv[1] == '-i':
-        print("=== PDF Generator - Interaktivt läge ===\n")
+        print("=== SiS Dokument - Interaktivt läge ===\n")
         title = input("Dokumenttitel: ")
         print("\nInnehåll (avsluta med Ctrl+D på tom rad):")
         lines = []
