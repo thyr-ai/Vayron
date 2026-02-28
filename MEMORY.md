@@ -14,6 +14,18 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-02-28: SiS-dokument PDF-generator
+**Snabb dokumentgenerator för svensk standard (SiS-mall):**
+- Python-app som använder Standarddokument.docx som mall
+- Fyller i titel, innehåll och uppdaterar datum automatiskt
+- Genererar både DOCX och PDF via LibreOffice headless
+- **Location:** `/home/administrator/vayron/sis-dokument`
+- **Användning:** `cd sis-dokument && source venv/bin/activate && python3 generate_pdf.py -i`
+- **Teknologi:** python-docx + LibreOffice för PDF-konvertering
+- **Mall:** Standarddokument.docx från Google Drive (SiS = Svenska Institutet för Standarder)
+- **Output:** Formaterade dokument med korrekt sidhuvud/sidfot enligt svensk standard
+- **Syfte:** Snabbt skapa professionella dokument utan att behöva oroa sig för formatering
+
 ### 2026-02-27: Mission Control systemd service + ElevenLabs voice cloning
 **Mission Control kraschade 3 gånger → systemd service fixade problemet:**
 - Node.js-processen dog utan varning
