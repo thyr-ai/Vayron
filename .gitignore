@@ -23,3 +23,7 @@ __pycache__/
 
 # Memory files - sync public spheres, keep private local
 memory/private_encrypted/
+
+# Backups & temp projects
+backups/
+elevenlabs/
