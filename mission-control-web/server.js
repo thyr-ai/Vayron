@@ -3,6 +3,7 @@ const basicAuth = require('express-basic-auth');
 const fs = require('fs').promises;
 const path = require('path');
 const chokidar = require('chokidar');
+const { spawn } = require('child_process');
 const { parseBookmarks, getAllBookmarks, getStats } = require('./parse-bookmarks');
 
 const app = express();
@@ -200,6 +201,95 @@ app.get('/api/bookmarks/stats', (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+// SiS-dokument generation
+app.post('/api/sis-generate', async (req, res) => {
+  const { title, content, header_choice, footer_choice, custom_header, custom_footer, output_name } = req.body;
+  
+  if (!title || !content) {
+    return res.status(400).json({ error: 'Titel och innehåll krävs' });
+  }
+
+  const SIS_DIR = path.join(WORKSPACE, 'sis-dokument');
+  const VENV_PYTHON = path.join(SIS_DIR, 'venv/bin/python3');
+  const SCRIPT = path.join(SIS_DIR, 'generate_pdf_v2.py');
+  
+  // Generate output filename if not provided
+  const fileName = output_name || `dokument_${Date.now()}`;
+  
+  // Create temporary Python script to call generator
+  const tempScript = `
+import sys
+sys.path.insert(0, '${SIS_DIR}')
+from generate_pdf_v2 import PDFGeneratorV2
+
+gen = PDFGeneratorV2()
+gen.create_document(
+    title=${JSON.stringify(title)},
+    content=${JSON.stringify(content)},
+    header_choice=${JSON.stringify(header_choice)},
+    footer_choice=${JSON.stringify(footer_choice)},
+    custom_header=${JSON.stringify(custom_header)},
+    custom_footer=${JSON.stringify(custom_footer)},
+    output_name=${JSON.stringify(fileName)}
+)
+`;
+
+  try {
+    // Execute Python script
+    const python = spawn(VENV_PYTHON, ['-c', tempScript], {
+      cwd: SIS_DIR
+    });
+
+    let stdout = '';
+    let stderr = '';
+
+    python.stdout.on('data', (data) => {
+      stdout += data.toString();
+    });
+
+    python.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
+
+    python.on('close', (code) => {
+      if (code === 0) {
+        res.json({
+          success: true,
+          message: 'Dokument genererat!',
+          pdf_file: `${fileName}.pdf`,
+          docx_file: `${fileName}.docx`
+        });
+      } else {
+        console.error('Python error:', stderr);
+        res.status(500).json({ 
+          error: 'Kunde inte generera dokument',
+          details: stderr
+        });
+      }
+    });
+  } catch (err) {
+    console.error('Generation error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Download generated SiS document
+app.get('/api/sis-download/:filename', (req, res) => {
+  const { filename } = req.params;
+  const filePath = path.join(WORKSPACE, 'sis-dokument', filename);
+  
+  // Security check
+  if (!filePath.startsWith(path.join(WORKSPACE, 'sis-dokument'))) {
+    return res.status(403).send('Access denied');
+  }
+  
+  res.download(filePath, (err) => {
+    if (err) {
+      res.status(404).send('Fil hittades inte');
+    }
+  });
 });
 
 // Health check

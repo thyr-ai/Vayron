@@ -15,6 +15,7 @@
       <button class="tab-btn" data-tab="bookmarks">🐦 X Bookmarks</button>
       <button class="tab-btn" data-tab="documents">📄 Dokument</button>
       <button class="tab-btn" data-tab="images">🖼️ Bilder</button>
+      <button class="tab-btn" data-tab="sis">📝 SiS-dokument</button>
     </nav>
   </header>
 
@@ -101,6 +102,78 @@
       <div id="images-grid" class="images-grid">
         <div class="loading">Laddar bilder...</div>
       </div>
+    </section>
+
+    <!-- SiS-dokument Tab -->
+    <section id="sis-tab" class="tab-content">
+      <div class="sis-header">
+        <h2>📝 SiS Dokument Generator</h2>
+        <p class="subtitle">Skapa professionella dokument med svensk standard</p>
+      </div>
+
+      <form id="sis-form" class="sis-form">
+        <div class="form-group">
+          <label for="doc-title">Dokumenttitel *</label>
+          <input type="text" id="doc-title" required placeholder="T.ex. Ansökan, Projektrapport...">
+        </div>
+
+        <div class="form-group">
+          <label for="doc-content">Innehåll *</label>
+          <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="header-choice">Sidhuvud</label>
+            <select id="header-choice" required>
+              <option value="1">Dagens datum (bara datum)</option>
+              <option value="2">Mattias Thyr</option>
+              <option value="3">Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö</option>
+              <option value="4">Dokument</option>
+              <option value="5">Standarddokument</option>
+              <option value="6">Konfident</option>
+              <option value="7" selected>Privat korrespondens</option>
+              <option value="8">Anpassad text...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="footer-choice">Sidfot</label>
+            <select id="footer-choice" required>
+              <option value="1">Ingen sidfot</option>
+              <option value="2" selected>Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se</option>
+              <option value="3">070 666 10 13 | m@thyr.se</option>
+              <option value="4">070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se</option>
+              <option value="5">070 323 10 13 | mattias@konfident.se</option>
+              <option value="6">m@thyr.se</option>
+              <option value="7">mattias@konfident.se</option>
+              <option value="8">Sida {page} (sidnummer)</option>
+              <option value="9">Anpassad text...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group" id="custom-header-group" style="display: none;">
+          <label for="custom-header">Anpassad sidhuvud-text</label>
+          <input type="text" id="custom-header" placeholder="Skriv din egen text...">
+        </div>
+
+        <div class="form-group" id="custom-footer-group" style="display: none;">
+          <label for="custom-footer">Anpassad sidfot-text</label>
+          <input type="text" id="custom-footer" placeholder="Skriv din egen text...">
+        </div>
+
+        <div class="form-group">
+          <label for="output-name">Filnamn (utan .pdf)</label>
+          <input type="text" id="output-name" placeholder="dokument_2026-02-28">
+        </div>
+
+        <button type="submit" class="btn-primary" id="generate-btn">
+          📄 Generera PDF & DOCX
+        </button>
+
+        <div id="sis-status" class="status-message"></div>
+      </form>
     </section>
   </main>
 
