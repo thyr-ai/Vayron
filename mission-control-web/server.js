@@ -219,6 +219,9 @@ app.post('/api/sis-generate', async (req, res) => {
   const fileName = output_name || `dokument_${Date.now()}`;
   
   // Create temporary Python script to call generator
+  // Convert null to None for Python
+  const toPython = (val) => val === null ? 'None' : JSON.stringify(val);
+  
   const tempScript = `
 import sys
 sys.path.insert(0, '${SIS_DIR}')
@@ -230,9 +233,9 @@ gen.create_document(
     content=${JSON.stringify(content)},
     header_choice=${JSON.stringify(header_choice)},
     footer_choice=${JSON.stringify(footer_choice)},
-    custom_header=${JSON.stringify(custom_header)},
-    custom_footer=${JSON.stringify(custom_footer)},
-    output_name=${JSON.stringify(fileName)}
+    custom_header=${toPython(custom_header)},
+    custom_footer=${toPython(custom_footer)},
+    output_name=${toPython(fileName)}
 )
 `;
 
