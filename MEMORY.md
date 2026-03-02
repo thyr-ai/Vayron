@@ -14,6 +14,26 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-03-02: One.com domäner + bot-filter
+**One.com har bot-filter (2026-03):**
+- Headless browser (Brave/Chrome) timeout:ar varje gång
+- One.com tekniker bekräftade att bot-filter installerats
+- **Lösning framåt:** Använd endast Chrome relay för access till one.com
+- Browser-verktyget (openclaw profile) fungerar INTE för one.com längre
+
+**Mattias domäner på one.com (11 st):**
+1. **blendljusdesign.se**
+2. **ckgc.cc**
+3. **cykelluffarn.se**
+4. **godabud.se**
+5. **konfident.se** (Mission Control: mc.konfident.se)
+6. **livepodden.se**
+7. **lokalfotograf.se**
+8. **nassjogp.bike** (WordPress → HTML migration klar)
+9. **ovning.se**
+10. **thyr.se**
+11. **voilavelo.fr**
+
 ### 2026-02-28: SiS-dokument PDF-generator
 **Snabb dokumentgenerator för svensk standard (SiS-mall):**
 - Python-app som använder Standarddokument.docx som mall
