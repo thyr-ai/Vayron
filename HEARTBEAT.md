@@ -16,8 +16,7 @@
    - Erbjud att hjälpa skriva dagens sammanfattning
    - Uppdatera MEMORY.md om något väsentligt hänt
 
-## Rotera genom dessa (2-3 ggr/dag):
-- **Gmail** - Kolla olästa mail, rapportera viktiga (från människor, inte nyhetsbrev)
+## Rotera genom dessa (1-2 ggr/dag):
 - Git status i workspace
 - Kolla om det finns oorganiserade filer
 - Läs senaste memory-filer för insights
