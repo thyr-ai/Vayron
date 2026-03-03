@@ -1,0 +1,3 @@
+#!/bin/bash
+# Gmail wrapper script - using IMAP (simpler than OAuth)
+exec /home/administrator/vayron/gmail-env/bin/python3 /home/administrator/vayron/agent/gmail_imap.py "$@"
