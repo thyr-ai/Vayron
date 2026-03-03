@@ -28,3 +28,6 @@ memory/private_encrypted/
 backups/
 elevenlabs/
 nassjogp-bike-website/
+gmail-env/
+credentials/gmail-oauth.json
+credentials/gmail-token.json
