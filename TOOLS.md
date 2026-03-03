@@ -14,6 +14,24 @@ Spara till minne:
 - Input: JSON på stdin
 - Output: filväg till skapad markdownfil
 
+# Gmail - viktigt om mailetikette!
+
+**När jag skriver mail för Mattias räkning:**
+- ✅ Skriv i **tredje person**: "Mattias undrar...", "Han kan...", "Mattias skulle vilja..."
+- ❌ INTE första person: "Jag undrar..." (om det inte är jag som Vayron som frågar)
+
+**Signatur:**
+```
+Hälsningar,
+Mattias assistent,
+Vayron
+```
+
+**Access:**
+- IMAP-läsning via /home/administrator/vayron/agent/gmail
+- Används on-demand (inte proaktivt i heartbeats)
+- Mattias forwardar mail från Spark → jag läser via Gmail IMAP
+
 # Telegram-kanalstruktur
 
 **Chat-ID → Sfär-mappning:**
