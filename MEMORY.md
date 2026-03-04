@@ -12,6 +12,31 @@ _Skapad: 2026-02-16_
 - Spara minne deterministiskt och säkert i rätt sfärer
 - Vara proaktiv men inte påträngande
 
+## 🔄 Min utvidgade roll (2026-02-26)
+**Tidigare:** Administration och verkställande  
+**Nu:** Strategiförvaltare + Taktisk översättare
+
+**Strategiförvaltning:**
+- Dokumentera Mattias strategiska mål
+- Se till att taktiken matchar strategin
+- Påminna om strategiska prioriteringar
+- Upptäcka när något spårar ur från planen
+
+**Taktisk översättning:**
+- Översätta strategi → konkreta steg
+- Identifiera vad som behöver göras, i vilken ordning
+- Vem som ska göra vad, när det ska vara klart
+
+**Kritiskt krav: "Utan att missa något"**
+- Jag är den som ser helheten OCH detaljerna
+- Mattias kan hoppa mellan tankar - jag håller ihop allt
+- Ingenting får falla mellan stolarna
+
+**Mattias + Vayron synergi:**
+- Mattias: Strategisk vision, politisk navigation, människor
+- Vayron: Strategiförvaltning, taktisk översättning, "inget missas"-garanti
+- Tillsammans: Komplett ledare - vision + exekvering utan glapp
+
 ## 📚 Viktiga lärdomar
 
 ### 2026-03-02: One.com domäner + bot-filter
@@ -237,7 +262,8 @@ rclone copy backup.tar.gz gdrive:backups/
   - SSL via Let's Encrypt (expires 2026-05-28, auto-renew)
   - Basic auth för säkerhet
   - Firewall: port 80 & 443 öppna
-- **Next:** Testa från telefon, skapa systemd service för auto-start
+  - Systemd service för auto-restart (skapad 2026-02-27)
+- **Status:** Stabil, körs sedan 2026-02-28 (3+ dagar uptime)
 
 ### Mission Control - Kanban Board
 - **Status:** Designspec komplett, väntar på implementation
@@ -271,6 +297,25 @@ rclone copy backup.tar.gz gdrive:backups/
 - **Mål:** Email-hantering, VPS-översikt, hemsideuppladdning
 - **Säkerhet:** GUARDRAILS.md + SAFETY.md på plats
 - **Nästa steg:** Få credentials när Mattias är redo
+
+### Smålands Cykelförbund (Semiprofessional)
+- **Status:** Arbetsgrupp bildad, årsmöte inställt
+- **Mattias roll:** Valberedningsordförande
+- **Fakta:** 56 föreningar, 300+ licensierade cyklister, inaktivt i ~10 år
+- **Potential:** 
+  - Distriktsbidrag från SCF: ~25k SEK/år
+  - SISU-medel: 5,2M SEK regionalt, 100 SEK/deltagare för utbildningar
+  - SISU Småland eget kapital: ~20M SEK (utrymme för innovativa projekt)
+- **Strategiska mål (Mattias):**
+  - Geografisk spridning (Kronoberg, Kalmar, Jönköping)
+  - Balansera Erik's landsvägsfokus med disciplinmångfald
+  - Undvika 2019-fiasko (hastig styrelse)
+  - Positionera sig som valberedare (inflytande utan börda)
+- **Nästa steg:**
+  - [ ] Kommunicera inställning av årsmötet (Mattias)
+  - [ ] Arbetsgruppsmöte inom 3 veckor (digitalt)
+  - [ ] Kim (SISU) levererar föreningslista med mejladresser
+- **Min roll:** Strategiförvaltning + taktisk översättning, se till att inget missas
 
 ## 💡 Framtida förbättringar
 - [ ] Fixa OpenAI embeddings för memory_search
