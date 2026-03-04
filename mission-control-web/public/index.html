@@ -7,220 +7,245 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🎯 Mission Control</h1>
-    <nav>
-      <button class="tab-btn active" data-tab="kanban">📋 Kanban</button>
-      <a href="/gantt.html" class="tab-btn" style="display: inline-block; text-decoration: none; color: inherit;">📊 Gantt</a>
-      <button class="tab-btn" data-tab="bookmarks">🐦 X Bookmarks</button>
-      <button class="tab-btn" data-tab="documents">📄 Dokument</button>
-      <button class="tab-btn" data-tab="images">🖼️ Bilder</button>
-      <button class="tab-btn" data-tab="sis">📝 SiS-dokument</button>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>🎯 Mission Control</h1>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-item active" data-tab="kanban">
+        <span class="icon">📋</span>
+        <span>Kanban</span>
+      </div>
+      <div class="nav-item" data-tab="bookmarks">
+        <span class="icon">🐦</span>
+        <span>X Bookmarks</span>
+      </div>
+      <div class="nav-item" data-tab="documents">
+        <span class="icon">📄</span>
+        <span>Dokument</span>
+      </div>
+      <div class="nav-item" data-tab="images">
+        <span class="icon">🖼️</span>
+        <span>Bilder</span>
+      </div>
+      <div class="nav-item" data-tab="sis">
+        <span class="icon">📝</span>
+        <span>SiS-dokument</span>
+      </div>
+      <a href="/gantt.html" class="nav-item" style="text-decoration: none; color: inherit;">
+        <span class="icon">📊</span>
+        <span>Gantt</span>
+      </a>
     </nav>
-  </header>
+  </aside>
 
-  <main>
-    <!-- Kanban Tab -->
-    <section id="kanban-tab" class="tab-content active">
-      <div class="kanban-header">
-        <h2>📋 Kanban Board</h2>
-        <select id="context-filter" class="context-filter">
-          <option value="all">Alla kontexter</option>
-          <option value="@dator">@dator</option>
-          <option value="@telefon">@telefon</option>
-          <option value="@vps">@vps</option>
-          <option value="@garaget">@garaget</option>
-        </select>
-      </div>
+  <!-- Main Content -->
+  <div class="main-wrapper">
+    <header>
+      <h2 id="page-title">📋 Kanban Board</h2>
+    </header>
 
-      <div class="kanban-board">
-        <div class="kanban-column" data-state="inbox">
-          <h3>📥 Inbox</h3>
-          <div class="tasks" id="inbox-tasks"></div>
-          <button class="add-task-btn" data-state="inbox">+ Lägg till</button>
+    <main>
+      <!-- Kanban Tab -->
+      <section id="kanban-tab" class="tab-content active">
+        <div class="kanban-header">
+          <select id="context-filter" class="context-filter">
+            <option value="all">Alla kontexter</option>
+            <option value="@dator">@dator</option>
+            <option value="@telefon">@telefon</option>
+            <option value="@vps">@vps</option>
+            <option value="@garaget">@garaget</option>
+          </select>
         </div>
 
-        <div class="kanban-column" data-state="next">
-          <h3>▶️ Nästa steg</h3>
-          <div class="tasks" id="next-tasks"></div>
-          <button class="add-task-btn" data-state="next">+ Lägg till</button>
-        </div>
-
-        <div class="kanban-column" data-state="doing">
-          <h3>🚧 Pågående</h3>
-          <div class="tasks" id="doing-tasks"></div>
-          <button class="add-task-btn" data-state="doing">+ Lägg till</button>
-        </div>
-
-        <div class="kanban-column" data-state="waiting">
-          <h3>⏸️ Väntar på</h3>
-          <div class="tasks" id="waiting-tasks"></div>
-          <button class="add-task-btn" data-state="waiting">+ Lägg till</button>
-        </div>
-
-        <div class="kanban-column" data-state="backlog">
-          <h3>📦 Backlog</h3>
-          <div class="tasks" id="backlog-tasks"></div>
-          <button class="add-task-btn" data-state="backlog">+ Lägg till</button>
-        </div>
-      </div>
-
-      <div class="completed-section">
-        <h3>✅ Klart (senaste veckan)</h3>
-        <div id="completed-tasks" class="completed-list"></div>
-      </div>
-    </section>
-
-    <!-- X Bookmarks Tab -->
-    <section id="bookmarks-tab" class="tab-content">
-      <div class="bookmarks-header">
-        <h2>🐦 X Bookmarks</h2>
-        <div class="account-filters">
-          <button class="account-btn active" data-account="all">Alla konton</button>
-        </div>
-      </div>
-
-      <div class="bookmarks-grid">
-        <div class="loading">Laddar bookmarks...</div>
-      </div>
-    </section>
-
-    <!-- Documents Tab -->
-    <section id="documents-tab" class="tab-content">
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="🔍 Sök i dokument...">
-        <button id="clear-search">✕</button>
-      </div>
-
-      <div id="documents-list" class="content-list">
-        <div class="loading">Laddar dokument...</div>
-      </div>
-    </section>
-
-    <!-- Images Tab -->
-    <section id="images-tab" class="tab-content">
-      <div id="images-grid" class="images-grid">
-        <div class="loading">Laddar bilder...</div>
-      </div>
-    </section>
-
-    <!-- SiS-dokument Tab -->
-    <section id="sis-tab" class="tab-content">
-      <div class="sis-header">
-        <h2>📝 SiS Dokument Generator</h2>
-        <p class="subtitle">Skapa professionella dokument med svensk standard</p>
-      </div>
-
-      <form id="sis-form" class="sis-form">
-        <div class="form-group">
-          <label for="doc-title">Dokumenttitel *</label>
-          <input type="text" id="doc-title" required placeholder="T.ex. Ansökan, Projektrapport...">
-        </div>
-
-        <div class="form-group">
-          <label for="doc-content">Innehåll *</label>
-          <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här..."></textarea>
-        </div>
-
-        <div class="form-section">
-          <label class="section-label">Sidhuvud (datum läggs till automatiskt)</label>
-          <div class="checkbox-group" id="header-checkboxes">
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="1" checked>
-              <span class="checkbox-text">Dagens datum (bara datum, ingen text)</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="2">
-              <span class="checkbox-text">Mattias Thyr</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="3">
-              <span class="checkbox-text">Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="4">
-              <span class="checkbox-text">Dokument</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="5">
-              <span class="checkbox-text">Standarddokument</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="6">
-              <span class="checkbox-text">Konfident</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="7">
-              <span class="checkbox-text">Privat korrespondens</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="header" value="8">
-              <span class="checkbox-text">Anpassad text...</span>
-            </label>
+        <div class="kanban-board">
+          <div class="kanban-column" data-state="inbox">
+            <h3>📥 Inbox</h3>
+            <div class="tasks" id="inbox-tasks"></div>
+            <button class="add-task-btn" data-state="inbox">+ Lägg till</button>
           </div>
-          <div class="form-group" id="custom-header-group" style="display: none; margin-top: 1rem;">
-            <input type="text" id="custom-header" placeholder="Skriv din egen sidhuvud-text...">
+
+          <div class="kanban-column" data-state="next">
+            <h3>▶️ Nästa steg</h3>
+            <div class="tasks" id="next-tasks"></div>
+            <button class="add-task-btn" data-state="next">+ Lägg till</button>
+          </div>
+
+          <div class="kanban-column" data-state="doing">
+            <h3>🚧 Pågående</h3>
+            <div class="tasks" id="doing-tasks"></div>
+            <button class="add-task-btn" data-state="doing">+ Lägg till</button>
+          </div>
+
+          <div class="kanban-column" data-state="waiting">
+            <h3>⏸️ Väntar på</h3>
+            <div class="tasks" id="waiting-tasks"></div>
+            <button class="add-task-btn" data-state="waiting">+ Lägg till</button>
+          </div>
+
+          <div class="kanban-column" data-state="backlog">
+            <h3>📦 Backlog</h3>
+            <div class="tasks" id="backlog-tasks"></div>
+            <button class="add-task-btn" data-state="backlog">+ Lägg till</button>
           </div>
         </div>
 
-        <div class="form-section">
-          <label class="section-label">Sidfot</label>
-          <div class="checkbox-group" id="footer-checkboxes">
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="1">
-              <span class="checkbox-text">Ingen sidfot</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="2" checked>
-              <span class="checkbox-text">Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="3">
-              <span class="checkbox-text">070 666 10 13 | m@thyr.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="4">
-              <span class="checkbox-text">070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="5">
-              <span class="checkbox-text">070 323 10 13 | mattias@konfident.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="6">
-              <span class="checkbox-text">m@thyr.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="7">
-              <span class="checkbox-text">mattias@konfident.se</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="8">
-              <span class="checkbox-text">Sida {page} (sidnummer)</span>
-            </label>
-            <label class="checkbox-item">
-              <input type="radio" name="footer" value="9">
-              <span class="checkbox-text">Anpassad text...</span>
-            </label>
-          </div>
-          <div class="form-group" id="custom-footer-group" style="display: none; margin-top: 1rem;">
-            <input type="text" id="custom-footer" placeholder="Skriv din egen sidfot-text...">
+        <div class="completed-section">
+          <h3>✅ Klart (senaste veckan)</h3>
+          <div id="completed-tasks" class="completed-list"></div>
+        </div>
+      </section>
+
+      <!-- X Bookmarks Tab -->
+      <section id="bookmarks-tab" class="tab-content">
+        <div class="bookmarks-header">
+          <div class="account-filters">
+            <button class="account-btn active" data-account="all">Alla konton</button>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="output-name">Filnamn (utan .pdf)</label>
-          <input type="text" id="output-name" placeholder="dokument_2026-02-28">
+        <div class="bookmarks-grid">
+          <div class="loading">Laddar bookmarks...</div>
+        </div>
+      </section>
+
+      <!-- Documents Tab -->
+      <section id="documents-tab" class="tab-content">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="🔍 Sök i dokument...">
+          <button id="clear-search">✕</button>
         </div>
 
-        <button type="submit" class="btn-primary" id="generate-btn">
-          📄 Generera PDF & DOCX
-        </button>
+        <div id="documents-list" class="content-list">
+          <div class="loading">Laddar dokument...</div>
+        </div>
+      </section>
 
-        <div id="sis-status" class="status-message"></div>
-      </form>
-    </section>
-  </main>
+      <!-- Images Tab -->
+      <section id="images-tab" class="tab-content">
+        <div id="images-grid" class="images-grid">
+          <div class="loading">Laddar bilder...</div>
+        </div>
+      </section>
+
+      <!-- SiS-dokument Tab -->
+      <section id="sis-tab" class="tab-content">
+        <div class="sis-header">
+          <p class="subtitle">Skapa professionella dokument med svensk standard</p>
+        </div>
+
+        <form id="sis-form" class="sis-form">
+          <div class="form-group">
+            <label for="doc-title">Dokumenttitel *</label>
+            <input type="text" id="doc-title" required placeholder="T.ex. Ansökan, Projektrapport...">
+          </div>
+
+          <div class="form-group">
+            <label for="doc-content">Innehåll *</label>
+            <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här..."></textarea>
+          </div>
+
+          <div class="form-section">
+            <label class="section-label">Sidhuvud (datum läggs till automatiskt)</label>
+            <div class="checkbox-group" id="header-checkboxes">
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="1" checked>
+                <span class="checkbox-text">Dagens datum (bara datum, ingen text)</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="2">
+                <span class="checkbox-text">Mattias Thyr</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="3">
+                <span class="checkbox-text">Mattias Thyr | Handskerydsvägen 7, 571 40 Nässjö</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="4">
+                <span class="checkbox-text">Dokument</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="5">
+                <span class="checkbox-text">Standarddokument</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="6">
+                <span class="checkbox-text">Konfident</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="7">
+                <span class="checkbox-text">Privat korrespondens</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="header" value="8">
+                <span class="checkbox-text">Anpassad text...</span>
+              </label>
+            </div>
+            <div class="form-group" id="custom-header-group" style="display: none; margin-top: 1rem;">
+              <input type="text" id="custom-header" placeholder="Skriv din egen sidhuvud-text...">
+            </div>
+          </div>
+
+          <div class="form-section">
+            <label class="section-label">Sidfot</label>
+            <div class="checkbox-group" id="footer-checkboxes">
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="1">
+                <span class="checkbox-text">Ingen sidfot</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="2" checked>
+                <span class="checkbox-text">Handskerydsvägen 7, 571 40 Nässjö | 070 666 10 13 | m@thyr.se | www.thyr.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="3">
+                <span class="checkbox-text">070 666 10 13 | m@thyr.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="4">
+                <span class="checkbox-text">070 323 10 13 | mattiasthyr@gmail.com, mattias@konfident.se | www.konfident.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="5">
+                <span class="checkbox-text">070 323 10 13 | mattias@konfident.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="6">
+                <span class="checkbox-text">m@thyr.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="7">
+                <span class="checkbox-text">mattias@konfident.se</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="8">
+                <span class="checkbox-text">Sida {page} (sidnummer)</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="radio" name="footer" value="9">
+                <span class="checkbox-text">Anpassad text...</span>
+              </label>
+            </div>
+            <div class="form-group" id="custom-footer-group" style="display: none; margin-top: 1rem;">
+              <input type="text" id="custom-footer" placeholder="Skriv din egen sidfot-text...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="output-name">Filnamn (utan .pdf)</label>
+            <input type="text" id="output-name" placeholder="dokument_2026-02-28">
+          </div>
+
+          <button type="submit" class="btn-primary" id="generate-btn">
+            📄 Generera PDF & DOCX
+          </button>
+
+          <div id="sis-status" class="status-message"></div>
+        </form>
+      </section>
+    </main>
+  </div>
 
   <!-- Modal for viewing content -->
   <div id="modal" class="modal">
@@ -230,6 +255,7 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

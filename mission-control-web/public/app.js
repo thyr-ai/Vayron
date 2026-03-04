@@ -14,15 +14,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Tab switching
 function initTabs() {
-  const tabBtns = document.querySelectorAll('.tab-btn');
+  const navItems = document.querySelectorAll('.nav-item[data-tab]');
+  const pageTitle = document.getElementById('page-title');
   
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tab = btn.dataset.tab;
+  const tabTitles = {
+    kanban: '📋 Kanban Board',
+    bookmarks: '🐦 X Bookmarks',
+    documents: '📄 Dokument',
+    images: '🖼️ Bilder',
+    sis: '📝 SiS-dokument'
+  };
+  
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const tab = item.dataset.tab;
       
-      // Update buttons
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      // Update navigation
+      navItems.forEach(n => n.classList.remove('active'));
+      item.classList.add('active');
+      
+      // Update page title
+      pageTitle.textContent = tabTitles[tab] || tab;
       
       // Update content
       document.querySelectorAll('.tab-content').forEach(content => {
@@ -113,22 +125,28 @@ function displayDocuments(docs) {
     
     return `
       <div class="doc-item" data-path="${doc.path}">
-        <h3>${doc.name}</h3>
-        <div class="doc-meta">
-          <span>📂 ${doc.path}</span>
-          <span>📅 ${date}</span>
-          <span>💾 ${sizeKB} KB</span>
+        <div class="doc-header">
+          <h3>${doc.name}</h3>
+          <div class="doc-meta">
+            <span>📂 ${doc.path}</span>
+            <span>📅 ${date}</span>
+            <span>💾 ${sizeKB} KB</span>
+          </div>
+          ${matchesHtml}
         </div>
-        ${matchesHtml}
+        <div class="doc-content-preview" style="display: none;">
+          <div class="loading">Laddar...</div>
+        </div>
       </div>
     `;
   }).join('');
   
   // Add click handlers
   container.querySelectorAll('.doc-item').forEach(item => {
-    item.addEventListener('click', () => {
+    const header = item.querySelector('.doc-header');
+    header.addEventListener('click', () => {
       const path = item.dataset.path;
-      viewDocument(path);
+      toggleDocumentPreview(item, path);
     });
   });
 }
@@ -155,7 +173,53 @@ function highlightSearch(text) {
   return text.replace(regex, '<mark>$1</mark>');
 }
 
-// View document
+// Toggle document preview (accordion style)
+async function toggleDocumentPreview(item, path) {
+  const preview = item.querySelector('.doc-content-preview');
+  const isExpanded = preview.style.display !== 'none';
+  
+  // Close all other previews first
+  document.querySelectorAll('.doc-content-preview').forEach(p => {
+    if (p !== preview) {
+      p.style.display = 'none';
+      p.closest('.doc-item').classList.remove('expanded');
+    }
+  });
+  
+  if (isExpanded) {
+    // Collapse this one
+    preview.style.display = 'none';
+    item.classList.remove('expanded');
+  } else {
+    // Expand and load content
+    preview.style.display = 'block';
+    item.classList.add('expanded');
+    
+    // Load content if not already loaded
+    if (preview.innerHTML.includes('Laddar...')) {
+      try {
+        const response = await fetch(`/api/file${path}`);
+        const data = await response.json();
+        
+        const fileName = path.split('/').pop();
+        const isMarkdown = fileName.endsWith('.md');
+        
+        let contentHtml;
+        if (isMarkdown && typeof marked !== 'undefined') {
+          contentHtml = `<div class="markdown-content">${marked.parse(data.content)}</div>`;
+        } else {
+          contentHtml = `<pre>${escapeHtml(data.content)}</pre>`;
+        }
+        
+        preview.innerHTML = contentHtml;
+      } catch (err) {
+        preview.innerHTML = `<div style="color: #ff4444;">Kunde inte ladda: ${err.message}</div>`;
+      }
+    }
+  }
+}
+
+// View document (legacy - keep for modal if needed)
 async function viewDocument(path) {
   const modal = document.getElementById('modal');
   const modalBody = document.getElementById('modal-body');
@@ -167,12 +231,22 @@ async function viewDocument(path) {
     const response = await fetch(`/api/file${path}`);
     const data = await response.json();
     
+    const fileName = path.split('/').pop();
+    const isMarkdown = fileName.endsWith('.md');
+    
+    let contentHtml;
+    if (isMarkdown && typeof marked !== 'undefined') {
+      contentHtml = `<div class="markdown-content">${marked.parse(data.content)}</div>`;
+    } else {
+      contentHtml = `<pre>${escapeHtml(data.content)}</pre>`;
+    }
+    
     modalBody.innerHTML = `
-      <h2>${path.split('/').pop()}</h2>
+      <h2>${fileName}</h2>
       <p style="color: var(--text-dim); margin-bottom: 1rem;">
         📂 ${path}
       </p>
-      <pre>${escapeHtml(data.content)}</pre>
+      ${contentHtml}
     `;
   } catch (err) {
     modalBody.innerHTML = `

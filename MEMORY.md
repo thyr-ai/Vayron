@@ -39,6 +39,41 @@ _Skapad: 2026-02-16_
 
 ## 📚 Viktiga lärdomar
 
+### 2026-03-04: Instagram Reel Transcriber ✅ KLART
+**Lokalt Whisper på VPS - automatisk transkribering:**
+- OpenAI Whisper installerat i Python venv (`whisper-env/`)
+- Modell: base (139 MB, bra balans mellan snabbhet och kvalitet)
+- Script: `/home/administrator/vayron/transcribe-reel.sh`
+- Output: `/home/administrator/vayron/transcripts/`
+
+**Workflow:**
+```bash
+./transcribe-reel.sh <instagram-url>
+```
+→ Laddar ner video (yt-dlp)  
+→ Extraherar ljud (ffmpeg)  
+→ Transkriberar (Whisper)  
+→ Sparar .txt + .srt + .meta i transcripts/
+
+**Filformat:**
+- `YYYYMMDD-HHMMSS_titel.txt` - ren text
+- `YYYYMMDD-HHMMSS_titel.srt` - undertexter med timestamps
+- `YYYYMMDD-HHMMSS_titel.meta` - URL, datum, längd
+
+**Performance:**
+- CPU-baserad transkribering (ingen GPU)
+- 2:32 video → ~7 min transkribering
+- Fullständigt gratis (inga API-kostnader)
+
+**Användning framåt:**
+- Mattias skickar Instagram Reel-länk → jag kör script automatiskt
+- Meddelar Mattias med sökväg till transkription
+- Svenska som standard-språk
+
+**Test lyckad:**
+- 2026-03-04: Reel om prissättning för kreatörer
+- Output: `/home/administrator/vayron/transcripts/20260304-135544_prisstattning_kreativa.txt`
+
 ### 2026-03-02: One.com domäner + bot-filter
 **One.com har bot-filter (2026-03):**
 - Headless browser (Brave/Chrome) timeout:ar varje gång
