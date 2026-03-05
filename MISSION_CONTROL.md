@@ -15,6 +15,13 @@ _Uppdaterad: 2026-02-20_
 <!-- Context-taggade: @dator @telefon @vps @garaget osv -->
 
 ### @dator
+- **Kalender i Mission Control** - Bygg kalenderfunktion som visar planerade aktiviteter
+  - Visa cron jobs (auto-commit 09/13/17, domain check, etc.)
+  - Visa uppgifter/deadlines från MISSION_CONTROL.md
+  - Visa Vayron heartbeats (kl 09 morgonöversikt, kl 20 kvällsförslag)
+  - Tydliggör vad som händer när och varför
+  - Integration: läs crontab + parse TODO-filer
+
 - **OpenClaw Optimized Setup Guide** - Gå igenom och implementera optimeringar från Obsidian-guiden
   - Läs guiden i Obsidian
   - Identifiera relevanta optimeringar för Vayron setup
