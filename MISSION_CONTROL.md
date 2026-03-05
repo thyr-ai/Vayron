@@ -15,6 +15,12 @@ _Uppdaterad: 2026-02-20_
 <!-- Context-taggade: @dator @telefon @vps @garaget osv -->
 
 ### @dator
+- **OpenClaw Optimized Setup Guide** - Gå igenom och implementera optimeringar från Obsidian-guiden
+  - Läs guiden i Obsidian
+  - Identifiera relevanta optimeringar för Vayron setup
+  - Implementera steg för steg
+  - Dokumentera vad som gjorts
+
 - **X Live Scraping med cookies** - Exportera cookies från Chrome för att aktivera live scraping
   - Installera "EditThisCookie" Chrome extension
   - Logga in på x.com
