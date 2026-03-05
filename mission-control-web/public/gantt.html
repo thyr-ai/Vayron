@@ -52,6 +52,24 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .legend-item:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .legend-item.active {
+            border-color: #00d9ff;
+            background: rgba(0,217,255,0.1);
+        }
+
+        .legend-item.inactive {
+            opacity: 0.4;
         }
 
         .legend-color {
@@ -187,19 +205,19 @@
     </div>
 
     <div class="legend">
-        <div class="legend-item">
+        <div class="legend-item active" data-sphere="private">
             <div class="legend-color sphere-private"></div>
             <span>Privat</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item active" data-sphere="semiprofessional">
             <div class="legend-color sphere-semiprofessional"></div>
             <span>Semiprofessionellt</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item active" data-sphere="professional">
             <div class="legend-color sphere-professional"></div>
             <span>Professionellt</span>
         </div>
-        <div class="legend-item">
+        <div class="legend-item active" data-sphere="personal">
             <div class="legend-color sphere-personal"></div>
             <span>Personligt</span>
         </div>
@@ -226,6 +244,9 @@
     </div>
 
     <script>
+        // Aktiva sfärfilter (default: alla aktiva)
+        const activeSpheres = new Set(['private', 'semiprofessional', 'professional', 'personal']);
+
         // Projekdata från 01:00 i natt (2026-02-26)
         const startTime = new Date('2026-02-26T01:00:00');
         const tasks = [
@@ -342,43 +363,77 @@
             timelineEl.appendChild(hourDiv);
         }
 
-        // Rendera uppgifter
-        tasks.forEach(task => {
-            const row = document.createElement('div');
-            row.className = 'gantt-row';
+        // Funktion för att rendera Gantt-chart
+        function renderGantt() {
+            ganttBody.innerHTML = '';
             
-            const label = document.createElement('div');
-            label.className = 'task-label';
-            label.innerHTML = `
-                <div class="task-name">${task.name}</div>
-                <div class="task-meta">${task.meta}</div>
-            `;
+            // Filtrera tasks baserat på aktiva sfärer
+            const filteredTasks = tasks.filter(task => activeSpheres.has(task.sphere));
             
-            const track = document.createElement('div');
-            track.className = 'gantt-track';
+            // Rendera endast filtrerade uppgifter (packar ihop uppifrån)
+            filteredTasks.forEach(task => {
+                const row = document.createElement('div');
+                row.className = 'gantt-row';
+                
+                const label = document.createElement('div');
+                label.className = 'task-label';
+                label.innerHTML = `
+                    <div class="task-name">${task.name}</div>
+                    <div class="task-meta">${task.meta}</div>
+                `;
+                
+                const track = document.createElement('div');
+                track.className = 'gantt-track';
+                
+                const bar = document.createElement('div');
+                bar.className = `gantt-bar sphere-${task.sphere}`;
+                bar.style.left = `${(task.start / 24) * 100}%`;
+                bar.style.width = `${(task.duration / 24) * 100}%`;
+                bar.textContent = task.name;
+                bar.title = `${task.name}\n${task.meta}\nStart: ${String(Math.floor(task.start) + 1).padStart(2, '0')}:${String(Math.floor((task.start % 1) * 60)).padStart(2, '0')}\nTid: ${task.duration}h`;
+                
+                track.appendChild(bar);
+                row.appendChild(label);
+                row.appendChild(track);
+                ganttBody.appendChild(row);
+            });
             
-            const bar = document.createElement('div');
-            bar.className = `gantt-bar sphere-${task.sphere}`;
-            bar.style.left = `${(task.start / 24) * 100}%`;
-            bar.style.width = `${(task.duration / 24) * 100}%`;
-            bar.textContent = task.name;
-            bar.title = `${task.name}\n${task.meta}\nStart: ${String(Math.floor(task.start) + 1).padStart(2, '0')}:${String(Math.floor((task.start % 1) * 60)).padStart(2, '0')}\nTid: ${task.duration}h`;
+            updateStats(filteredTasks);
+        }
+
+        // Uppdatera statistik
+        function updateStats(filteredTasks) {
+            document.getElementById('total-tasks').textContent = filteredTasks.length;
+            const totalHours = filteredTasks.reduce((sum, task) => sum + task.duration, 0);
+            document.getElementById('total-hours').textContent = totalHours.toFixed(1) + 'h';
             
-            track.appendChild(bar);
-            row.appendChild(label);
-            row.appendChild(track);
-            ganttBody.appendChild(row);
+            const now = new Date();
+            const elapsed = (now - startTime) / (1000 * 60 * 60);
+            const completion = totalHours > 0 ? Math.min(100, Math.max(0, (elapsed / totalHours) * 100)) : 0;
+            document.getElementById('completion').textContent = completion.toFixed(0) + '%';
+        }
+
+        // Klickhändelser för sfärfilter
+        document.querySelectorAll('.legend-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const sphere = item.dataset.sphere;
+                
+                if (activeSpheres.has(sphere)) {
+                    activeSpheres.delete(sphere);
+                    item.classList.remove('active');
+                    item.classList.add('inactive');
+                } else {
+                    activeSpheres.add(sphere);
+                    item.classList.remove('inactive');
+                    item.classList.add('active');
+                }
+                
+                renderGantt();
+            });
         });
 
-        // Statistik
-        document.getElementById('total-tasks').textContent = tasks.length;
-        const totalHours = tasks.reduce((sum, task) => sum + task.duration, 0);
-        document.getElementById('total-hours').textContent = totalHours.toFixed(1) + 'h';
-        
-        const now = new Date();
-        const elapsed = (now - startTime) / (1000 * 60 * 60); // timmar sedan start
-        const completion = Math.min(100, Math.max(0, (elapsed / totalHours) * 100));
-        document.getElementById('completion').textContent = completion.toFixed(0) + '%';
+        // Initial rendering
+        renderGantt();
     </script>
 </body>
 </html>

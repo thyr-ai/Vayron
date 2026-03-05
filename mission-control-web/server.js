@@ -295,6 +295,53 @@ app.get('/api/sis-download/:filename', (req, res) => {
   });
 });
 
+// X Live Scraper
+app.post('/api/x-scrape', async (req, res) => {
+  const SCRAPLING_VENV = path.join(WORKSPACE, 'scrapling-env/bin/python3');
+  const SCRAPER_SCRIPT = path.join(WORKSPACE, 'scrapling-tools/x_live_scraper.py');
+  
+  try {
+    console.log('🐦 Starting X scraper...');
+    
+    const scraper = spawn(SCRAPLING_VENV, [SCRAPER_SCRIPT], {
+      cwd: WORKSPACE
+    });
+
+    let stdout = '';
+    let stderr = '';
+
+    scraper.stdout.on('data', (data) => {
+      const output = data.toString();
+      stdout += output;
+      console.log(output);
+    });
+
+    scraper.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
+
+    scraper.on('close', (code) => {
+      if (code === 0) {
+        console.log('✅ X scraping complete');
+        res.json({
+          success: true,
+          message: 'Scraping complete!',
+          output: stdout
+        });
+      } else {
+        console.error('❌ X scraping failed:', stderr);
+        res.status(500).json({ 
+          error: 'Scraping failed',
+          details: stderr
+        });
+      }
+    });
+  } catch (err) {
+    console.error('Scraper error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ 

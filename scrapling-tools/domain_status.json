@@ -1,0 +1,95 @@
+[
+  {
+    "domain": "blendljusdesign.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.21,
+    "title": "hem",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:40.228124"
+  },
+  {
+    "domain": "ckgc.cc",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.14,
+    "title": "\"ckgc.cc\"",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:40.363845"
+  },
+  {
+    "domain": "cykelluffarn.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 2.98,
+    "title": "Vagrant [\u02c8v\u0101\u0261r\u0259nt] \u2013 Aktuell med en 12h t\u00e4vling f\u00f6r tv\u00e5mannalag l\u00f6rdagen den 28:e november",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:43.346706"
+  },
+  {
+    "domain": "godabud.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 2.36,
+    "title": "No title",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:45.705538"
+  },
+  {
+    "domain": "konfident.se",
+    "status": "down",
+    "error": "Failed to perform, curl: (60) SSL: no alternative certificate subject name matches target hostname 'konfident.se'. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+    "checked_at": "2026-03-05T02:34:47.952954"
+  },
+  {
+    "domain": "livepodden.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.16,
+    "title": "Livepodden",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:48.117262"
+  },
+  {
+    "domain": "lokalfotograf.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.21,
+    "title": "Hosted By One.com | Webhosting made simple",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:48.324352"
+  },
+  {
+    "domain": "nassjogp.bike",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.94,
+    "title": "N\u00e4ssj\u00f6 Grand Prix \u2013 2014-2018",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:49.264990"
+  },
+  {
+    "domain": "ovning.se",
+    "status": "error",
+    "http_code": 500,
+    "load_time": 1.52,
+    "title": "No title",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:50.780636"
+  },
+  {
+    "domain": "thyr.se",
+    "status": "ok",
+    "http_code": 200,
+    "load_time": 0.13,
+    "title": "thyr.se",
+    "ssl": true,
+    "checked_at": "2026-03-05T02:34:50.914582"
+  },
+  {
+    "domain": "voilavelo.fr",
+    "status": "down",
+    "error": "Failed to perform, curl: (6) Could not resolve host: voilavelo.fr. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.",
+    "checked_at": "2026-03-05T02:34:53.120033"
+  }
+]
