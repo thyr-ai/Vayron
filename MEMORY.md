@@ -333,6 +333,84 @@ rclone copy backup.tar.gz gdrive:backups/
 - **Säkerhet:** GUARDRAILS.md + SAFETY.md på plats
 - **Nästa steg:** Få credentials när Mattias är redo
 
+### Legal Radar Platform + Multi-Agent Organisation (Professional) 🆕
+**Startad: 2026-03-06**
+
+**Företagsstruktur:**
+- **Konfident.se** (moderbolag) - Professional sfär
+- **Shields & Spears** (dotterbolag) - äger Legal Radar Platform
+- **Legal Radar Platform** - plattform för att ta vara på PBM-utbildning
+
+**Plattformens bas-funktioner (klart 2026-03-06):**
+- Databas
+- Dashboard
+- EventFlow
+
+**Multi-Agent Arkitektur:**
+
+**Dotterbolag: Shields & Spears (3 agenter + Mattias som PBM)**
+1. **ss-revenue** - "The Closer" (Säljansvarig)
+   - Karaktär: Optimistisk, kunddriven, ser möjligheter
+   - Fokus: Pipeline, lead-nurturing, deal-closure
+   - Model: Claude Sonnet 4-5
+
+2. **ss-platform** - "The Builder" (Utvecklingsansvarig)
+   - Karaktär: Teknisk, pragmatisk, kvalitetsfokuserad
+   - Fokus: Arkitektur, feature-utveckling, tech debt
+   - Model: Claude Sonnet 4-5
+
+3. **ss-operations** - "The Anchor" (Kundleverans)
+   - Karaktär: Kundnöjdhet, implementation, stabilitet
+   - Fokus: Onboarding, support, feedback-loop till Platform
+   - Model: Claude Sonnet 4-5
+
+**Mattias = PBM** - Human in the loop, slutgiltigt ord i kundkontakt
+
+**Moderbolag: Konfident.se (5 agenter - Styrgrupp)**
+1. **kf-strategy** - "The Visionary" (Strategi)
+   - Karaktär: Långsiktig, ser mönster, riskmedveten
+   - Fokus: Affärsutveckling, positionering, strategiska partnerskap
+   - Model: Claude Opus 4-6 (strategisk analys)
+
+2. **kf-finance** - "The Realist" (Ekonomi)
+   - Karaktär: Sifferfokuserad, konservativ, ROI-driven
+   - Fokus: Ekonomi, resurser, hållbarhet, prissättning
+   - Model: Claude Sonnet 4-5
+
+3. **kf-marketing** - "The Storyteller" (Marknadsföring)
+   - Karaktär: Varumärke, narrativ, målgruppsförståelse
+   - Fokus: Positioning, content, lead generation
+   - Model: Claude Sonnet 4-5
+
+4. **kf-legal** - "The Guardian" (Juridik/Compliance)
+   - Karaktär: Regelefterlevnad, riskminimering, skydd
+   - Fokus: Avtal, GDPR, upphandlingsregler, IP
+   - Model: Claude Sonnet 4-5
+
+5. **kf-meta** - "The Devil's Advocate" (Meta-granskare) ⭐
+   - Karaktär: Neutral, ifrågasättande, motviktsanalys
+   - Fokus:
+     - Läser session history från andra agenter
+     - Identifierar groupthink
+     - Vänder på resonemang när alla är överens
+     - Lyfter blinda fläckar
+   - Verktyg: Full tillgång till sessions_list, sessions_history
+   - Model: Claude Opus 4-6 (djup analys)
+
+**Teknisk implementation:**
+- OpenClaw 2026.3.2 multi-agent system
+- Agent-to-agent kommunikation via sessions_spawn och sessions_send
+- Separata workspaces per agent (egna SOUL.md, memory)
+- Meta-agent kan analysera andra agenters resonemang för att undvika groupthink
+
+**Status:** Pilot-planering
+**Nästa steg:**
+- [ ] Skapa OpenClaw config för alla 8 agenter
+- [ ] Generera workspace-mappar med SOUL.md för varje agent
+- [ ] Testa inter-agent kommunikation
+- [ ] Domännamn för Legal Radar Platform?
+- [ ] Registrering av Shields & Spears som AB eller hålla under Konfident?
+
 ### Smålands Cykelförbund (Semiprofessional)
 - **Status:** Arbetsgrupp bildad, årsmöte inställt
 - **Mattias roll:** Valberedningsordförande
