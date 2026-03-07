@@ -335,7 +335,8 @@ rclone copy backup.tar.gz gdrive:backups/
 
 ### Legal Radar Platform + Multi-Agent Organisation (Professional) 🆕
 **Startad: 2026-03-06**  
-**Affärslogik dokumenterad: 2026-03-07** → `/memory/professional/legal-radar-platform/affarslogik.md`
+**Affärslogik dokumenterad: 2026-03-07** → `/memory/professional/legal-radar-platform/affarslogik.md`  
+**Kravspec dokumenterad: 2026-03-07** → `/memory/professional/legal-radar-platform/kravspec.md`
 
 **Företagsstruktur:**
 - **Konfident.se** (moderbolag) - Professional sfär
