@@ -334,7 +334,8 @@ rclone copy backup.tar.gz gdrive:backups/
 - **Nästa steg:** Få credentials när Mattias är redo
 
 ### Legal Radar Platform + Multi-Agent Organisation (Professional) 🆕
-**Startad: 2026-03-06**
+**Startad: 2026-03-06**  
+**Affärslogik dokumenterad: 2026-03-07** → `/memory/professional/legal-radar-platform/affarslogik.md`
 
 **Företagsstruktur:**
 - **Konfident.se** (moderbolag) - Professional sfär
@@ -345,6 +346,15 @@ rclone copy backup.tar.gz gdrive:backups/
 - Databas
 - Dashboard
 - EventFlow
+
+**Affärsmodell (komplett dokumentation i affarslogik.md):**
+- Prissättning: 29 999 kr/mån (solist) / 49 999 kr/mån (byrå)
+- Break-even: 2 kunder
+- Delmål: 20 kunder = 1 MSEK/mån
+- Marginal vid skala: ~84%
+- Kvartals-låst strategi med Lead Radar trigger-system (M-18 till M-3)
+- Nätverkseffekt via anonymiserad data (≥5 kunder)
+- Progressiv automation: Manuell (M1-3) → Semi-autonom (M4-6) → Autopilot (M7+)
 
 **Multi-Agent Arkitektur:**
 
