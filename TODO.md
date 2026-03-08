@@ -50,6 +50,25 @@ cat /home/administrator/vayron/agent/memory_writer.py
 - Routing-rules.yaml integration med kanaler
 - Memory-search över alla sfärer samtidigt
 
+### One.com webhook-baserad automation
+**Mål:** Undvik bot-filter genom att bete sig som människa
+
+**Strategi:**
+- Webhook-trigger istället för cron-spam
+- Kör EN gång/dag vid normal tid (10:00 svensk tid)
+- Spara cookies mellan körningar (persistent storage)
+- Samma user agent + stabilt VPS-IP
+- Om captcha → notifiera Mattias → lös via Chrome relay
+
+**Implementation:**
+1. ⏳ Skapa webhook-endpoint för one.com-check
+2. ⏳ Implementera cookie-persistence (filesystem eller databas)
+3. ⏳ Daglig cron kl 10:00 → webhook trigger
+4. ⏳ Captcha-detection → Telegram-notifiering
+5. ⏳ Dokumentera som alternativ till Chrome relay
+
+**Referens:** Headless bot-detection guide (screenshot 2026-03-08)
+
 ---
 
 ## Klart ✅
