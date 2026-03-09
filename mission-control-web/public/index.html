@@ -3,42 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mission Control 🎯</title>
+  <title>Mission Control</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Sidebar -->
   <aside class="sidebar">
     <div class="sidebar-header">
-      <h1>🎯 Mission Control</h1>
+      <h1>Mission Control</h1>
     </div>
     <nav class="sidebar-nav">
       <div class="nav-item active" data-tab="kanban">
-        <span class="icon">📋</span>
         <span>Kanban</span>
       </div>
+      <div class="nav-item" data-tab="cron">
+        <span>Cron Jobs</span>
+      </div>
+      <div class="nav-item" data-tab="x-feeds">
+        <span>X Feeds</span>
+      </div>
       <div class="nav-item" data-tab="bookmarks">
-        <span class="icon">🐦</span>
         <span>X Bookmarks</span>
       </div>
       <div class="nav-item" data-tab="documents">
-        <span class="icon">📄</span>
         <span>Dokument</span>
       </div>
       <div class="nav-item" data-tab="images">
-        <span class="icon">🖼️</span>
         <span>Bilder</span>
       </div>
       <div class="nav-item" data-tab="sis">
-        <span class="icon">📝</span>
         <span>SiS-dokument</span>
       </div>
       <a href="/gantt.html" class="nav-item" style="text-decoration: none; color: inherit;">
-        <span class="icon">📊</span>
         <span>Gantt</span>
       </a>
       <a href="/x-live.html" class="nav-item" style="text-decoration: none; color: inherit;">
-        <span class="icon">🐦</span>
         <span>Live X Bookmarks</span>
       </a>
     </nav>
@@ -47,7 +46,7 @@
   <!-- Main Content -->
   <div class="main-wrapper">
     <header>
-      <h2 id="page-title">📋 Kanban Board</h2>
+      <h2 id="page-title">Kanban Board</h2>
     </header>
 
     <main>
@@ -65,39 +64,91 @@
 
         <div class="kanban-board">
           <div class="kanban-column" data-state="inbox">
-            <h3>📥 Inbox</h3>
+            <h3>Inbox</h3>
             <div class="tasks" id="inbox-tasks"></div>
             <button class="add-task-btn" data-state="inbox">+ Lägg till</button>
           </div>
 
           <div class="kanban-column" data-state="next">
-            <h3>▶️ Nästa steg</h3>
+            <h3>Nästa steg</h3>
             <div class="tasks" id="next-tasks"></div>
             <button class="add-task-btn" data-state="next">+ Lägg till</button>
           </div>
 
           <div class="kanban-column" data-state="doing">
-            <h3>🚧 Pågående</h3>
+            <h3>Pågående</h3>
             <div class="tasks" id="doing-tasks"></div>
             <button class="add-task-btn" data-state="doing">+ Lägg till</button>
           </div>
 
           <div class="kanban-column" data-state="waiting">
-            <h3>⏸️ Väntar på</h3>
+            <h3>Väntar på</h3>
             <div class="tasks" id="waiting-tasks"></div>
             <button class="add-task-btn" data-state="waiting">+ Lägg till</button>
           </div>
 
           <div class="kanban-column" data-state="backlog">
-            <h3>📦 Backlog</h3>
+            <h3>Backlog</h3>
             <div class="tasks" id="backlog-tasks"></div>
             <button class="add-task-btn" data-state="backlog">+ Lägg till</button>
           </div>
         </div>
 
         <div class="completed-section">
-          <h3>✅ Klart (senaste veckan)</h3>
+          <h3>Klart (senaste veckan)</h3>
           <div id="completed-tasks" class="completed-list"></div>
+        </div>
+      </section>
+
+      <!-- Cron Jobs Tab -->
+      <section id="cron-tab" class="tab-content">
+        <div class="cron-header">
+          <h3>Schemalagda Cron Jobs</h3>
+          <button id="refresh-cron" class="refresh-btn">Uppdatera</button>
+        </div>
+        
+        <div class="cron-calendar">
+          <div class="loading">Laddar cron jobs...</div>
+        </div>
+      </section>
+
+      <!-- X Feeds Tab -->
+      <section id="x-feeds-tab" class="tab-content">
+        <div class="x-feeds-header">
+          <h3>Bookmarks</h3>
+          <button id="refresh-feeds" class="refresh-btn">Uppdatera</button>
+        </div>
+
+        <div class="x-feeds-container">
+          <div class="feed-column" id="feed-mattiasthyr">
+            <div class="feed-header" style="border-left-color: #1DA1F2;">
+              <h4>@mattiasthyr</h4>
+              <span class="feed-timestamp"></span>
+            </div>
+            <div class="feed-tweets">
+              <div class="loading">Laddar timeline...</div>
+            </div>
+          </div>
+
+          <div class="feed-column" id="feed-konfident">
+            <div class="feed-header" style="border-left-color: #F4D03F;">
+              <h4>@Konfidentse</h4>
+              <span class="feed-timestamp"></span>
+            </div>
+            <div class="feed-tweets">
+              <div class="loading">Laddar timeline...</div>
+            </div>
+          </div>
+
+          <div class="feed-column" id="feed-ovning">
+            <div class="feed-header" style="border-left-color: #2ECC71;">
+              <h4>@ovningse</h4>
+              <span class="feed-timestamp"></span>
+            </div>
+            <div class="feed-tweets">
+              <div class="loading">Laddar timeline...</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -117,7 +168,7 @@
       <!-- Documents Tab -->
       <section id="documents-tab" class="tab-content">
         <div class="search-box">
-          <input type="text" id="search-input" placeholder="🔍 Sök i dokument...">
+          <input type="text" id="search-input" placeholder="Sök i dokument...">
           <button id="clear-search">✕</button>
         </div>
 
@@ -147,7 +198,12 @@
 
           <div class="form-group">
             <label for="doc-content">Innehåll *</label>
-            <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här..."></textarea>
+            <div class="content-toolbar">
+              <button type="button" id="load-md-btn" class="toolbar-btn">Ladda Markdown-fil</button>
+              <input type="file" id="md-file-input" accept=".md,.markdown" style="display: none;">
+              <span id="md-file-name" class="file-indicator"></span>
+            </div>
+            <textarea id="doc-content" required rows="12" placeholder="Skriv ditt dokumentinnehåll här eller ladda en Markdown-fil..."></textarea>
           </div>
 
           <div class="form-section">
@@ -242,7 +298,7 @@
           </div>
 
           <button type="submit" class="btn-primary" id="generate-btn">
-            📄 Generera PDF & DOCX
+            Generera PDF & DOCX
           </button>
 
           <div id="sis-status" class="status-message"></div>

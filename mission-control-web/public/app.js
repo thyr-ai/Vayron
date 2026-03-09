@@ -2,12 +2,15 @@
 let allDocuments = [];
 let allImages = [];
 let searchTimeout = null;
+let kanbanTasks = {};
+let currentContextFilter = 'all';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initSearch();
   initModal();
+  initKanban();
   loadDocuments();
   loadImages();
 });
@@ -18,11 +21,13 @@ function initTabs() {
   const pageTitle = document.getElementById('page-title');
   
   const tabTitles = {
-    kanban: '📋 Kanban Board',
-    bookmarks: '🐦 X Bookmarks',
-    documents: '📄 Dokument',
-    images: '🖼️ Bilder',
-    sis: '📝 SiS-dokument'
+    kanban: 'Kanban Board',
+    cron: 'Cron Jobs',
+    'x-feeds': 'X Feeds',
+    bookmarks: 'X Bookmarks',
+    documents: 'Dokument',
+    images: 'Bilder',
+    sis: 'SiS-dokument'
   };
   
   navItems.forEach(item => {
@@ -81,6 +86,83 @@ function initModal() {
       modal.classList.remove('active');
     }
   });
+}
+
+// Kanban Board
+function initKanban() {
+  const contextFilter = document.getElementById('context-filter');
+  
+  if (contextFilter) {
+    contextFilter.addEventListener('change', (e) => {
+      currentContextFilter = e.target.value;
+      renderKanbanTasks();
+    });
+  }
+  
+  loadKanbanTasks();
+}
+
+async function loadKanbanTasks() {
+  try {
+    const response = await fetch('/api/kanban/tasks');
+    kanbanTasks = await response.json();
+    renderKanbanTasks();
+  } catch (err) {
+    console.error('Failed to load Kanban tasks:', err);
+  }
+}
+
+function renderKanbanTasks() {
+  const sections = ['inbox', 'next', 'doing', 'waiting', 'backlog'];
+  
+  sections.forEach(section => {
+    const container = document.getElementById(`${section}-tasks`);
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    const tasks = kanbanTasks[section] || [];
+    const filteredTasks = currentContextFilter === 'all' 
+      ? tasks
+      : tasks.filter(t => t.contexts.includes(currentContextFilter));
+    
+    filteredTasks.forEach(task => {
+      const taskEl = document.createElement('div');
+      taskEl.className = 'task-card';
+      taskEl.innerHTML = `
+        <div class="task-content">
+          <p>${escapeHtml(task.text)}</p>
+          ${task.contexts.length > 0 ? `
+            <div class="task-contexts">
+              ${task.contexts.map(c => `<span class="context-badge">${c}</span>`).join('')}
+            </div>
+          ` : ''}
+          ${task.subtasks.length > 0 ? `
+            <ul class="task-subtasks">
+              ${task.subtasks.map(st => `<li>${escapeHtml(st)}</li>`).join('')}
+            </ul>
+          ` : ''}
+        </div>
+      `;
+      container.appendChild(taskEl);
+    });
+  });
+  
+  // Render completed tasks
+  const completedContainer = document.getElementById('completed-tasks');
+  if (completedContainer && kanbanTasks.done) {
+    completedContainer.innerHTML = kanbanTasks.done.map(task => `
+      <div class="completed-task">
+        <span class="task-text">${escapeHtml(task.text)}</span>
+      </div>
+    `).join('');
+  }
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
 
 // Load documents
@@ -543,6 +625,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Markdown file loading
+  const loadMdBtn = document.getElementById('load-md-btn');
+  const mdFileInput = document.getElementById('md-file-input');
+  const mdFileName = document.getElementById('md-file-name');
+  const docContentTextarea = document.getElementById('doc-content');
+  const docTitleInput = document.getElementById('doc-title');
+
+  loadMdBtn?.addEventListener('click', () => {
+    mdFileInput.click();
+  });
+
+  mdFileInput?.addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      
+      // Parse markdown: extract title from first # heading if exists
+      const lines = text.split('\n');
+      let title = '';
+      let content = '';
+      let titleFound = false;
+
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        
+        // Extract first # heading as title
+        if (!titleFound && line.match(/^#\s+(.+)/)) {
+          title = line.replace(/^#\s+/, '').trim();
+          titleFound = true;
+          continue;
+        }
+        
+        // Skip empty lines at the start
+        if (!content && !line.trim()) continue;
+        
+        // Remove markdown formatting for PDF (keep plain text)
+        let cleanLine = line
+          .replace(/^#+\s+/, '')           // Remove headers
+          .replace(/\*\*(.+?)\*\*/g, '$1') // Remove bold
+          .replace(/\*(.+?)\*/g, '$1')     // Remove italic
+          .replace(/\[(.+?)\]\(.+?\)/g, '$1') // Keep link text only
+          .replace(/`(.+?)`/g, '$1')       // Remove code marks
+          .replace(/^[-*+]\s+/, '• ')      // Convert list markers to bullets
+          .replace(/^\d+\.\s+/, '');       // Remove numbered list markers
+        
+        content += cleanLine + '\n';
+      }
+
+      // Fill form
+      if (title && !docTitleInput.value) {
+        docTitleInput.value = title;
+      }
+      
+      docContentTextarea.value = content.trim();
+      mdFileName.textContent = `✓ ${file.name}`;
+      
+    } catch (error) {
+      mdFileName.textContent = `✗ Fel: ${error.message}`;
+      mdFileName.style.color = 'var(--pink)';
+    }
+  });
+
   // Handle form submission
   sisForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -602,3 +748,124 @@ document.addEventListener('DOMContentLoaded', () => {
     statusEl.className = `status-message show ${type}`;
   }
 });
+
+// ===== X FEEDS =====
+let xFeedsLoaded = false;
+
+// Load X Feeds when tab is activated
+document.addEventListener('DOMContentLoaded', () => {
+  const xFeedsTab = document.querySelector('.nav-item[data-tab="x-feeds"]');
+  if (xFeedsTab) {
+    xFeedsTab.addEventListener('click', () => {
+      if (!xFeedsLoaded) {
+        loadXFeeds();
+        xFeedsLoaded = true;
+      }
+    });
+  }
+
+  // Refresh button
+  const refreshBtn = document.getElementById('refresh-feeds');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      loadXFeeds(true);
+    });
+  }
+});
+
+async function loadXFeeds(force = false) {
+  const accounts = ['mattiasthyr', 'konfident', 'ovning'];
+  
+  // Show loading state
+  for (const accountId of accounts) {
+    const feedColumn = document.getElementById(`feed-${accountId}`);
+    const tweetsContainer = feedColumn.querySelector('.feed-tweets');
+    tweetsContainer.innerHTML = '<div class="loading">🔄 Hämtar bookmarks...</div>';
+  }
+  
+  try {
+    const response = await fetch('/api/x/bookmarks');
+    const results = await response.json();
+    
+    if (response.ok) {
+      results.forEach(result => {
+        const feedColumn = document.getElementById(`feed-${result.accountId}`);
+        const tweetsContainer = feedColumn.querySelector('.feed-tweets');
+        const timestampEl = feedColumn.querySelector('.feed-timestamp');
+        
+        if (result.error) {
+          tweetsContainer.innerHTML = `<div class="error">Fel: ${result.error}</div>`;
+        } else {
+          displayTimeline(tweetsContainer, result.bookmarks);
+          timestampEl.textContent = formatTimestamp(result.fetchedAt);
+        }
+      });
+    } else {
+      throw new Error('Failed to fetch bookmarks');
+    }
+  } catch (error) {
+    console.error('Failed to load bookmarks:', error);
+    for (const accountId of accounts) {
+      const feedColumn = document.getElementById(`feed-${accountId}`);
+      const tweetsContainer = feedColumn.querySelector('.feed-tweets');
+      tweetsContainer.innerHTML = `<div class="error">Kunde inte ladda bookmarks: ${error.message}</div>`;
+    }
+  }
+}
+
+function displayTimeline(container, tweets) {
+  if (!tweets || tweets.length === 0) {
+    container.innerHTML = '<div class="empty-state">Inga tweets att visa</div>';
+    return;
+  }
+  
+  const html = tweets.map(tweet => `
+    <div class="tweet-card">
+      <div class="tweet-header">
+        <div>
+          <div class="tweet-author">${escapeHtml(tweet.author)}</div>
+          <div class="tweet-handle">${escapeHtml(tweet.authorHandle)}</div>
+        </div>
+        <div class="tweet-timestamp">${formatTweetTime(tweet.timestamp)}</div>
+      </div>
+      <div class="tweet-text">${escapeHtml(tweet.text)}</div>
+      <div class="tweet-stats">
+        <span class="tweet-stat">❤️ ${tweet.likes}</span>
+        <span class="tweet-stat">🔄 ${tweet.retweets}</span>
+        <span class="tweet-stat">💬 ${tweet.replies}</span>
+      </div>
+      <a href="${tweet.url}" target="_blank" class="tweet-url">Se på X →</a>
+    </div>
+  `).join('');
+  
+  container.innerHTML = html;
+}
+
+function formatTweetTime(timestamp) {
+  const date = new Date(timestamp);
+  const now = new Date();
+  const diff = now - date;
+  
+  const minutes = Math.floor(diff / 60000);
+  const hours = Math.floor(diff / 3600000);
+  const days = Math.floor(diff / 86400000);
+  
+  if (minutes < 1) return 'just nu';
+  if (minutes < 60) return `${minutes}m`;
+  if (hours < 24) return `${hours}h`;
+  return `${days}d`;
+}
+
+function formatTimestamp(isoString) {
+  const date = new Date(isoString);
+  return date.toLocaleTimeString('sv-SE', { 
+    hour: '2-digit', 
+    minute: '2-digit' 
+  });
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}

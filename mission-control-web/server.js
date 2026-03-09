@@ -5,6 +5,7 @@ const path = require('path');
 const chokidar = require('chokidar');
 const { spawn } = require('child_process');
 const { parseBookmarks, getAllBookmarks, getStats } = require('./parse-bookmarks');
+const { scrapeAllBookmarks, ACCOUNTS } = require('./x-bookmark-scraper');
 
 const app = express();
 const PORT = 8080;
@@ -215,12 +216,9 @@ app.post('/api/sis-generate', async (req, res) => {
   const VENV_PYTHON = path.join(SIS_DIR, 'venv/bin/python3');
   const SCRIPT = path.join(SIS_DIR, 'generate_pdf_v2.py');
   
-  // Generate output filename if not provided
-  const fileName = output_name || `dokument_${Date.now()}`;
-  
   // Create temporary Python script to call generator
-  // Convert null to None for Python
-  const toPython = (val) => val === null ? 'None' : JSON.stringify(val);
+  // Convert null/undefined to None for Python
+  const toPython = (val) => (val === null || val === undefined) ? 'None' : JSON.stringify(val);
   
   const tempScript = `
 import sys
@@ -228,15 +226,17 @@ sys.path.insert(0, '${SIS_DIR}')
 from generate_pdf_v2 import PDFGeneratorV2
 
 gen = PDFGeneratorV2()
-gen.create_document(
+result = gen.create_document(
     title=${JSON.stringify(title)},
     content=${JSON.stringify(content)},
     header_choice=${JSON.stringify(header_choice)},
     footer_choice=${JSON.stringify(footer_choice)},
     custom_header=${toPython(custom_header)},
     custom_footer=${toPython(custom_footer)},
-    output_name=${toPython(fileName)}
+    output_name=${toPython(output_name)}
 )
+print(result)  # Output filnamnet
+
 `;
 
   try {
@@ -258,11 +258,14 @@ gen.create_document(
 
     python.on('close', (code) => {
       if (code === 0) {
+        // Parse output filename from stdout (last non-empty line)
+        const outputName = stdout.trim().split('\n').filter(l => l.trim()).pop() || output_name || 'dokument';
+        
         res.json({
           success: true,
           message: 'Dokument genererat!',
-          pdf_file: `${fileName}.pdf`,
-          docx_file: `${fileName}.docx`
+          pdf_file: `${outputName}.pdf`,
+          docx_file: `${outputName}.docx`
         });
       } else {
         console.error('Python error:', stderr);
@@ -338,6 +341,163 @@ app.post('/api/x-scrape', async (req, res) => {
     });
   } catch (err) {
     console.error('Scraper error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// X Bookmarks API
+app.get('/api/x/accounts', (req, res) => {
+  res.json(ACCOUNTS);
+});
+
+app.get('/api/x/bookmarks', async (req, res) => {
+  try {
+    const results = await scrapeAllBookmarks();
+    res.json(results);
+  } catch (err) {
+    console.error('Failed to fetch bookmarks:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Parse MISSION_CONTROL.md for Kanban tasks
+function parseMissionControl(content) {
+  const sections = {
+    inbox: [],
+    next: [],
+    waiting: [],
+    doing: [],
+    backlog: [],
+    done: []
+  };
+  
+  const lines = content.split('\n');
+  let currentSection = null;
+  let currentContext = null;
+  let currentTask = null;
+  
+  for (const line of lines) {
+    // Detect section headers
+    if (line.includes('## 📥 Inbox') || line.includes('## Inbox')) {
+      currentSection = 'inbox';
+      currentContext = null;
+      continue;
+    } else if (line.includes('## 🎯 Att göra') || line.includes('## Att göra')) {
+      currentSection = 'next';
+      currentContext = null;
+      continue;
+    } else if (line.includes('## ⏸️ Väntar på') || line.includes('## Väntar på')) {
+      currentSection = 'waiting';
+      currentContext = null;
+      continue;
+    } else if (line.includes('## 🚧 Pågående') || line.includes('## Pågående')) {
+      currentSection = 'doing';
+      currentContext = null;
+      continue;
+    } else if (line.includes('## 📦 Backlog') || line.includes('## Backlog')) {
+      currentSection = 'backlog';
+      currentContext = null;
+      continue;
+    } else if (line.includes('## ✅ Klart') || line.includes('## Klart')) {
+      currentSection = 'done';
+      currentContext = null;
+      continue;
+    }
+    
+    // Detect context subsections (### @dator, ### @telefon, etc.)
+    const contextMatch = line.match(/^###\s+(@\w+)/);
+    if (contextMatch) {
+      currentContext = contextMatch[1].toLowerCase();
+      continue;
+    }
+    
+    if (!currentSection) continue;
+    
+    // Parse tasks (lines starting with -, •, or *)
+    if (line.match(/^[\s]*[-•*]\s+(.+)/)) {
+      const match = line.match(/^[\s]*[-•*]\s+(.+)/);
+      let taskText = match[1].trim();
+      
+      // Remove markdown bold
+      taskText = taskText.replace(/\*\*(.+?)\*\*/g, '$1');
+      
+      // Extract context tags from text (@dator, @telefon, etc.)
+      const inlineContexts = (taskText.match(/@\w+/g) || []).map(c => c.toLowerCase());
+      
+      // Combine section context with inline contexts
+      const contexts = currentContext ? [currentContext, ...inlineContexts] : inlineContexts;
+      
+      currentTask = {
+        id: Date.now() + Math.random(),
+        text: taskText,
+        contexts: [...new Set(contexts)], // Remove duplicates
+        subtasks: []
+      };
+      
+      sections[currentSection].push(currentTask);
+    } else if (line.match(/^\s{2,}[-•*]\s+(.+)/) && currentTask) {
+      // Subtask (indented)
+      const match = line.match(/^\s{2,}[-•*]\s+(.+)/);
+      currentTask.subtasks.push(match[1].trim());
+    }
+  }
+  
+  return sections;
+}
+
+// Get Kanban tasks from MISSION_CONTROL.md
+app.get('/api/kanban/tasks', async (req, res) => {
+  try {
+    const mcPath = path.join(WORKSPACE, 'MISSION_CONTROL.md');
+    const content = await fs.readFile(mcPath, 'utf-8');
+    const tasks = parseMissionControl(content);
+    
+    res.json(tasks);
+  } catch (err) {
+    console.error('Failed to load MISSION_CONTROL.md:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Save Kanban tasks back to MISSION_CONTROL.md
+app.post('/api/kanban/tasks', async (req, res) => {
+  try {
+    const { tasks } = req.body;
+    const mcPath = path.join(WORKSPACE, 'MISSION_CONTROL.md');
+    
+    // Read current content to preserve header/footer
+    const currentContent = await fs.readFile(mcPath, 'utf-8');
+    const lines = currentContent.split('\n');
+    
+    // Find where sections start and end
+    let newContent = '';
+    let inTaskSection = false;
+    
+    for (const line of lines) {
+      if (line.includes('## 📥 Inbox') || line.includes('## Inbox')) {
+        newContent += line + '\n<!-- Snabba idéer och grejer som dyker upp - bearbetas senare -->\n\n';
+        tasks.inbox.forEach(t => newContent += `- ${t.text}\n`);
+        newContent += '\n---\n\n';
+        inTaskSection = true;
+        continue;
+      }
+      
+      if (!inTaskSection) {
+        newContent += line + '\n';
+      }
+      
+      // Skip until we hit the next major section (Notes or similar)
+      if (line.startsWith('## 📝') || line.startsWith('## Noter')) {
+        inTaskSection = false;
+        newContent += line + '\n';
+      }
+    }
+    
+    await fs.writeFile(mcPath, newContent, 'utf-8');
+    
+    res.json({ success: true });
+  } catch (err) {
+    console.error('Failed to save MISSION_CONTROL.md:', err);
     res.status(500).json({ error: err.message });
   }
 });

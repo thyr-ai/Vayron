@@ -1,0 +1,6 @@
+# Strava data update - runs daily at 06:00
+0 6 * * * cd /home/administrator/vayron/ovning-se && /usr/bin/python3 scripts/fetch_activities.py >> logs/cron.log 2>&1
+
+# To install this cron job:
+# crontab -e
+# Then paste the line above (without the # comments)

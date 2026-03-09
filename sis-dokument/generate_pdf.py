@@ -27,6 +27,25 @@ class PDFGenerator:
         if not output_name:
             output_name = f"dokument_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         
+        # Auto-numrering: hitta nästa lediga filnamn
+        base_name = output_name
+        counter = 0
+        while True:
+            # Försök med current name
+            test_name = output_name if counter == 0 else f"{base_name}_{counter}"
+            
+            # Kolla om PDF eller DOCX redan finns
+            if not os.path.exists(f"{test_name}.pdf") and not os.path.exists(f"{test_name}.docx"):
+                output_name = test_name
+                break
+            
+            counter += 1
+            
+            # Säkerhetsgräns (undvik oändlig loop)
+            if counter > 1000:
+                output_name = f"{base_name}_{datetime.now().strftime('%H%M%S')}"
+                break
+        
         # Läs mallen
         doc = Document(self.template_path)
         
