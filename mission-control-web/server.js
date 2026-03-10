@@ -352,7 +352,9 @@ app.get('/api/x/accounts', (req, res) => {
 
 app.get('/api/x/bookmarks', async (req, res) => {
   try {
-    const results = await scrapeAllBookmarks();
+    // Use static exports instead of live scraping (X blocks bots)
+    const bookmarksDir = path.join(WORKSPACE, 'x-bookmarks');
+    const results = getAllBookmarks(bookmarksDir);
     res.json(results);
   } catch (err) {
     console.error('Failed to fetch bookmarks:', err);
