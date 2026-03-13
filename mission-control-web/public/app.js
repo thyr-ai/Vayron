@@ -126,9 +126,12 @@ function renderKanbanTasks() {
       ? tasks
       : tasks.filter(t => t.contexts.includes(currentContextFilter));
     
-    filteredTasks.forEach(task => {
+    filteredTasks.forEach((task, index) => {
       const taskEl = document.createElement('div');
       taskEl.className = 'task-card';
+      taskEl.draggable = true;
+      taskEl.dataset.section = section;
+      taskEl.dataset.index = index;
       taskEl.innerHTML = `
         <div class="task-content">
           <p>${escapeHtml(task.text)}</p>
@@ -144,8 +147,18 @@ function renderKanbanTasks() {
           ` : ''}
         </div>
       `;
+      
+      // Drag event listeners
+      taskEl.addEventListener('dragstart', handleDragStart);
+      taskEl.addEventListener('dragend', handleDragEnd);
+      
       container.appendChild(taskEl);
     });
+    
+    // Make containers droppable
+    container.addEventListener('dragover', handleDragOver);
+    container.addEventListener('drop', handleDrop);
+    container.addEventListener('dragleave', handleDragLeave);
   });
   
   // Render completed tasks
@@ -157,6 +170,102 @@ function renderKanbanTasks() {
       </div>
     `).join('');
   }
+}
+
+// Drag and drop handlers
+let draggedElement = null;
+let draggedTask = null;
+let sourceSection = null;
+
+function handleDragStart(e) {
+  draggedElement = this;
+  sourceSection = this.dataset.section;
+  const taskIndex = parseInt(this.dataset.index);
+  draggedTask = kanbanTasks[sourceSection][taskIndex];
+  
+  this.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+  e.dataTransfer.setData('text/html', this.innerHTML);
+}
+
+function handleDragEnd(e) {
+  this.classList.remove('dragging');
+  
+  // Remove all drag-over classes
+  document.querySelectorAll('.kanban-column').forEach(col => {
+    col.classList.remove('drag-over');
+  });
+}
+
+function handleDragOver(e) {
+  if (e.preventDefault) {
+    e.preventDefault();
+  }
+  
+  e.dataTransfer.dropEffect = 'move';
+  
+  // Add visual feedback
+  const column = e.currentTarget.closest('.kanban-column');
+  if (column) {
+    column.classList.add('drag-over');
+  }
+  
+  return false;
+}
+
+function handleDragLeave(e) {
+  const column = e.currentTarget.closest('.kanban-column');
+  if (column && !column.contains(e.relatedTarget)) {
+    column.classList.remove('drag-over');
+  }
+}
+
+async function handleDrop(e) {
+  if (e.stopPropagation) {
+    e.stopPropagation();
+  }
+  
+  const targetContainer = e.currentTarget;
+  const targetSection = targetContainer.id.replace('-tasks', '');
+  
+  // Remove visual feedback
+  const column = targetContainer.closest('.kanban-column');
+  if (column) {
+    column.classList.remove('drag-over');
+  }
+  
+  if (sourceSection === targetSection) {
+    return false;
+  }
+  
+  // Update data structure
+  const taskIndex = kanbanTasks[sourceSection].findIndex(t => t.text === draggedTask.text);
+  if (taskIndex > -1) {
+    kanbanTasks[sourceSection].splice(taskIndex, 1);
+  }
+  
+  if (!kanbanTasks[targetSection]) {
+    kanbanTasks[targetSection] = [];
+  }
+  kanbanTasks[targetSection].push(draggedTask);
+  
+  // Save to backend
+  try {
+    await fetch('/api/kanban/tasks', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(kanbanTasks)
+    });
+  } catch (err) {
+    console.error('Failed to save Kanban tasks:', err);
+  }
+  
+  // Re-render
+  renderKanbanTasks();
+  
+  return false;
 }
 
 function escapeHtml(text) {

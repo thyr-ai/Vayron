@@ -465,6 +465,16 @@ main {
 
 .task-card.dragging {
   opacity: 0.5;
+  cursor: grabbing;
+}
+
+.kanban-column.drag-over {
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 2px dashed rgba(0, 255, 255, 0.5);
+}
+
+.task-card {
+  cursor: grab;
 }
 
 .task-title {
