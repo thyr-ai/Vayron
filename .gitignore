@@ -17,6 +17,13 @@ node_modules/
 __pycache__/
 *.pyc
 
+# Python virtual environments
+whisper-env/
+elevenlabs-env/
+*-env/
+venv/
+.venv/
+
 # Obsidian workspace (personal settings)
 .obsidian/workspace*
 .obsidian/workspace.json
