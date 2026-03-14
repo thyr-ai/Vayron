@@ -74,6 +74,31 @@ _Skapad: 2026-02-16_
 - 2026-03-04: Reel om prissättning för kreatörer
 - Output: `/home/administrator/vayron/transcripts/20260304-135544_prisstattning_kreativa.txt`
 
+### 2026-03-14: Telegram-kanaler - configWrites fix
+**OpenClaw doctor slutade klaga på Telegram-config:**
+- Problem: Doctor ville skriva om config varje gång (username→ID, streaming-format)
+- Lösning: `openclaw doctor --repair` + `"configWrites": false` i channels.telegram
+
+**Workflow:**
+1. `openclaw doctor --non-interactive` - identifiera problem
+2. `openclaw doctor --repair` - migrera legacy-format (backup skapas automatiskt)
+3. Lägg till `"configWrites": false` under `channels.telegram` i openclaw.json
+4. Gateway restart (händer automatiskt)
+
+**Resultat:**
+- Config migrerad från legacy till nuvarande format
+- Doctor slutar försöka skriva om config
+- Backup: `~/.openclaw/openclaw.json.bak`
+
+**Kvarvarande varningar (förväntat):**
+- @kompass_bot saknas i grupper → Väntar på ny användare (OK)
+- BotFather privacy mode → Kan fixas vid behov
+
+**Lärdomar:**
+- `configWrites: false` förhindrar att Telegram-events ändrar config
+- Doctor --repair är säkert (skapar alltid backup först)
+- Gateway restart hanteras automatiskt av systemd
+
 ### 2026-03-02: One.com domäner + bot-filter
 **One.com har bot-filter (2026-03):**
 - Headless browser (Brave/Chrome) timeout:ar varje gång
