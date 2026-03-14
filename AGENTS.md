@@ -255,9 +255,17 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 **REGEL:** Innan context komprimeras (Compact), kör alltid ett memory flow:
 
-1. Läs igenom sessionens viktigaste händelser
-2. Uppdatera `MEMORY.md` med det som INTE får gå förlorat
+1. Gå igenom sessionens viktigaste händelser
+2. Sortera varje minne till rätt plats:
+   - **MEMORY.md** → Vayrons egna inställningar, teknisk setup, kommunikationsregler, lärdomar/misstag
+   - **memory/professional/** → Affärer, upphandling, Shields & Spears, företagsprojekt
+   - **memory/semiprofessional/** → Cykel, hockey, tech-experiment, kreativa projekt
+   - **memory/personal/** → Karriär, familj, kontakter, vardagligt
+   - **memory/private_encrypted/** → Känsligt, personliga hemligheter
 3. Commit + push till GitHub
+
+**Principen:** MEMORY.md är Vayrons *hjärna* — vem jag är, hur jag fungerar, mina regler.
+Sfärfilerna är *innehållsminnen* — specifika projekt, beslut, kontext per sfär.
 
 **Varför:** Compact komprimerar kontexten → viktiga detaljer riskerar försvinna.
 Memory flow säkerställer att lärdomar, beslut och konfigurationer överlever.
