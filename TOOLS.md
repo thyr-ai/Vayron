@@ -45,3 +45,72 @@ Vayron
 - Semiprofessional: full disclosure
 - Personal: hint_only (fulltext på begäran)
 - Private: indirect_only + metadata (fulltext på begäran)
+
+# SSH-tunnlar till VPS
+
+**VPS-adress:** 85.190.102.252  
+**SSH-alias:** `vps` (konfigurerad i ~/.ssh/config)
+
+## Tjänster med HTTPS-domäner (inget tunnelbehov)
+
+- **OpenClaw Dashboard:** https://db.konfident.se (port 18789)
+- **Mission Control:** http://mc.konfident.se:8080 (port 8080)
+- **Camp:** https://camp.konfident.se
+- **Relay:** https://relay.konfident.se
+- **TUI:** https://tui.konfident.se
+
+## SSH-tunnlar (vid behov)
+
+### macOS / Linux
+
+**OpenClaw Dashboard (alternativ till db.konfident.se):**
+```bash
+ssh -L 18789:localhost:18789 vps
+```
+Sen öppna: http://localhost:18789
+
+**Mission Control (alternativ till mc.konfident.se):**
+```bash
+ssh -L 8080:localhost:8080 vps
+```
+Sen öppna: http://localhost:8080
+
+**Kombinerad tunnel (flera tjänster samtidigt):**
+```bash
+ssh -L 18789:localhost:18789 -L 8080:localhost:8080 vps
+```
+
+### Windows (PowerShell / CMD)
+
+**OpenClaw Dashboard:**
+```powershell
+ssh -L 18789:localhost:18789 administrator@85.190.102.252
+```
+
+**Mission Control:**
+```powershell
+ssh -L 8080:localhost:8080 administrator@85.190.102.252
+```
+
+**Kombinerad tunnel:**
+```powershell
+ssh -L 18789:localhost:18789 -L 8080:localhost:8080 administrator@85.190.102.252
+```
+
+## Användning
+
+1. **Starta tunnel** i Terminal/PowerShell (lämna fönstret öppet)
+2. **Öppna webbläsare** och gå till `http://localhost:<port>`
+3. **Stäng tunnel** med Ctrl+C när du är klar
+
+## När använda tunnel vs HTTPS-domän?
+
+**Använd HTTPS-domän (rekommenderat):**
+- ✅ Enklare (ingen tunnel att hålla öppen)
+- ✅ Fungerar från mobil/iPad
+- ✅ SSL-krypterad
+
+**Använd SSH-tunnel:**
+- ✅ Extra säkerhet (trafik går genom SSH)
+- ✅ Fungerar även om DNS är nere
+- ✅ Kan komma åt localhost-tjänster som inte är exponerade
