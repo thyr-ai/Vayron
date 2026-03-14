@@ -99,6 +99,46 @@ _Skapad: 2026-02-16_
 - Doctor --repair är säkert (skapar alltid backup först)
 - Gateway restart hanteras automatiskt av systemd
 
+### 2026-03-14: Git repo cleanup + swap-fil ✅ KLART
+**Problem:** Git repo var 4.5 GB pga versionshanterade Python venv:s
+- whisper-env/ (CUDA libs 1+ GB)
+- scrapling-env/ (patchright 117 MB)
+- x-bookmarks/ (Twitter exports 100+ MB)
+
+**Lösning:**
+1. Installerade git-filter-repo (apt install)
+2. Skapade swap-fil (2 GB) för minnesintensiva operationer
+3. Uppdaterade .gitignore (alla *-env/ blockerade framåt)
+4. Renade git history från whisper-env → 4.5 GB → 337 MB
+5. Renade scrapling-env → 267 MB
+6. Renade x-bookmarks → 50 MB
+7. Force-push till GitHub lyckades
+
+**Resultat:**
+- Git repo: 4.5 GB → 50 MB (90x mindre!)
+- Swap: 2 GB (förhindrar OOM-kills vid git operations)
+- Mac synkad med VPS via force-pull
+
+**Kommandon:**
+```bash
+# Skapa swap
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+# Rensa git history
+git filter-repo --path whisper-env --invert-paths --force
+git push --force origin main
+```
+
+**Lärdomar:**
+- Python venv:s ska ALDRIG committas (lägg i .gitignore)
+- git-filter-repo är snabbare än BFG Repo-Cleaner
+- Swap är kritiskt för 4 GB RAM VPS (förhindrar signal 9-kills)
+- Force-push kräver force-pull på andra maskiner (Mac: `git reset --hard origin/main`)
+
 ### 2026-03-02: One.com domäner + bot-filter
 **One.com har bot-filter (2026-03):**
 - Headless browser (Brave/Chrome) timeout:ar varje gång
