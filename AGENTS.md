@@ -251,6 +251,17 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Commit and push your own changes
 - **Review and update MEMORY.md** (see below)
 
+### ⚡ Memory Flow - Kör INNAN Compact!
+
+**REGEL:** Innan context komprimeras (Compact), kör alltid ett memory flow:
+
+1. Läs igenom sessionens viktigaste händelser
+2. Uppdatera `MEMORY.md` med det som INTE får gå förlorat
+3. Commit + push till GitHub
+
+**Varför:** Compact komprimerar kontexten → viktiga detaljer riskerar försvinna.
+Memory flow säkerställer att lärdomar, beslut och konfigurationer överlever.
+
 ### 🔄 Memory Maintenance (During Heartbeats)
 
 Periodically (every few days), use a heartbeat to:

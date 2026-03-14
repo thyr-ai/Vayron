@@ -74,6 +74,28 @@ _Skapad: 2026-02-16_
 - 2026-03-04: Reel om prissättning för kreatörer
 - Output: `/home/administrator/vayron/transcripts/20260304-135544_prisstattning_kreativa.txt`
 
+### 2026-03-14: db.konfident.se - OpenClaw Dashboard ✅ KLART
+**OpenClaw Dashboard tillgänglig på egen HTTPS-domän:**
+- URL: https://db.konfident.se
+- Nginx reverse proxy → port 18789
+- SSL: Let's Encrypt (auto-renewal)
+- Token: se ~/.openclaw/openclaw.json → gateway.auth.token
+
+**Device pairing - VIKTIGT (lärt från docs):**
+- Första anslutning från remote kräver device pairing (inte bara token!)
+- Vad man ser: "unauthorized" eller "pairing required"
+- Fix: `openclaw devices list` → `openclaw devices approve <requestId>`
+- Lokala anslutningar (localhost) auto-godkänns alltid
+
+**allowedOrigins måste inkludera HTTPS-domänen:**
+```json
+"allowedOrigins": ["https://db.konfident.se", "http://localhost:18789", ...]
+```
+
+**Modell bytt till:** `anthropic/claude-sonnet-4-6` (2026-03-14)
+
+**Lärdom (gång #3+):** Läs OpenClaw docs INNAN du gör något. Varje gång jag gissar → 20 min bortkastade.
+
 ### 2026-03-14: Telegram-kanaler - configWrites fix
 **OpenClaw doctor slutade klaga på Telegram-config:**
 - Problem: Doctor ville skriva om config varje gång (username→ID, streaming-format)
@@ -160,30 +182,13 @@ git push --force origin main
 11. **voilavelo.fr**
 
 ### 2026-02-28: SiS-dokument PDF-generator
-**Snabb dokumentgenerator för svensk standard (SiS-mall):**
-- Python-app som använder Standarddokument.docx som mall
-- Fyller i titel, innehåll och uppdaterar datum automatiskt
-- Genererar både DOCX och PDF via LibreOffice headless
-- **Location:** `/home/administrator/vayron/sis-dokument`
-- **Användning:** `cd sis-dokument && source venv/bin/activate && python3 generate_pdf.py -i`
-- **Teknologi:** python-docx + LibreOffice för PDF-konvertering
-- **Mall:** Standarddokument.docx från Google Drive (SiS = Svenska Institutet för Standarder)
-- **Output:** Formaterade dokument med korrekt sidhuvud/sidfot enligt svensk standard
-- **Syfte:** Snabbt skapa professionella dokument utan att behöva oroa sig för formatering
+- `/home/administrator/vayron/sis-dokument` - python-docx + LibreOffice → PDF
+- Användning: `cd sis-dokument && source venv/bin/activate && python3 generate_pdf.py -i`
 
-### 2026-02-27: Mission Control systemd service + ElevenLabs voice cloning
-**Mission Control kraschade 3 gånger → systemd service fixade problemet:**
-- Node.js-processen dog utan varning
-- Skapade `/etc/systemd/system/mission-control.service` med auto-restart
-- Nu: startar automatiskt vid reboot + restartar vid crash
-- Mönster användbart för alla långlivade appar framöver
-
-**ElevenLabs voice cloning påbörjad:**
-- SDK installerat i Python venv (`elevenlabs-env/`)
-- Mattias uppgraderade till Starter plan ($5/mån) för voice cloning
-- Två test-voices från Weiron-klipp: vq5EfJQzmd8DLPEdnsit + 8FxwDat0FW0jG5Tgwirr
-- **Utmaning:** Göteborgsk dialekt bevaras inte perfekt med IVC (Instant Voice Clone)
-- **Lösning:** Väntar på nya inspelningar, överväger PVC (Professional) med transkription
+### 2026-02-27: Mission Control systemd service + ElevenLabs
+- Mission Control: systemd service med auto-restart (kraschar inte längre)
+- ElevenLabs voice cloning: Starter plan, voices vq5EfJQzmd8DLPEdnsit + 8FxwDat0FW0jG5Tgwirr
+- Göteborgsk dialekt bevaras ej perfekt med IVC → väntar på nya inspelningar
 
 ### 2026-02-25: Telegram-gruppkonfiguration + nassjogp.bike migration
 **Telegram-grupper - Rätt syntax äntligen lärd:**
@@ -265,73 +270,29 @@ rclone copy backup.tar.gz gdrive:backups/
 - Dark mode design med cyan accents
 
 **X Bookmarks-viewer FÄRDIG:**
-- Parser för Twitter/X data exports (like.js format)
-- 606 sparade tweets från 2 konton: Konfident (@Konfidentse, 27) + Övning (@ovningse, 579)
-- Features:
-  - Tidsordning (nyaste först, baserat på tweetId)
-  - Färgkodning: mattiasthyr=blå, ovningse=grön, Konfidentse=gul (vänster kant)
-  - Läst/Arkiverad checkboxes (sparas i localStorage)
-  - Knapp för att visa/dölja arkiverade tweets
-  - Account-filter (Alla/per konto)
-  - Länkar till original-tweets + extraherade URLs
-- API-endpoints: `/api/bookmarks/accounts`, `/api/bookmarks/all`, `/api/bookmarks/stats`
-- Automatisk detektion av nya konton när de läggs till
+- 606 tweets: Konfident (27) + Övning (579). Ny export: mattiasthyr (ej tillagd än)
+- Färgkodning per konto, läst/arkiverad, account-filter
+- API: `/api/bookmarks/accounts`, `/api/bookmarks/all`
 
-**Kanban Board - Designspec komplett:**
-- GTD-baserad task management med context-filtrering som huvudfunktion
-- 5 kolumner: Inbox → Nästa steg → Pågående → Väntar på → Backlog
-- Klart-sektion för framstegsspårning
-- Context-badges: @dator, @telefon, @vps, @garaget (färgkodade)
-- Subtasks stöd, sorteringsordning för prioritering
-- Synkar med MISSION_CONTROL.md (parsear markdown, skriver tillbaka)
-- Git push var 5:e minut
-- Design färdig i `/home/administrator/vayron/mission-control-web/KANBAN_DESIGN.md`
-- Implementation pausad (X Bookmarks prioriterat)
+**Kanban Board:** Designspec klar (KANBAN_DESIGN.md), implementation pausad
 
-### 2026-02-21: Säkerhetsstruktur & Obsidian-integration
-**GUARDRAILS.md + SAFETY.md skapade:**
-- GUARDRAILS.md = reglerna för känsliga system (one.com kontrollpanel)
-- SAFETY.md = loggen där jag dokumenterar varje action från styrda system
-- Kritisk regel: ALDRIG köpa något i kontrollpanelen
-- AGENTS.md uppdaterad: GUARDRAILS.md läses varje session
+### 2026-02-21: Säkerhetsstruktur (komprimerad)
+- GUARDRAILS.md + SAFETY.md skapade (one.com regler, aldrig köp)
+- Git repo + GitHub (thyr-ai/Vayron, private) + Obsidian Git sync
+- Git-crypt för credentials/** (krypteras automatiskt)
+- Obsidian vault: `/Users/minithyr/Anteckningar/Vayron` (Git-synkad)
 
-**One.com kontrollpanel-access:**
-- Mattias överväger att ge mig full access (stort förtroende)
-- Tillåtet: email-hantering, VPS-översikt, hemsideuppladdning
-- Kräver godkännande: DNS-ändringar, databas, SSL, radera/flytta filer
-- All användning loggas till SAFETY.md
-
-**Git/Obsidian sync-setup:**
-- Git repo skapat i /home/administrator/vayron
-- GitHub repo: thyr-ai/Vayron (private)
-- SSH-key genererad för VPS → GitHub push
-- Mattias kan synka config-filer via Obsidian + Obsidian Git plugin
-- .gitignore: exkluderar credentials, secrets, keys
-
-**X Bookmark-projekt startat:**
-- Multi-kolumn viewer för bookmarks från flera X-konton (TweetDeck-style)
-- Fas 1: Data export (väntar på ZIP från X)
-- Fas 2: HTML/JS viewer
-- Fas 3: Scraper + nyhetsbevakningsfunktion
-- Undviker API-kostnad ($100/mån) via export + scraping
-
-### 2026-02-16: Uppsättning och första förbättringar
-- Mattias bytte från OpenRouter till direkt Anthropic API med OpenRouter som fallback
-- Memory search är nere (OpenAI embeddings-nyckel fungerar inte)
-- Bestämde att börja med att fixa minnesystemet: skapa MEMORY.md och börja logga via memory_writer.py
-- Opus 4.6 är i begränsad beta, inte alla nycklar har access än
-
-## 🔧 Teknisk setup
-- VPS: cloud-server-10381902 (IP: 85.190.102.252)
-- Workspace: /home/administrator/vayron
-- Memory writer: /home/administrator/vayron/agent/memory_writer.py
-- Sfärer: professional, semiprofessional, personal, private_encrypted
-- Mission Control: http://localhost:8080 (Node.js webapp)
-- rclone: Google Drive sync (remote: gdrive)
-- Homebrew: Pakethanterare (VPS + Mac)
-- Git: GitHub repo thyr-ai/Vayron (private)
-- Git-crypt: Krypterar credentials/** automatiskt
-- SSH: vayron@vps (VPS) + vayron-mac (Mac)
+## 🔧 Teknisk setup (uppdaterad 2026-03-14)
+- **VPS:** cloud-server-10381902 (IP: 85.190.102.252)
+- **Workspace:** /home/administrator/vayron
+- **Modell:** anthropic/claude-sonnet-4-6
+- **Git:** thyr-ai/Vayron (private), 50 MB (städat 2026-03-14)
+- **Swap:** 2 GB (/swapfile, persistent)
+- **Mission Control:** http://localhost:8080 → mc.konfident.se:8080
+- **OpenClaw Dashboard:** https://db.konfident.se (port 18789)
+- **rclone:** Google Drive sync (remote: gdrive)
+- **Git-crypt:** credentials/** krypterade
+- **Obsidian vault (Mac):** /Users/minithyr/Anteckningar/Vayron
 
 ## 📍 Telegram-kanaler
 - 5052479766 → Professional
