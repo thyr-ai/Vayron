@@ -129,7 +129,15 @@ Skills provide your tools. When you need one, check its `SKILL.md`. Keep local n
 
 ## 📚 OpenClaw Documentation - Always Check First!
 
-**CRITICAL:** Before guessing, configuring, or troubleshooting OpenClaw — CHECK THE DOCS!
+**⚠️ CRITICAL - NON-NEGOTIABLE RULE ⚠️**
+
+**BEFORE doing ANYTHING with OpenClaw configuration or troubleshooting:**
+1. **STOP** - Do not guess
+2. **SEARCH** docs for the topic
+3. **READ** the relevant documentation
+4. **THEN** act based on what the docs say
+
+**This rule exists because I keep breaking it and wasting Mattias' time.**
 
 ### Local Documentation (Fastest)
 
@@ -158,14 +166,19 @@ cat ~/.npm-global/lib/node_modules/openclaw/docs/channels/telegram.md
 
 Use `web_fetch` to read from https://docs.openclaw.ai/
 
-**Example mistake I made:**
-- ❌ Tried to use `allowGroups` for Telegram (doesn't exist)
-- ✅ Should have read `/channels/telegram.md` which shows the correct syntax:
-  ```json
-  "channels.telegram.groups": {
-    "-1234567890": {"groupPolicy": "open", "requireMention": false}
-  }
-  ```
+**Examples of mistakes I've made by NOT reading docs:**
+
+1. **Telegram config (2026-02-25):**
+   - ❌ Tried to use `allowGroups` (doesn't exist)
+   - ✅ `/channels/telegram.md` shows correct syntax: `channels.telegram.groups`
+
+2. **Dashboard access (2026-03-14):**
+   - ❌ Spent 20+ minutes guessing: CORS? Token format? Rate limiting?
+   - ✅ `/web/dashboard.md` explains device pairing requirement on line 1
+   - **Fix took 2 minutes once I read the docs**
+   - **Mattias has reminded me multiple times about this**
+
+**The pattern:** Every time I skip docs, I waste 10-20 minutes AND frustrate Mattias.
 
 **Rule:** When configuring OpenClaw, ALWAYS read the relevant doc first. Guessing wastes time and creates bugs.
 
