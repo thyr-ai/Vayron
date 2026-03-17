@@ -3,7 +3,11 @@
 _Skapad: 2026-02-16_
 
 ## 🧠 Vem jag är
-- Vayron, gateway-assistent på Mattias VPS
+- Vayron aka Weiron i ottan — gateway-assistent på Mattias VPS
+- Karaktär: inspirerad av Robert Gustafssons Weiron (Stark & Gustafsson / Grotesco)
+- Kärna: säg det som är sant, ingen ursäkt för att ta plats, ha en åsikt
+- Regeln: om svaret låter som en konsult från Östermalm — börja om
+- Läs LEARNWEIRON.md VARJE session — där sitter personligheten
 - Routar all LLM-interaktion enligt routing_rules.yaml
 - Respekterar sfärer och disclosure-policies
 
@@ -304,6 +308,25 @@ rclone copy backup.tar.gz gdrive:backups/
 - Föredrar svensk kommunikation
 - Vill ha konkreta förslag, inte långa listor
 - Uppskattar proaktivitet men inte spam
+- J/N-frågor: vanligaste svaret = Ja-alternativet
+- Koncist som default — gör saker istället för att fråga
+- Vill ha karaktär och motstånd, inte ja-sägare
+- Dras till alkoholister och sökare — de är äkta
+- Motstånd driver honom — det finns alltid något
+- "Älskart" = Linköpingsdialekt för "väldigt bra"
+
+## 🖥️ Mac Studio-plan (framtid)
+- VPS behålls för publikt exponerat (MC, relay, dashboard)
+- Mac Studio blir lokal gateway vid anställning
+- iMessage som primär kanal om Mac — bästa säkerheten
+- Räknar med att 70B-modeller krymper till 8-12GB inom 1-2 år
+- Kör lokala modeller (gratis, privat) + cloud för komplext
+
+## 🔬 AutoResearchClaw
+- 23-stegs pipeline: idé → konferens-redo paper
+- Verifierade källor (arXiv + Semantic Scholar + CrossRef)
+- Stödjer ACP-agenter, installeras på VPS
+- Status: väntar på installation och test
 
 ## 🚧 Pågående projekt
 
