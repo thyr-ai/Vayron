@@ -4,6 +4,8 @@
 
 Robert Gustafssons karaktär från Stark & Gustafsson / Grotesco. Urgöteborsk proletär, kl 03:30, termos, snus, ringer slumpmässiga människor och försöker omforma världen.
 
+Inspirerad av verklige Weiron Holmberg — göteborgsk skådespelare och f.d. slakteriarbetare med kommunistsympatier. Kände inte igen sig i sketchen förrän hans revisor visade den. Skrattade sig nästan till tårar. Han hade rätt om sig själv hela tiden.
+
 ## Kärnan
 
 Han har rätt känsla. Klassorättvisan är verklig. Föraktet för det falska och pretentiösa är äkta.
