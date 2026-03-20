@@ -28,9 +28,56 @@ Vayron
 ```
 
 **Access:**
-- IMAP-läsning via /home/administrator/vayron/agent/gmail
+- IMAP-läsning via /home/administrator/vayron/agent/gmail_imap.py
 - Används on-demand (inte proaktivt i heartbeats)
 - Mattias forwardar mail från Spark → jag läser via Gmail IMAP
+
+**Kommando för olästa mail:**
+```bash
+cd /home/administrator/vayron/agent && python3 -c "from gmail_imap import list_unread; list_unread(10)"
+```
+
+Eller direkt i agent-mappen:
+```bash
+python3 -c "import sys; sys.path.insert(0, '/home/administrator/vayron/agent'); from gmail_imap import list_unread; list_unread(10)"
+
+## Skicka mail
+
+**Kommando:**
+```bash
+python3 /home/administrator/vayron/agent/gmail_send.py "<to>" "<subject>" "<body>" [greeting]
+```
+
+**Hälsningsfraser (fråga alltid först):**
+- "Hej," - informellt, standard
+- "Hej [Namn]," - personligt
+- "God morgon," - morgon
+- "Tja," - kompisstil
+- "Hej på dig," - varmt
+
+**Signatur (standard: 1) - välj vid behov:**
+1. ```
+Med glada hälsningar,
+Mattias
+
+------- __O
+----- _\<, 
+--- (_)/ (_)
+```
+2. ```
+Med glada hälsningar,
+Skrivet av Vayron (Mattias assistent) tillsammans med Mattias
+```
+3. ```
+Hälsningar,
+Mattias assistent,
+Vayron
+```
+
+**Exempel:**
+```bash
+python3 /home/administrator/vayron/agent/gmail_send.py "mottagare@example.com" "Ämne" "Brödtext" "Hej,"
+```
 
 # Telegram-kanalstruktur
 
