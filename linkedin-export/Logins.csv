@@ -1,0 +1,76 @@
+Login Date,IP Address,User Agent,Login Type
+Mon Oct 23 14:27:03 UTC 2023,2a09:bac3:52f0:505:0:0:80:fe,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",Login
+Sun Nov 05 14:37:05 UTC 2023,89.160.68.161,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",Login
+Fri Dec 08 11:34:16 UTC 2023,2a09:bac3:52f6:2a0:0:0:43:4f,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1.2 Safari/605.1.15",Login
+Fri Dec 08 11:37:40 UTC 2023,78.70.233.32,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",Login
+Wed Dec 27 12:27:55 UTC 2023,89.160.68.161,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",Login
+Wed Dec 27 17:33:30 UTC 2023,2a09:bac2:52f4:28c:0:0:41:66,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15",Login
+Thu Jan 11 05:37:30 UTC 2024,78.70.224.38,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",Login
+Thu Jan 25 15:24:35 UTC 2024,78.70.233.32,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.1 Safari/605.1.15",Login
+Thu Jan 25 15:30:13 UTC 2024,78.70.233.32,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.1 Safari/605.1.15",Login
+Wed Jan 31 22:21:20 UTC 2024,78.70.233.32,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",Login
+Sun Feb 04 10:49:22 UTC 2024,78.70.233.32,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21C66 [FBAN/FBIOS;FBAV/448.1.0.39.110;FBBV/559583292;FBDV/iPhone14,4;FBMD/iPhone;FBSN/iOS;FBSV/17.2.1;FBSS/3;FBID/phone;FBLC/sv_SE;FBOP/5;FBRV/562876731]",Login
+Mon Feb 12 12:09:12 UTC 2024,2001:2042:fc23:3600:c5ef:72dc:cf28:9f7d,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0@linkedin/windows-native-app/edge-webview2",Login
+Mon Feb 12 16:56:34 UTC 2024,2001:2042:fc23:3600:2ce6:e813:7249:66a5,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.1 Safari/605.1.15",Login
+Tue Feb 20 12:00:02 UTC 2024,2a09:bac2:517e:28c:0:0:41:65,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Tue Feb 20 12:00:12 UTC 2024,2a09:bac2:517e:28c:0:0:41:65,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Wed Feb 21 10:08:01 UTC 2024,78.70.231.65,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",Login
+Thu Feb 29 12:24:46 UTC 2024,2a09:bac2:517e:28c:0:0:41:4c,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Thu Feb 29 19:46:37 UTC 2024,2a09:bac2:5178:28c:0:0:41:7d,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Thu Feb 29 19:46:45 UTC 2024,2a09:bac2:5178:28c:0:0:41:7d,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Thu Feb 29 22:21:05 UTC 2024,2a09:bac2:5178:28c:0:0:41:7d,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Sat Mar 02 19:29:00 UTC 2024,89.160.68.161,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21D61 [FBAN/FBIOS;FBAV/453.0.0.47.106;FBBV/570990458;FBDV/iPhone14,4;FBMD/iPhone;FBSN/iOS;FBSV/17.3.1;FBSS/3;FBID/phone;FBLC/sv_SE;FBOP/5;FBRV/572216755]",Login
+Thu Mar 14 14:04:44 UTC 2024,2001:2042:fc23:3600:c09c:964f:46ec:c17f,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6.1 Safari/605.1.15",Login
+Thu Mar 21 10:35:08 UTC 2024,2001:2042:fc23:3600:c46c:dbf2:630d:9448,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",Login
+Fri Mar 29 08:26:01 UTC 2024,2a09:bac3:5369:505:0:0:80:d9,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Fri Mar 29 10:07:38 UTC 2024,2a09:bac3:5369:505:0:0:80:d9,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Sun Mar 31 18:21:32 UTC 2024,2a09:bac3:517e:505:0:0:80:143,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Sun Mar 31 18:37:43 UTC 2024,2a09:bac3:517e:505:0:0:80:143,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Sun Mar 31 19:43:09 UTC 2024,2a09:bac3:517e:505:0:0:80:143,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3.1 Safari/605.1.15",Login
+Mon Apr 15 09:43:14 UTC 2024,2001:2042:fc23:3600:94fc:170d:cfec:83bb,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",Login
+Tue Apr 30 11:04:09 UTC 2024,2001:2042:fc23:3600:ec04:6c6e:577:56ca,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Login
+Tue Apr 30 15:09:09 UTC 2024,2001:2042:fc23:3600:ec04:6c6e:577:56ca,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Login
+Tue Apr 30 15:25:51 UTC 2024,2001:2042:fc23:3600:ec04:6c6e:577:56ca,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Login
+Wed May 01 06:07:46 UTC 2024,2001:2042:fc23:3600:7b72:b7c5:8555:6923,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",Login
+Wed May 01 06:07:47 UTC 2024,2001:2042:fc23:3600:7b72:b7c5:8555:6923,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",Login
+Wed May 01 07:24:17 UTC 2024,2001:2042:fc23:3600:7b72:b7c5:8555:6923,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",Login
+Wed May 01 07:24:18 UTC 2024,2001:2042:fc23:3600:7b72:b7c5:8555:6923,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",Login
+Thu May 09 10:20:21 UTC 2024,2001:2042:fc23:3600:7488:ef25:f07d:fe59,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Login
+Fri May 10 07:50:00 UTC 2024,2001:2042:fc23:3600:1583:7cec:3bf4:ff2c,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",Login
+Thu May 30 19:20:47 UTC 2024,2001:2042:fc23:3600:1d03:7e63:1ea2:fa3c,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",Login
+Thu May 30 20:25:38 UTC 2024,2001:2042:fc23:3600:1d03:7e63:1ea2:fa3c,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",Login
+Sun Jun 30 21:02:32 UTC 2024,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",Login
+Sat Aug 31 18:26:24 UTC 2024,2001:2042:fc03:e300:a109:b008:5da5:b024,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",Login
+Sat Nov 30 17:50:15 UTC 2024,2001:2042:fc03:e300:c57b:3f51:5427:6284,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",Login
+Sat Nov 30 17:50:16 UTC 2024,2001:2042:fc03:e300:c57b:3f51:5427:6284,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",Login
+Sat Nov 30 20:09:22 UTC 2024,2001:2042:fc03:e300:c57b:3f51:5427:6284,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",Login
+Sat Nov 30 20:09:22 UTC 2024,2001:2042:fc03:e300:c57b:3f51:5427:6284,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",Login
+Wed Jan 29 20:18:35 UTC 2025,2001:2042:fc03:e300:9976:4e57:572e:be9e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",Login
+Wed Jan 29 20:18:36 UTC 2025,2001:2042:fc03:e300:9976:4e57:572e:be9e,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",Login
+Wed Feb 05 12:12:19 UTC 2025,2001:2042:fc03:e300:4003:5dae:558:3f38,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",Login
+Thu Feb 27 15:32:37 UTC 2025,78.69.210.53,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15",Login
+Thu Feb 27 19:14:36 UTC 2025,78.69.210.53,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22D72 Instagram 369.0.0.29.88 (iPhone14,4; iOS 18_3_1; sv_SE; sv; scale=3.00; 1125x2436; 700656188; IABMV/1)",Login
+Fri Feb 28 08:39:55 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",Login
+Fri Feb 28 13:25:51 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",Login
+Fri Feb 28 13:25:51 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",Login
+Fri Feb 28 13:45:36 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",Login
+Fri Feb 28 17:11:14 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",Login
+Thu Mar 13 11:31:01 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",Login
+Sun Mar 30 20:29:03 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",Login
+Tue Apr 15 11:08:02 UTC 2025,95.194.139.238,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_3_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22D82 [FBAN/FBIOS;FBAV/508.1.0.72.95;FBBV/720370353;FBDV/iPhone14,4;FBMD/iPhone;FBSN/iOS;FBSV/18.3.2;FBSS/3;FBID/phone;FBLC/sv_SE;FBOP/5;FBRV/721604465;IABMV/1]",Login
+Mon May 12 11:00:56 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",Login
+Mon May 12 11:00:56 UTC 2025,78.69.210.53,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",Login
+Wed Jun 04 18:39:18 UTC 2025,78.69.210.53,"Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/22F76 [FBAN/FBIOS;FBAV/515.0.0.59.91;FBBV/740881359;FBDV/iPhone14,4;FBMD/iPhone;FBSN/iOS;FBSV/18.5;FBSS/3;FBID/phone;FBLC/sv_SE;FBOP/5;FBRV/743368604;IABMV/1]",Login
+Thu Jul 17 11:58:29 UTC 2025,2001:2042:fc03:e300:5d5b:85f0:7359:8544,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Tue Jul 22 16:08:36 UTC 2025,2001:2042:fc03:e300:65ec:b723:4beb:6e80,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Mon Jul 28 06:36:58 UTC 2025,2001:2042:fc03:e300:e4ba:38ba:949c:19d0,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Tue Jul 29 15:02:04 UTC 2025,2001:2042:fc03:e300:e54d:52dd:5e98:4006,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Tue Jul 29 15:02:04 UTC 2025,2001:2042:fc03:e300:e54d:52dd:5e98:4006,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Tue Jul 29 17:59:50 UTC 2025,2001:2042:fc03:e300:e54d:52dd:5e98:4006,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Mon Aug 04 16:26:11 UTC 2025,2001:2042:fc03:e300:8c89:8277:96c1:423f,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",Login
+Mon Aug 11 12:31:33 UTC 2025,2001:2042:fc03:e300:fc61:b432:552:f4da,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
+Sun Aug 31 10:42:03 UTC 2025,2001:2042:fc03:e300:cd65:c710:8892:cff,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
+Sun Aug 31 11:42:39 UTC 2025,2001:2042:fc03:e300:cd65:c710:8892:cff,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
+Sun Aug 31 14:42:05 UTC 2025,2001:2042:fc03:e300:cd65:c710:8892:cff,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
+Tue Sep 09 10:50:49 UTC 2025,2001:2042:fc03:e300:dc64:4dc6:a88c:e82,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",Login
+Fri Sep 12 11:14:44 UTC 2025,2001:2042:fc03:e300:524:90b9:c788:976b,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",Login
