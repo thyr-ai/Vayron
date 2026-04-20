@@ -1,0 +1,5094 @@
+[
+  {
+    "namn": "Carina Börjesson",
+    "klubb": "Åstorps CK",
+    "uci_id": "",
+    "land": "",
+    "starter": 8,
+    "finished": 5,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "Åstorps CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-17",
+        "tavling": "Musettecross 2024 Lopp 4",
+        "event_id": "15140",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "58:02",
+        "varv": "",
+        "deltagare_klass": 8,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15140/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15140/results/6594637"
+      },
+      {
+        "datum": "2024-10-27",
+        "tavling": "Musettecross 2024 Lopp 2",
+        "event_id": "15138",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "10:00:00",
+        "varv": "",
+        "deltagare_klass": 5,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15138/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15138/results/6555658"
+      },
+      {
+        "datum": "2023-10-15",
+        "tavling": "Musettecross 2023 Lopp 2",
+        "event_id": "13297",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "58:57",
+        "varv": "5",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/13297/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13297/results/5557831"
+      },
+      {
+        "datum": "2023-10-01",
+        "tavling": "Musettecross 2023 Lopp 1",
+        "event_id": "13240",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "53:39",
+        "varv": "7",
+        "deltagare_klass": 21,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/13240/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13240/results/5533502"
+      },
+      {
+        "datum": "2022-11-27",
+        "tavling": "Musettecross 2022 Lopp 4",
+        "event_id": "11407",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "1:00:10",
+        "varv": "4",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/11407/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11407/results/4859816"
+      },
+      {
+        "datum": "2022-11-13",
+        "tavling": "Musettecross 2022 Lopp 3",
+        "event_id": "11574",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "51:25",
+        "varv": "4",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/11574/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11574/results/4837828"
+      },
+      {
+        "datum": "2022-10-30",
+        "tavling": "Musettecross 2022 Lopp 2",
+        "event_id": "11467",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "51:15",
+        "varv": "4",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11467/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11467/results/4786250"
+      },
+      {
+        "datum": "2022-10-16",
+        "tavling": "Musettecross 2022 Lopp 1",
+        "event_id": "11399",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "57:50",
+        "varv": "5",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11399/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11399/results/4772215"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Maja HAGMAN",
+    "klubb": "Järfälla Cykel Klubb",
+    "uci_id": "10131320095",
+    "land": "SWE",
+    "starter": 6,
+    "finished": 6,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Järfälla CK",
+      "Järfälla Cykel Klubb",
+      "Järfälla ck"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-13",
+        "tavling": "Fristads CX Day 2 SweCup #4",
+        "event_id": "14962",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "22:17",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14962/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2024-10-12",
+        "tavling": "Fristads CX Day 1 SweCup #3",
+        "event_id": "14915",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "22:07",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14915/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2023-10-08",
+        "tavling": "Fristads CX SWE Cup sön",
+        "event_id": "13242",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "22:16",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13242/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13242/results/5543363"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX SWE Cup lör",
+        "event_id": "13186",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "26:53",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13186/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13186/results/5522329"
+      },
+      {
+        "datum": "2022-10-16",
+        "tavling": "Stockholm CX UCI C2 SWECUP",
+        "event_id": "11262",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "24:19",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11262/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "26:23",
+        "varv": "2",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 2.2
+  },
+  {
+    "namn": "Maria Timander",
+    "klubb": "Länna Sport CK",
+    "uci_id": "",
+    "land": "",
+    "starter": 6,
+    "finished": 4,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "Länna Sport CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-17",
+        "tavling": "Musettecross 2024 Lopp 4",
+        "event_id": "15140",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "55:08",
+        "varv": "",
+        "deltagare_klass": 8,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15140/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15140/results/6699766"
+      },
+      {
+        "datum": "2024-10-27",
+        "tavling": "Musettecross 2024 Lopp 2",
+        "event_id": "15138",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "10:00:00",
+        "varv": "",
+        "deltagare_klass": 5,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15138/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15138/results/6565765"
+      },
+      {
+        "datum": "2023-11-26",
+        "tavling": "Musettecross 2023 Lopp 5",
+        "event_id": "13470",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "58:25",
+        "varv": "6",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/13470/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13470/results/5708557"
+      },
+      {
+        "datum": "2023-11-19",
+        "tavling": "Musettecross 2023 Lopp 4",
+        "event_id": "13469",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "59:09",
+        "varv": "3",
+        "deltagare_klass": 21,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/13469/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13469/results/5680151"
+      },
+      {
+        "datum": "2023-11-05",
+        "tavling": "Musettecross 2023 Lopp 3",
+        "event_id": "13348",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "57:29",
+        "varv": "6",
+        "deltagare_klass": 21,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/13348/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13348/results/5588000"
+      },
+      {
+        "datum": "2023-10-15",
+        "tavling": "Musettecross 2023 Lopp 2",
+        "event_id": "13297",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "57:16",
+        "varv": "6",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/13297/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13297/results/5562694"
+      }
+    ],
+    "snitt_placering": 3.8
+  },
+  {
+    "namn": "Tilde LINGMERTH",
+    "klubb": "Eksjö Cykelklubb",
+    "uci_id": "10095164256",
+    "land": "SWE",
+    "starter": 6,
+    "finished": 6,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Eksjö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-20",
+        "tavling": "Varberg CX SWE-Cup #4",
+        "event_id": "11479",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "25:42",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/11479/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11479/results/4841834"
+      },
+      {
+        "datum": "2022-11-19",
+        "tavling": "Varberg CX SWE-Cup #3",
+        "event_id": "11478",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "22:33",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/11478/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2022-11-13",
+        "tavling": "Börjessons CX-Pokal #4 Alingsås",
+        "event_id": "11305",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "19:19",
+        "varv": "3",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/11305/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11305/results/4811005"
+      },
+      {
+        "datum": "2022-11-12",
+        "tavling": "Börjessons CX-Pokal #3 Alingsås",
+        "event_id": "11278",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "23:48",
+        "varv": "4",
+        "deltagare_klass": 4,
+        "fullfort_klass": 3,
+        "resultat_url": "https://www.sportstiming.dk/event/11278/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11278/results/4811002"
+      },
+      {
+        "datum": "2022-10-16",
+        "tavling": "Stockholm CX UCI C2 SWECUP",
+        "event_id": "11262",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "16:52",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11262/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "17:27",
+        "varv": "2",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Anna Persson",
+    "klubb": "Staffanstorp CK",
+    "uci_id": "",
+    "land": "",
+    "starter": 5,
+    "finished": 4,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Staffanstorp CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-19",
+        "tavling": "Musettecross 2023 Lopp 4",
+        "event_id": "13469",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "51:15",
+        "varv": "3",
+        "deltagare_klass": 21,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/13469/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13469/results/5680132"
+      },
+      {
+        "datum": "2023-11-05",
+        "tavling": "Musettecross 2023 Lopp 3",
+        "event_id": "13348",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "51:21",
+        "varv": "6",
+        "deltagare_klass": 21,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/13348/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13348/results/5587981"
+      },
+      {
+        "datum": "2023-10-15",
+        "tavling": "Musettecross 2023 Lopp 2",
+        "event_id": "13297",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "51:40",
+        "varv": "6",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/13297/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13297/results/5562645"
+      },
+      {
+        "datum": "2023-10-01",
+        "tavling": "Musettecross 2023 Lopp 1",
+        "event_id": "13240",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "53:26",
+        "varv": "9",
+        "deltagare_klass": 21,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/13240/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13240/results/5543162"
+      },
+      {
+        "datum": "2022-11-13",
+        "tavling": "Musettecross 2022 Lopp 3",
+        "event_id": "11574",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "56:13",
+        "varv": "6",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/11574/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11574/results/4835212"
+      }
+    ],
+    "snitt_placering": 1.2
+  },
+  {
+    "namn": "Jessica Bengtsson",
+    "klubb": "Musette",
+    "uci_id": "",
+    "land": "",
+    "starter": 5,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "CK Ringen",
+      "Musette"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-17",
+        "tavling": "Musettecross 2024 Lopp 4",
+        "event_id": "15140",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "51:29",
+        "varv": "",
+        "deltagare_klass": 8,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15140/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15140/results/6700837"
+      },
+      {
+        "datum": "2024-10-06",
+        "tavling": "Musettecross 2024 Lopp 1",
+        "event_id": "15137",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "53:04",
+        "varv": "",
+        "deltagare_klass": 2,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/15137/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15137/results/6534377"
+      },
+      {
+        "datum": "2023-10-01",
+        "tavling": "Musettecross 2023 Lopp 1",
+        "event_id": "13240",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "55:43",
+        "varv": "9",
+        "deltagare_klass": 21,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/13240/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13240/results/5542573"
+      },
+      {
+        "datum": "2022-11-13",
+        "tavling": "Musettecross 2022 Lopp 3",
+        "event_id": "11574",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "54:09",
+        "varv": "5",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/11574/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11574/results/4837847"
+      },
+      {
+        "datum": "2022-10-16",
+        "tavling": "Musettecross 2022 Lopp 1",
+        "event_id": "11399",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "52:56",
+        "varv": "6",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11399/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11399/results/4772260"
+      }
+    ],
+    "snitt_placering": 2.5
+  },
+  {
+    "namn": "Signe LIDBERG",
+    "klubb": "Cykelklubben Uni",
+    "uci_id": "10130591989",
+    "land": "SWE",
+    "starter": 5,
+    "finished": 5,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "CK Uni",
+      "Cykelklubben Uni"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX SWE Cup lör",
+        "event_id": "13186",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "25:27",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13186/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13186/results/5533295"
+      },
+      {
+        "datum": "2023-09-24",
+        "tavling": "Varberg CX SWE-Cup #2",
+        "event_id": "12929",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "25:28",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/12929/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2023-09-23",
+        "tavling": "Varberg CX UCI C2 SWE-Cup #1",
+        "event_id": "12923",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "25:14",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/12923/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2022-10-16",
+        "tavling": "Stockholm CX UCI C2 SWECUP",
+        "event_id": "11262",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "22:18",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11262/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "24:03",
+        "varv": "2",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.6
+  },
+  {
+    "namn": "Tora SJÖQVIST BOWENIUS",
+    "klubb": "FInspångs CA",
+    "uci_id": "10129358877",
+    "land": "SWE",
+    "starter": 5,
+    "finished": 5,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "FInspångs CA",
+      "Finspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-23",
+        "tavling": "SM Cykelcross 2025 Ullared",
+        "event_id": "15167",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "22:35",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15167/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15167/results/6701404"
+      },
+      {
+        "datum": "2024-10-20",
+        "tavling": "Varberg CX Day 2 SWE-Cup #6",
+        "event_id": "15016",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "24:05",
+        "varv": "1",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15016/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2024-10-19",
+        "tavling": "Varberg CX Day 1 SWE-Cup #5",
+        "event_id": "15009",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "17:08",
+        "varv": "1",
+        "deltagare_klass": 2,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/15009/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2024-10-13",
+        "tavling": "Fristads CX Day 2 SweCup #4",
+        "event_id": "14962",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "31:56",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14962/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2024-10-12",
+        "tavling": "Fristads CX Day 1 SweCup #3",
+        "event_id": "14915",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "30:09",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14915/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.6
+  },
+  {
+    "namn": "Lucas MOLIN",
+    "klubb": "Falu CK",
+    "uci_id": "10022621895",
+    "land": "SWE",
+    "starter": 4,
+    "finished": 3,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 9,
+    "klubbar": [
+      "Falu CK",
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "1:05:33",
+        "varv": "6",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7899721"
+      },
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 10,
+        "status": "finished",
+        "tid": "1:03:41",
+        "varv": "8",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5589105"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12,
+        "status": "finished",
+        "tid": "57:19",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5530820"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4839340"
+      }
+    ],
+    "snitt_placering": 10.3
+  },
+  {
+    "namn": "Anna Eriksmo",
+    "klubb": "Beijers Coaching CK",
+    "uci_id": "",
+    "land": "",
+    "starter": 3,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "Beijers Coaching CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-05",
+        "tavling": "Musettecross 2023 Lopp 3",
+        "event_id": "13348",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "52:16",
+        "varv": "6",
+        "deltagare_klass": 21,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/13348/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13348/results/5587986"
+      },
+      {
+        "datum": "2023-10-15",
+        "tavling": "Musettecross 2023 Lopp 2",
+        "event_id": "13297",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "53:24",
+        "varv": "6",
+        "deltagare_klass": 18,
+        "fullfort_klass": 12,
+        "resultat_url": "https://www.sportstiming.dk/event/13297/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13297/results/5562646"
+      },
+      {
+        "datum": "2023-10-01",
+        "tavling": "Musettecross 2023 Lopp 1",
+        "event_id": "13240",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "unknown",
+        "tid": "54:07",
+        "varv": "9",
+        "deltagare_klass": 21,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/13240/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13240/results/5543195"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "David Risberg",
+    "klubb": "ML Sports club",
+    "uci_id": "10022265019",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 3,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Evolite Cycling Club",
+      "ML Sports club",
+      "Örebrocyklisterna"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "1:00:51",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7898994"
+      },
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "1:02:29",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5678257"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "59:40",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4845302"
+      }
+    ],
+    "snitt_placering": 1.3
+  },
+  {
+    "namn": "Filip MÅRD",
+    "klubb": "Motala AIF CK",
+    "uci_id": "10022437801",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 3,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "BAUHAUS Sportklubb",
+      "Bauhaus SK",
+      "Motala AIF CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "1:04:47",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5674175"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "53:05",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5532530"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "1:00:04",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4785692"
+      }
+    ],
+    "snitt_placering": 3.3
+  },
+  {
+    "namn": "Louis MONVILLE",
+    "klubb": "CK master",
+    "uci_id": "10132708310",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 3,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 5,
+    "klubbar": [
+      "CK Master",
+      "CK master"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "1:08:15",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7900795"
+      },
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "1:07:06",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5670808"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "1:03:01",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4853256"
+      }
+    ],
+    "snitt_placering": 5.7
+  },
+  {
+    "namn": "Oskar Liljeros",
+    "klubb": "Västerås Cykelklubb",
+    "uci_id": "10094978643",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 3,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Västerås Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-21",
+        "tavling": "Hagströmska CX SWE-CUP lör",
+        "event_id": "13284",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "15:44",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/13284/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13284/results/5567900"
+      },
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "19:06",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4748635"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "18:50",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4748625"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Rasmus ALM",
+    "klubb": "Trosabygdens OK",
+    "uci_id": "10022583705",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": 8,
+    "klubbar": [
+      "ML Sports Club",
+      "Trosabygdens OK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "1:09:18",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5695915"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 11,
+        "status": "finished",
+        "tid": "57:18",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5550127"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "3",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4846140"
+      }
+    ],
+    "snitt_placering": 9.5
+  },
+  {
+    "namn": "Sebastian PETTERSSON",
+    "klubb": "Finspångs CA",
+    "uci_id": "10022337262",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 3,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 9,
+    "klubbar": [
+      "Finspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "1:09:22",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5668502"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "55:41",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5543828"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12,
+        "status": "finished",
+        "tid": "1:05:51",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4806488"
+      }
+    ],
+    "snitt_placering": 10.0
+  },
+  {
+    "namn": "William Chapman",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10129270163",
+    "land": "SWE",
+    "starter": 3,
+    "finished": 2,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-06",
+        "tavling": "Hagströmska CX SWE-CUP #2 sön",
+        "event_id": "14973",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "15:11",
+        "varv": "2",
+        "deltagare_klass": 11,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14973/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14973/results/6519646"
+      },
+      {
+        "datum": "2023-10-22",
+        "tavling": "Hagströmska CX SWE-CUP sön",
+        "event_id": "13285",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 1,
+        "fullfort_klass": 0,
+        "resultat_url": "https://www.sportstiming.dk/event/13285/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13285/results/5565176"
+      },
+      {
+        "datum": "2023-10-21",
+        "tavling": "Hagströmska CX SWE-CUP lör",
+        "event_id": "13284",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "17:45",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/13284/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13284/results/5565143"
+      }
+    ],
+    "snitt_placering": 1.5
+  },
+  {
+    "namn": "Albin DE KOSTER",
+    "klubb": "CK Ringen",
+    "uci_id": "10141019792",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 11,
+    "klubbar": [
+      "CK Ringen",
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12,
+        "status": "finished",
+        "tid": "1:01:50",
+        "varv": "5",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7884010"
+      },
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 11,
+        "status": "finished",
+        "tid": "1:06:53",
+        "varv": "7",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5670092"
+      }
+    ],
+    "snitt_placering": 11.5
+  },
+  {
+    "namn": "Anton OLARS",
+    "klubb": "Falu CK",
+    "uci_id": "10022597041",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 5,
+    "klubbar": [
+      "Falu CK",
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5544075"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "1:02:35",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4847713"
+      }
+    ],
+    "snitt_placering": 5.0
+  },
+  {
+    "namn": "August CHAPMAN",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10141931592",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-06",
+        "tavling": "Hagströmska CX SWE-CUP #2 sön",
+        "event_id": "14973",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "16:50",
+        "varv": "2",
+        "deltagare_klass": 11,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14973/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14973/results/6519654"
+      },
+      {
+        "datum": "2024-10-05",
+        "tavling": "Hagströmska CX SWE-CUP #1 lör",
+        "event_id": "14972",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "17:03",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14972/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14972/results/6519653"
+      }
+    ],
+    "snitt_placering": 1.5
+  },
+  {
+    "namn": "Axel LINDAHL",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10129478412",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 5,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "24:29",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4741997"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "23:33",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4741970"
+      }
+    ],
+    "snitt_placering": 6.0
+  },
+  {
+    "namn": "Axel Lorentsson",
+    "klubb": "Jönköpings CK",
+    "uci_id": "10120571182",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Jönköpings CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-16",
+        "tavling": "Malmö CX SWE-CUP #6",
+        "event_id": "16838",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "18:55",
+        "varv": "5",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/16838/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16838/results/7819387"
+      },
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "20:01",
+        "varv": "4",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7819379"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Cesar PAULSSON",
+    "klubb": "MTB Täby",
+    "uci_id": "10142582102",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "MTB Täby"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-06",
+        "tavling": "Hagströmska CX SWE-CUP #2 sön",
+        "event_id": "14973",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "17:57",
+        "varv": "2",
+        "deltagare_klass": 11,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14973/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14973/results/6523450"
+      },
+      {
+        "datum": "2024-10-05",
+        "tavling": "Hagströmska CX SWE-CUP #1 lör",
+        "event_id": "14972",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "17:33",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14972/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14972/results/6523436"
+      }
+    ],
+    "snitt_placering": 2.5
+  },
+  {
+    "namn": "Constantin Costes",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "10163899769",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-16",
+        "tavling": "Malmö CX SWE-CUP #6",
+        "event_id": "16838",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "22:40",
+        "varv": "5",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/16838/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16838/results/7797423"
+      },
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "24:46",
+        "varv": "4",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7797410"
+      }
+    ],
+    "snitt_placering": 4.5
+  },
+  {
+    "namn": "Dani Nilsson Huisman",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "10094978138",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-10",
+        "tavling": "Malmö CX SWE-CUP #9",
+        "event_id": "15248",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "22:07",
+        "varv": "3",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/15248/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15248/results/6586577"
+      },
+      {
+        "datum": "2024-11-09",
+        "tavling": "Malmö CX SWE-CUP #8",
+        "event_id": "15246",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "17:34",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/15246/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15246/results/6582349"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Ella PÅLSSON GUSTAFSSON",
+    "klubb": "FK Trampen",
+    "uci_id": "10132559069",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "FK Trampen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-13",
+        "tavling": "Börjessons CX-Pokal #4 Alingsås",
+        "event_id": "11305",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "24:29",
+        "varv": "3",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/11305/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11305/results/4825510"
+      },
+      {
+        "datum": "2022-11-12",
+        "tavling": "Börjessons CX-Pokal #3 Alingsås",
+        "event_id": "11278",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "30:30",
+        "varv": "4",
+        "deltagare_klass": 4,
+        "fullfort_klass": 3,
+        "resultat_url": "https://www.sportstiming.dk/event/11278/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11278/results/4825503"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "Emmy Strömblad",
+    "klubb": "MTB Täby",
+    "uci_id": "10130387986",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "MTB Täby"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-08",
+        "tavling": "Fristads CX SWE Cup sön",
+        "event_id": "13242",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "23:17",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13242/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13242/results/5555029"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX SWE Cup lör",
+        "event_id": "13186",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13186/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13186/results/5542936"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Filip STARK",
+    "klubb": "Team Ormsalva AC",
+    "uci_id": "10022293513",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6,
+    "klubbar": [
+      "Ryska Posten SK",
+      "Team Ormsalva AC"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "1:08:04",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5677081"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4838831"
+      }
+    ],
+    "snitt_placering": 6.0
+  },
+  {
+    "namn": "Henrik JANSSON",
+    "klubb": "BAUHAUS SK",
+    "uci_id": "10010641991",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "BAUHAUS SK",
+      "Bauhaus SK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5674177"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "1:00:15",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4843553"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Henry HELLMAN",
+    "klubb": "Idrottsklubben Jarl Rättvik",
+    "uci_id": "10093415529",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "Idrottsklubben Jarl Rättvik"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "19:41",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4743515"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "19:23",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4743512"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "Hjalmar ERIKSSON",
+    "klubb": "Cykelklubben Dainon",
+    "uci_id": "10119746177",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "Cykelklubben Dainon"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "20:15",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4747219"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "19:32",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4747210"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Isac Lundgren",
+    "klubb": "CK Ringen",
+    "uci_id": "10010993619",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": 8,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "1",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5676694"
+      },
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "1:03:04",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4843362"
+      }
+    ],
+    "snitt_placering": 8.0
+  },
+  {
+    "namn": "Ivar SCHEDVIN",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10119942201",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "25:57",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4748547"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "24:17",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4748538"
+      }
+    ],
+    "snitt_placering": 7.0
+  },
+  {
+    "namn": "Linus LANDH",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10094976724",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "23:25",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4741989"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "21:55",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4741962"
+      }
+    ],
+    "snitt_placering": 4.5
+  },
+  {
+    "namn": "Louise Österman",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "10167571120",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-10-19",
+        "tavling": "Varberg CX Day 2 SWE-Cup #4",
+        "event_id": "16827",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "20:35",
+        "varv": "2",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/16827/results",
+        "cyklist_url": "#"
+      },
+      {
+        "datum": "2025-10-18",
+        "tavling": "Varberg CX Day 1 SWE-Cup #3",
+        "event_id": "16826",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "20:30",
+        "varv": "3",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/16826/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.5
+  },
+  {
+    "namn": "Lukas MERKEL",
+    "klubb": "CK Hymer",
+    "uci_id": "10075575916",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6,
+    "klubbar": [
+      "CK Hymer"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "1:08:18",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7901843"
+      },
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "1:08:44",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5673924"
+      }
+    ],
+    "snitt_placering": 6.5
+  },
+  {
+    "namn": "Melvin PÅLSSON GUSTAFSSONFK Trampen",
+    "klubb": "",
+    "uci_id": "10097262587",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-12-03",
+        "tavling": "Cross Cup 5 Holbæk",
+        "event_id": "11294",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "37:25",
+        "varv": "",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/11294/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11294/results/4871274"
+      },
+      {
+        "datum": "2022-10-09",
+        "tavling": "CX Skrænten CC",
+        "event_id": "11331",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "31:28",
+        "varv": "",
+        "deltagare_klass": 39,
+        "fullfort_klass": 25,
+        "resultat_url": "https://www.sportstiming.dk/event/11331/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11331/results/4757759"
+      }
+    ],
+    "snitt_placering": 1.5
+  },
+  {
+    "namn": "Melvin TYNELL FYHR",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10117330069",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 0,
+    "dns": 2,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4748546"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4748537"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Nora DECKNER",
+    "klubb": "Tyresö Cykelklubb",
+    "uci_id": "10117071910",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Tyresö CK",
+      "Tyresö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-08",
+        "tavling": "Fristads CX SWE Cup sön",
+        "event_id": "13242",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "19:58",
+        "varv": "2",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13242/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13242/results/5547717"
+      },
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "20:14",
+        "varv": "2",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.5
+  },
+  {
+    "namn": "Oskar Kumlin",
+    "klubb": "Mtb Täby",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 7,
+    "klubbar": [
+      "Mtb Täby",
+      "Täby Mtb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-02",
+        "tavling": "Hagströmska CX-pokalen sön",
+        "event_id": "11221",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "28:04",
+        "varv": "3",
+        "deltagare_klass": 22,
+        "fullfort_klass": 14,
+        "resultat_url": "https://www.sportstiming.dk/event/11221/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11221/results/4752834"
+      },
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "26:54",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4752809"
+      }
+    ],
+    "snitt_placering": 8.0
+  },
+  {
+    "namn": "Paul Greijus",
+    "klubb": "BAUHAUS Sportklubb",
+    "uci_id": "10022628666",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "BAUHAUS Sportklubb",
+      "Bauhaus SK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "1:01:55",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5674176"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "54:49",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5532735"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Petter Höhler",
+    "klubb": "Malmö Cykelcross klubb",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "Malmö Cykelcross klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-16",
+        "tavling": "Malmö CX SWE-CUP #6",
+        "event_id": "16838",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "19:48",
+        "varv": "4",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/16838/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16838/results/7821787"
+      },
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "25:41",
+        "varv": "4",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7821778"
+      }
+    ],
+    "snitt_placering": 6.0
+  },
+  {
+    "namn": "Simon Härling Björ",
+    "klubb": "Kvänums IF",
+    "uci_id": "10162473970",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "Kvänums IF"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-16",
+        "tavling": "Malmö CX SWE-CUP #6",
+        "event_id": "16838",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "21:27",
+        "varv": "5",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/16838/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16838/results/7821930"
+      },
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7821925"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Vidar LYCKHAGE",
+    "klubb": "Järfälla CK",
+    "uci_id": "10125194345",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 1,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "Järfälla CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-06",
+        "tavling": "Hagströmska CX SWE-CUP #2 sön",
+        "event_id": "14973",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 11,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14973/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14973/results/6524127"
+      },
+      {
+        "datum": "2024-10-05",
+        "tavling": "Hagströmska CX SWE-CUP #1 lör",
+        "event_id": "14972",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "17:51",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14972/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14972/results/6523302"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Vilgot MAGNUSSON",
+    "klubb": "Järfälla CK",
+    "uci_id": "10128689173",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 0,
+    "dns": 2,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "Järfälla CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-06",
+        "tavling": "Hagströmska CX SWE-CUP #2 sön",
+        "event_id": "14973",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 11,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14973/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14973/results/6522668"
+      },
+      {
+        "datum": "2024-10-05",
+        "tavling": "Hagströmska CX SWE-CUP #1 lör",
+        "event_id": "14972",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/14972/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14972/results/6522603"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Ville Merlöv",
+    "klubb": "Åstorps CK",
+    "uci_id": "10049005794",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "Åstorps CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "1:02:56",
+        "varv": "9",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5568776"
+      },
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "53:18",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5541043"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Wilmer Larsson",
+    "klubb": "Jönköpings CK",
+    "uci_id": "10107598141",
+    "land": "SWE",
+    "starter": 2,
+    "finished": 2,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "Jönköpings CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-16",
+        "tavling": "Malmö CX SWE-CUP #6",
+        "event_id": "16838",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "19:52",
+        "varv": "5",
+        "deltagare_klass": 24,
+        "fullfort_klass": 16,
+        "resultat_url": "https://www.sportstiming.dk/event/16838/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16838/results/7781927"
+      },
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "20:46",
+        "varv": "4",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7781926"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "0:06",
+    "klubb": "Eksjö Cykelklubb",
+    "uci_id": "11:07",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1200611071118,
+    "klubbar": [
+      "Eksjö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-19",
+        "tavling": "Varberg CX SWE-Cup #3",
+        "event_id": "11478",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1200611071118,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/11478/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 1200611071118.0
+  },
+  {
+    "namn": "0:19",
+    "klubb": "Finspångs CA",
+    "uci_id": "11:31",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1201911311044,
+    "klubbar": [
+      "Finspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-23",
+        "tavling": "SM Cykelcross 2025 Ullared",
+        "event_id": "15167",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1201911311044,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15167/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 1201911311044.0
+  },
+  {
+    "namn": "0:20",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "8:40",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 12020840850,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-23",
+        "tavling": "SM Cykelcross 2025 Ullared",
+        "event_id": "15167",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12020840850,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15167/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 12020840850.0
+  },
+  {
+    "namn": "10:59",
+    "klubb": "Järfälla ck",
+    "uci_id": "10:49",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 105910491108,
+    "klubbar": [
+      "Järfälla ck"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-12",
+        "tavling": "Fristads CX Day 1 SweCup #3",
+        "event_id": "14915",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 105910491108,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14915/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 105910491108.0
+  },
+  {
+    "namn": "11:03",
+    "klubb": "Järfälla ck",
+    "uci_id": "10:46",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 110310461119,
+    "klubbar": [
+      "Järfälla ck"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-13",
+        "tavling": "Fristads CX Day 2 SweCup #4",
+        "event_id": "14962",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 110310461119,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14962/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 110310461119.0
+  },
+  {
+    "namn": "12:02",
+    "klubb": "Järfälla CK",
+    "uci_id": "11:32",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 120211321233,
+    "klubbar": [
+      "Järfälla CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-16",
+        "tavling": "Stockholm CX UCI C2 SWECUP",
+        "event_id": "11262",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 120211321233,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11262/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 120211321233.0
+  },
+  {
+    "namn": "12:28",
+    "klubb": "Järfälla Cykel Klubb",
+    "uci_id": "11:49",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 122811491308,
+    "klubbar": [
+      "Järfälla Cykel Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 122811491308,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 122811491308.0
+  },
+  {
+    "namn": "14:59",
+    "klubb": "FInspångs CA",
+    "uci_id": "14:18",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 145914181540,
+    "klubbar": [
+      "FInspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-12",
+        "tavling": "Fristads CX Day 1 SweCup #3",
+        "event_id": "14915",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 145914181540,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14915/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 145914181540.0
+  },
+  {
+    "namn": "15:52",
+    "klubb": "FInspångs CA",
+    "uci_id": "15:23",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 155215231621,
+    "klubbar": [
+      "FInspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-13",
+        "tavling": "Fristads CX Day 2 SweCup #4",
+        "event_id": "14962",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 155215231621,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/14962/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 155215231621.0
+  },
+  {
+    "namn": "17:08",
+    "klubb": "FInspångs CA",
+    "uci_id": "",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 11708,
+    "klubbar": [
+      "FInspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-19",
+        "tavling": "Varberg CX Day 1 SWE-Cup #5",
+        "event_id": "15009",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 11708,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 2,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/15009/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 11708.0
+  },
+  {
+    "namn": "4:37",
+    "klubb": "Eksjö Cykelklubb",
+    "uci_id": "10:40",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1243710401023,
+    "klubbar": [
+      "Eksjö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-20",
+        "tavling": "Varberg CX SWE-Cup #4",
+        "event_id": "11479",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1243710401023,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/11479/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 1243710401023.0
+  },
+  {
+    "namn": "5:30",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "7:18",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 12530718747,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-10-19",
+        "tavling": "Varberg CX Day 2 SWE-Cup #4",
+        "event_id": "16827",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12530718747,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 3,
+        "fullfort_klass": 2,
+        "resultat_url": "https://www.sportstiming.dk/event/16827/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 12530718747.0
+  },
+  {
+    "namn": "6:37",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "6:55",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 123637655657,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-10-18",
+        "tavling": "Varberg CX Day 1 SWE-Cup #3",
+        "event_id": "16826",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 123637655657,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/16826/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 123637655657.0
+  },
+  {
+    "namn": "6:47",
+    "klubb": "Finspångs CA",
+    "uci_id": "17:17",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 16471717,
+    "klubbar": [
+      "Finspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-20",
+        "tavling": "Varberg CX Day 2 SWE-Cup #6",
+        "event_id": "15016",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 16471717,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15016/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 16471717.0
+  },
+  {
+    "namn": "6:55",
+    "klubb": "CK Ringen",
+    "uci_id": "6:44",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6556447041,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-09",
+        "tavling": "CX Skrænten CC",
+        "event_id": "11331",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 6556447041,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 39,
+        "fullfort_klass": 25,
+        "resultat_url": "https://www.sportstiming.dk/event/11331/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 6556447041.0
+  },
+  {
+    "namn": "7:26",
+    "klubb": "Finspångs CA",
+    "uci_id": "7:38",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 12726738,
+    "klubbar": [
+      "Finspångs CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 12726738,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 12726738.0
+  },
+  {
+    "namn": "7:42",
+    "klubb": "ML Sports Club",
+    "uci_id": "8:03",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 123742803839,
+    "klubbar": [
+      "ML Sports Club"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 123742803839,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 123742803839.0
+  },
+  {
+    "namn": "7:46",
+    "klubb": "CK Ringen",
+    "uci_id": "",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1746,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1746,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 1746.0
+  },
+  {
+    "namn": "8:02",
+    "klubb": "Eksjö Cykelklubb",
+    "uci_id": "8:01",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 802801802,
+    "klubbar": [
+      "Eksjö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-15",
+        "tavling": "CX Täby Park UCI C2 SWECUP",
+        "event_id": "11218",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 802801802,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 12,
+        "fullfort_klass": 8,
+        "resultat_url": "https://www.sportstiming.dk/event/11218/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 802801802.0
+  },
+  {
+    "namn": "8:21",
+    "klubb": "Eksjö Cykelklubb",
+    "uci_id": "8:14",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 821814829,
+    "klubbar": [
+      "Eksjö Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-16",
+        "tavling": "Stockholm CX UCI C2 SWECUP",
+        "event_id": "11262",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 821814829,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 9,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/11262/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 821814829.0
+  },
+  {
+    "namn": "Acke DAHLBLOM",
+    "klubb": "Södertälje CK",
+    "uci_id": "10022258753",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 9,
+    "klubbar": [
+      "Södertälje CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "1:03:55",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4842554"
+      }
+    ],
+    "snitt_placering": 9.0
+  },
+  {
+    "namn": "Adam NYLANDER",
+    "klubb": "Kvänums IF",
+    "uci_id": "10057742969",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 10,
+    "klubbar": [
+      "Kvänums IF"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 10,
+        "status": "finished",
+        "tid": "1:03:57",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4846182"
+      }
+    ],
+    "snitt_placering": 10.0
+  },
+  {
+    "namn": "Albin Sjögren",
+    "klubb": "CK Fix",
+    "uci_id": "10101600208",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 17,
+    "klubbar": [
+      "CK Fix"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 17,
+        "status": "finished",
+        "tid": "1:08:21",
+        "varv": "7",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4843623"
+      }
+    ],
+    "snitt_placering": 17.0
+  },
+  {
+    "namn": "Albin THURESSON",
+    "klubb": "CK Master",
+    "uci_id": "10082680861",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "CK Master"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "1",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4846154"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Alva BJURKLINT",
+    "klubb": "Borås CA",
+    "uci_id": "10132558564",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Borås CA"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-10-18",
+        "tavling": "Varberg CX Day 1 SWE-Cup #3",
+        "event_id": "16826",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "25:11",
+        "varv": "4",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/16826/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Alva FELLDIN",
+    "klubb": "Västerås CK",
+    "uci_id": "10022664840",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "Västerås CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6540572"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Alvin DAHL",
+    "klubb": "ML Sports Club",
+    "uci_id": "10022471951",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "ML Sports Club"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "3",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4845988"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Assar AKERSTROM",
+    "klubb": "Eskilstuna Cykelklubb",
+    "uci_id": "10056488942",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 10,
+    "klubbar": [
+      "Eskilstuna Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 10,
+        "status": "finished",
+        "tid": "56:55",
+        "varv": "8",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5550107"
+      }
+    ],
+    "snitt_placering": 10.0
+  },
+  {
+    "namn": "Astrid Forsby Persson",
+    "klubb": "CK Master",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "CK Master"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-20",
+        "tavling": "Varberg CX Day 2 SWE-Cup #6",
+        "event_id": "15016",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "25:24",
+        "varv": "1",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15016/results",
+        "cyklist_url": "#"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "CK Ringen",
+    "klubb": "CK Ringen",
+    "uci_id": "",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-19",
+        "tavling": "CX Amager Cykle Ring",
+        "event_id": "11386",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 21,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/11386/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Carina BörjessonÅstorps CK",
+    "klubb": "",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 11,
+    "klubbar": [],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-19",
+        "tavling": "Challenge Cup 5 Erling Hansen",
+        "event_id": "13121",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 11,
+        "status": "finished",
+        "tid": "50:43",
+        "varv": "",
+        "deltagare_klass": 42,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13121/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13121/results/5664490"
+      }
+    ],
+    "snitt_placering": 11.0
+  },
+  {
+    "namn": "Christoffer WALL",
+    "klubb": "CK Ringen",
+    "uci_id": "10015764403",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 13,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 13,
+        "status": "finished",
+        "tid": "1:06:12",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4840127"
+      }
+    ],
+    "snitt_placering": 13.0
+  },
+  {
+    "namn": "Cykelklubben Ringen",
+    "klubb": "Cykelklubben Ringen",
+    "uci_id": "",
+    "land": "",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6095576211,
+    "klubbar": [
+      "Cykelklubben Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-19",
+        "tavling": "CX Amager Cykle Ring",
+        "event_id": "11386",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 6095576211,
+        "status": "finished",
+        "tid": "6:21",
+        "varv": "",
+        "deltagare_klass": 21,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/11386/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 6095576211.0
+  },
+  {
+    "namn": "David Eriksson",
+    "klubb": "IKHP Huskvarna",
+    "uci_id": "10060995095",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 8,
+    "klubbar": [
+      "IKHP Huskvarna"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "1:02:47",
+        "varv": "6",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7898899"
+      }
+    ],
+    "snitt_placering": 8.0
+  },
+  {
+    "namn": "David Eriksson",
+    "klubb": "Mölndals CK",
+    "uci_id": "10008597315",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "Mölndals CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "1:01:45",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4844183"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Dennis WAHLQVIST",
+    "klubb": "Vincents Cycling Club",
+    "uci_id": "10007915988",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 11,
+    "klubbar": [
+      "Vincents Cycling Club"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 11,
+        "status": "finished",
+        "tid": "1:05:34",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4844421"
+      }
+    ],
+    "snitt_placering": 11.0
+  },
+  {
+    "namn": "Dexter KOCK",
+    "klubb": "Länna sport",
+    "uci_id": "10062276711",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 7,
+    "klubbar": [
+      "Länna sport"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 7,
+        "status": "finished",
+        "tid": "1:02:07",
+        "varv": "6",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7895877"
+      }
+    ],
+    "snitt_placering": 7.0
+  },
+  {
+    "namn": "Disa MOLIN",
+    "klubb": "Falu Cykelklubb",
+    "uci_id": "10050756141",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 9,
+    "klubbar": [
+      "Falu Cykelklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 9,
+        "status": "finished",
+        "tid": "46:38",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6539547"
+      }
+    ],
+    "snitt_placering": 9.0
+  },
+  {
+    "namn": "Elin ÅLSJÖ",
+    "klubb": "CK Uni",
+    "uci_id": "10084440807",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "CK Uni"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "40:32",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6547253"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Elinore NILSSON",
+    "klubb": "IK Trasten",
+    "uci_id": "10055677273",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "IK Trasten"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "40:15",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6536570"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "Ellen Bolik",
+    "klubb": "MTB Täby",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "MTB Täby"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX SWE Cup lör",
+        "event_id": "13186",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "28:09",
+        "varv": "2",
+        "deltagare_klass": 10,
+        "fullfort_klass": 6,
+        "resultat_url": "https://www.sportstiming.dk/event/13186/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13186/results/5550111"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Emil Oskarsson",
+    "klubb": "CK Master",
+    "uci_id": "10060236879",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 10,
+    "klubbar": [
+      "CK Master"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 10,
+        "status": "finished",
+        "tid": "1:08:41",
+        "varv": "6",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7900190"
+      }
+    ],
+    "snitt_placering": 10.0
+  },
+  {
+    "namn": "Erik KARLSSON LANDÉN",
+    "klubb": "CK Master",
+    "uci_id": "10016083186",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 15,
+    "klubbar": [
+      "CK Master"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 15,
+        "status": "finished",
+        "tid": "1:07:37",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4846042"
+      }
+    ],
+    "snitt_placering": 15.0
+  },
+  {
+    "namn": "Gustav THOMPSON",
+    "klubb": "Mölndals CK",
+    "uci_id": "10022432747",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 16,
+    "klubbar": [
+      "Mölndals CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 16,
+        "status": "finished",
+        "tid": "1:07:39",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4845945"
+      }
+    ],
+    "snitt_placering": 16.0
+  },
+  {
+    "namn": "Hampus Mortensen",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 5,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2025-11-15",
+        "tavling": "Malmö CX SWE-CUP #5",
+        "event_id": "16837",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 5,
+        "status": "finished",
+        "tid": "21:05",
+        "varv": "3",
+        "deltagare_klass": 16,
+        "fullfort_klass": 10,
+        "resultat_url": "https://www.sportstiming.dk/event/16837/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16837/results/7820448"
+      }
+    ],
+    "snitt_placering": 5.0
+  },
+  {
+    "namn": "Klara WESTERGREN",
+    "klubb": "Falu CK",
+    "uci_id": "10143034362",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 10,
+    "klubbar": [
+      "Falu CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 10,
+        "status": "finished",
+        "tid": "47:35",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6548763"
+      }
+    ],
+    "snitt_placering": 10.0
+  },
+  {
+    "namn": "Linnea NILSSON",
+    "klubb": "IK Trasten",
+    "uci_id": "10055677071",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "IK Trasten"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "41:14",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6536551"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Louise Österman",
+    "klubb": "Malmö Cykelcross Klubb",
+    "uci_id": "",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 1,
+    "klubbar": [
+      "Malmö Cykelcross Klubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-11-23",
+        "tavling": "SM Cykelcross 2025 Ullared",
+        "event_id": "15167",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 1,
+        "status": "finished",
+        "tid": "17:51",
+        "varv": "2",
+        "deltagare_klass": 6,
+        "fullfort_klass": 4,
+        "resultat_url": "https://www.sportstiming.dk/event/15167/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/15167/results/6594692"
+      }
+    ],
+    "snitt_placering": 1.0
+  },
+  {
+    "namn": "Lukas KARLÉN",
+    "klubb": "IF Hallby SOK",
+    "uci_id": "10022469527",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 14,
+    "klubbar": [
+      "IF Hallby SOK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-10-07",
+        "tavling": "Fristads CX European Cup",
+        "event_id": "13040",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 14,
+        "status": "finished",
+        "tid": "53:08",
+        "varv": "7",
+        "deltagare_klass": 44,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13040/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/13040/results/5544773"
+      }
+    ],
+    "snitt_placering": 14.0
+  },
+  {
+    "namn": "Niklas JAGERSTAL",
+    "klubb": "Motala AIF CK",
+    "uci_id": "10015904748",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 14,
+    "klubbar": [
+      "Motala AIF CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 14,
+        "status": "finished",
+        "tid": "1:06:45",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4843400"
+      }
+    ],
+    "snitt_placering": 14.0
+  },
+  {
+    "namn": "Nils JOHANSSON",
+    "klubb": "IKHP Huskvarna",
+    "uci_id": "10022656049",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 2,
+    "klubbar": [
+      "IKHP Huskvarna"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 2,
+        "status": "finished",
+        "tid": "1:03:33",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7900581"
+      }
+    ],
+    "snitt_placering": 2.0
+  },
+  {
+    "namn": "Nora Fransson",
+    "klubb": "Kvänums IF",
+    "uci_id": "10083256292",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "Kvänums IF"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6514158"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Olle SUNDBERGCK Ringen",
+    "klubb": "",
+    "uci_id": "10097490034",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 8,
+    "klubbar": [],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-09",
+        "tavling": "CX Skrænten CC",
+        "event_id": "11331",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "34:37",
+        "varv": "",
+        "deltagare_klass": 39,
+        "fullfort_klass": 25,
+        "resultat_url": "https://www.sportstiming.dk/event/11331/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11331/results/4756854"
+      }
+    ],
+    "snitt_placering": 8.0
+  },
+  {
+    "namn": "Oscar LILJA",
+    "klubb": "CK Ringen",
+    "uci_id": "10022658271",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6,
+    "klubbar": [
+      "CK Ringen"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-11-26",
+        "tavling": "SM Cykelcross 2023 Knutstorp",
+        "event_id": "11238",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "1:02:58",
+        "varv": "8",
+        "deltagare_klass": 61,
+        "fullfort_klass": 37,
+        "resultat_url": "https://www.sportstiming.dk/event/11238/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11238/results/4855809"
+      }
+    ],
+    "snitt_placering": 6.0
+  },
+  {
+    "namn": "Patrick STRACK",
+    "klubb": "Ängby CC",
+    "uci_id": "10132615249",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 13,
+    "klubbar": [
+      "Ängby CC"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 13,
+        "status": "finished",
+        "tid": "1:04:13",
+        "varv": "5",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7900466"
+      }
+    ],
+    "snitt_placering": 13.0
+  },
+  {
+    "namn": "Salvador RINCON AMAT",
+    "klubb": "Upsala CK",
+    "uci_id": "10022365150",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 11,
+    "klubbar": [
+      "Upsala CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 11,
+        "status": "finished",
+        "tid": "1:11:13",
+        "varv": "6",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7879620"
+      }
+    ],
+    "snitt_placering": 11.0
+  },
+  {
+    "namn": "Simon KELLÉN",
+    "klubb": "IK Trasten",
+    "uci_id": "10079743983",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 1,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "IK Trasten"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNS",
+        "tid": "",
+        "varv": "0",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5674101"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Thea PERSSON",
+    "klubb": "Kvänums IF",
+    "uci_id": "10116040070",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 8,
+    "klubbar": [
+      "Kvänums IF"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2024-10-16",
+        "tavling": "Hagströmska CX UCI C2",
+        "event_id": "14974",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 8,
+        "status": "finished",
+        "tid": "44:40",
+        "varv": "5",
+        "deltagare_klass": 32,
+        "fullfort_klass": 20,
+        "resultat_url": "https://www.sportstiming.dk/event/14974/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/14974/results/6535517"
+      }
+    ],
+    "snitt_placering": 8.0
+  },
+  {
+    "namn": "Theo STENHAMMAR",
+    "klubb": "OK Hammaren",
+    "uci_id": "10095163145",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 6,
+    "klubbar": [
+      "OK Hammaren"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 6,
+        "status": "finished",
+        "tid": "22:52",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4746786"
+      }
+    ],
+    "snitt_placering": 6.0
+  },
+  {
+    "namn": "Thor STENHAMMAR",
+    "klubb": "OK Hammaren",
+    "uci_id": "10095163044",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "OK Hammaren"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2022-10-01",
+        "tavling": "Hagströmska CX-pokalen lör",
+        "event_id": "11220",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "21:50",
+        "varv": "3",
+        "deltagare_klass": 28,
+        "fullfort_klass": 18,
+        "resultat_url": "https://www.sportstiming.dk/event/11220/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/11220/results/4746785"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Tobias BROBERG",
+    "klubb": "CK Bure",
+    "uci_id": "10117734136",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 0,
+    "dns": 0,
+    "dnf": 1,
+    "dsq": 0,
+    "basta_placering": null,
+    "klubbar": [
+      "CK Bure"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-25",
+        "tavling": "SCF SM Cykelcross 2024 Kågeröd",
+        "event_id": "12474",
+        "land": "SWE",
+        "kategori": "",
+        "placering": null,
+        "status": "DNF",
+        "tid": "",
+        "varv": "4",
+        "deltagare_klass": 40,
+        "fullfort_klass": 24,
+        "resultat_url": "https://www.sportstiming.dk/event/12474/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/12474/results/5676529"
+      }
+    ],
+    "snitt_placering": null
+  },
+  {
+    "namn": "Vilmar AASTRUP",
+    "klubb": "Bauhaus Sportklubb",
+    "uci_id": "10022482156",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 4,
+    "klubbar": [
+      "Bauhaus Sportklubb"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 4,
+        "status": "finished",
+        "tid": "1:08:04",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7898745"
+      }
+    ],
+    "snitt_placering": 4.0
+  },
+  {
+    "namn": "Vilmer Ekman",
+    "klubb": "Lucky Sport Cycling Club",
+    "uci_id": "10022659988",
+    "land": "SWE",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 3,
+    "klubbar": [
+      "Lucky Sport Cycling Club"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2026-01-11",
+        "tavling": "SCF SM Cykelcross 2026 SWE CUP 7",
+        "event_id": "16839",
+        "land": "SWE",
+        "kategori": "",
+        "placering": 3,
+        "status": "finished",
+        "tid": "1:06:51",
+        "varv": "7",
+        "deltagare_klass": 39,
+        "fullfort_klass": 26,
+        "resultat_url": "https://www.sportstiming.dk/event/16839/results",
+        "cyklist_url": "https://www.sportstiming.dk/event/16839/results/7895419"
+      }
+    ],
+    "snitt_placering": 3.0
+  },
+  {
+    "namn": "Åstorps CK",
+    "klubb": "Åstorps CK",
+    "uci_id": "",
+    "land": "13:16",
+    "starter": 1,
+    "finished": 1,
+    "dns": 0,
+    "dnf": 0,
+    "dsq": 0,
+    "basta_placering": 123611511316,
+    "klubbar": [
+      "Åstorps CK"
+    ],
+    "kategorier": [],
+    "resultat": [
+      {
+        "datum": "2023-11-19",
+        "tavling": "Challenge Cup 5 Erling Hansen",
+        "event_id": "13121",
+        "land": "DEN",
+        "kategori": "",
+        "placering": 123611511316,
+        "status": "finished",
+        "tid": "",
+        "varv": "",
+        "deltagare_klass": 42,
+        "fullfort_klass": 28,
+        "resultat_url": "https://www.sportstiming.dk/event/13121/results",
+        "cyklist_url": ""
+      }
+    ],
+    "snitt_placering": 123611511316.0
+  }
+]

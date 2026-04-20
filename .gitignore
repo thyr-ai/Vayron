@@ -38,3 +38,38 @@ nassjogp-bike-website/
 gmail-env/
 credentials/gmail-oauth.json
 credentials/gmail-token.json
+
+# === Ytterligare känsliga mönster ===
+**/lösenord*.md
+**/Lösenord*.md
+**/password*.md
+**/credentials*.md
+**/*-token.md
+**/*_token.md
+**/api_key*.md
+**/apikey*.md
+**/secret*.md
+**/*.op
+**/.op_*
+**/id_rsa*
+**/id_ed25519*
+
+# === Lokala lösenordsfiler - ALDRIG synca ===
+Privat/*lösenord*
+Privat/*lösenord*.md
+Prylar/*lösenord*
+Prylar/*lösenord*.md
+**/2501 Photo credentials.md
+
+# === Ytterligare lösenordsmönster ===
+**/2601*Los*enord*
+**/2501*Los*enord*
+**/202311*Losenord*
+Prylar/*Los*enord*
+Privat/*Los*enord*
+
+# === Vayron-submappar ===
+Vayron/Privat/*los*enord*
+Vayron/Prylar/*los*enord*
+**/los*enord*.md
+**/*lösenord*.md
