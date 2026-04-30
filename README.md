@@ -1,3 +1,3 @@
 # Vayron – Obsidian‑vault
 
-Detta är mitt personliga Obsidian‑vault med anteckningar, projekt, minne och verktyg för att hantera Public Bid Manager‑rollen, juridiska upphandlingar och andra affärsrelaterade idéer.
+Detta är mitt personliga Obsidian mapp med anteckningar, projekt, minne och verktyg för att hantera mina idéer tillsammans med min Assistent vi byggde den i en tid när det var andra förutsättningar för att dela data.
