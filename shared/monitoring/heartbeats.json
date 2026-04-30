@@ -1,0 +1,13 @@
+{
+  "hermes": {
+    "ts": 0,
+    "iso": "never",
+    "note": "Skrivs över när Vayron första heartbeat går (JSON-nyckeln 'hermes' är teknisk, persona är Vayron)"
+  },
+  "babyvayron": {
+    "ts": 0,
+    "iso": "never",
+    "note": "Skrivs över när BabyVayrons första heartbeat går"
+  },
+  "schema_version": 1,
+  "format": "Unix 
